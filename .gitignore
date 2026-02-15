@@ -1,0 +1,12 @@
+.idea
+.vscode
+node_modules
+dist
+*.pem
+*.cert
+*.key
+*.log
+.env
+.env.production
+.env.development
+!.env.example
