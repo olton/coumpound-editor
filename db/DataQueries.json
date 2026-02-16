@@ -1,0 +1,16 @@
+{
+  "name": "DataQueries",
+  "schema": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "System.String"
+      },
+      {
+        "name": "QueryXml",
+        "type": "System.String"
+      }
+    ]
+  },
+  "data": []
+}

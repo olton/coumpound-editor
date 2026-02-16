@@ -1,0 +1,283 @@
+{
+  "name": "UserData",
+  "schema": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "System.Int64"
+      },
+      {
+        "name": "AccountId",
+        "type": "System.Int64"
+      },
+      {
+        "name": "Key",
+        "type": "System.String"
+      },
+      {
+        "name": "Data",
+        "type": "System.String"
+      }
+    ]
+  },
+  "data": [
+    {
+      "Id": 24,
+      "AccountId": 11623,
+      "Key": "Accounts.__LastQuery",
+      "Data": "<Query id=\"Accounts.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisWeek\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.DateCreated\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Email\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"qbs\" text=\"qbs\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 25,
+      "AccountId": 11623,
+      "Key": "DownloadItems.__LastQuery",
+      "Data": "<Query id=\"DownloadItems.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"NotTrue\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.IsObsolete\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.ProductId\" />\r\n        <Expr class=\"CONST\" type=\"Int\" kind=\"Scalar\" value=\"5\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.Title\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"test\" text=\"test\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 26,
+      "AccountId": 11623,
+      "Key": "Logs.__LastQuery",
+      "Data": "<Query id=\"Logs.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinToday\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"LogItemViewModel.Date\" />\r\n        <Expr class=\"CONST\" type=\"DateTime\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 27,
+      "AccountId": 11623,
+      "Key": "Orders.__LastQuery",
+      "Data": "<Query id=\"Orders.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisMonth\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.DateSold\" />\r\n        <Expr class=\"CONST\" type=\"DateTime\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 28,
+      "AccountId": 11623,
+      "Key": "TicketListFilter",
+      "Data": "{\"Assignee\":0,\"Status\":1}"
+    },
+    {
+      "Id": 29,
+      "AccountId": 11623,
+      "Key": "accounts.queries.__LastQuery",
+      "Data": "<Query id=\"__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisMonth\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.DateCreated\" />\r\n        <Expr class=\"CONST\" type=\"DateTime\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.City\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.CompanyName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Email\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"IsTrue\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.EmailConfirmed\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Email2\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.FirstName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.FullName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 30,
+      "AccountId": 13801,
+      "Key": "Accounts.__LastQuery",
+      "Data": "<Query id=\"Accounts.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Email\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"lexisnexis\" text=\"lexisnexis\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 31,
+      "AccountId": 13801,
+      "Key": "DownloadItems.__LastQuery",
+      "Data": "<Query id=\"DownloadItems.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.Product.Id\" />\r\n        <Expr class=\"CONST\" type=\"Int\" kind=\"Scalar\" value=\"1\" text=\"1\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 32,
+      "AccountId": 13801,
+      "Key": "TicketListFilter",
+      "Data": "{\"Range\":1,\"Status\":0}"
+    },
+    {
+      "Id": 33,
+      "AccountId": 13804,
+      "Key": "Accounts.__LastQuery",
+      "Data": "<Query id=\"Accounts.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Id\" />\r\n        <Expr class=\"CONST\" type=\"Int64\" kind=\"Scalar\" value=\"12721\" text=\"12721\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Email\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"sunspotpv.com\" text=\"sunspotpv.com\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.CompanyName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"Plass Data\" text=\"Plass Data\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.NormalizedUserName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"Danley\" text=\"Danley\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n  <ExtraData>{}</ExtraData>\r\n  <InnerData>{\"aggr\":{\"groups\":[],\"ugt\":false,\"urc\":false,\"csg\":false,\"aggregates\":[],\"enabled\":false}}</InnerData>\r\n</Query>"
+    },
+    {
+      "Id": 34,
+      "AccountId": 13804,
+      "Key": "DownloadItems.__LastQuery",
+      "Data": "<Query id=\"DownloadItems.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.VersionNum\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"4.15\" text=\"4.15\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.Product.Family.Name\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"Local\" text=\"Local\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.Uri\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"protected/eqs\" text=\"protected/eqs\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"NotContains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.Flags\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"Source\" text=\"Source\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 35,
+      "AccountId": 13804,
+      "Key": "Logs.__LastQuery",
+      "Data": "<Query id=\"Logs.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisWeek\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"LogItemViewModel.Date\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"LogItemViewModel.Level\" />\r\n        <Expr class=\"CONST\" type=\"Unknown\" kind=\"Scalar\" value=\"4\" text=\"Error\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 36,
+      "AccountId": 13804,
+      "Key": "Orders.__LastQuery",
+      "Data": "<Query id=\"Orders.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisMonth\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.DateSold\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"DatePeriodPrecise\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.DateSold\" />\r\n        <Expr class=\"CONST\" type=\"DateTime\" kind=\"Scalar\" value=\"2019-07-09 00:00\" text=\"9 July, 2019 00:00\" />\r\n        <Expr class=\"CONST\" type=\"DateTime\" kind=\"Scalar\" value=\"2019-07-11 00:00\" text=\"11 July, 2019 00:00\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Commodity.Kind\" />\r\n        <Expr class=\"CONST\" type=\"Unknown\" kind=\"Scalar\" value=\"0\" text=\"License\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Commodity.Product.Family.Name\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"EasyQuery\" text=\"EasyQuery\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Kind\" />\r\n        <Expr class=\"CONST\" type=\"Unknown\" kind=\"Scalar\" value=\"0\" text=\"License\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 37,
+      "AccountId": 13804,
+      "Key": "TicketListFilter",
+      "Data": "{\"Range\":0,\"Status\":0}"
+    },
+    {
+      "Id": 38,
+      "AccountId": 13805,
+      "Key": "Orders.__LastQuery",
+      "Data": "<Query id=\"Orders.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisMonth\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.DateShipped\" />\r\n        <Expr class=\"CONST\" type=\"DateTime\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 39,
+      "AccountId": 234,
+      "Key": "Accounts.__LastQuery",
+      "Data": "<Query id=\"Accounts.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisMonth\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.DateCreated\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Email\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"sergiy@korzh\" text=\"sergiy@korzh\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Email2\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"novatel.com\" text=\"novatel.com\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.CompanyName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"donnelley\" text=\"donnelley\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.LastName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"Madrian\" text=\"Madrian\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.FirstName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"Charlie\" text=\"Charlie\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Country\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"CA\" text=\"CA\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"DateBeforePrecise\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.DateCreated\" />\r\n        <Expr class=\"CONST\" type=\"DateTime\" kind=\"Scalar\" value=\"2020-06-01 00:00\" text=\"1 June, 2020 00:00\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.City\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"Shreveport\" text=\"Shreveport\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"InList\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Id\" />\r\n        <Expr class=\"CONST\" type=\"Int64\" kind=\"List\" value=\"13234\" text=\"13234\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n  <ExtraData>{}</ExtraData>\r\n  <InnerData>{\"aggr\":{\"groups\":[],\"ugt\":false,\"urc\":false,\"csg\":false,\"aggregates\":[],\"enabled\":false}}</InnerData>\r\n</Query>"
+    },
+    {
+      "Id": 40,
+      "AccountId": 234,
+      "Key": "DownloadItems.__LastQuery",
+      "Data": "<Query id=\"DownloadItems.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.Product.Tag\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"EQ-JS\" text=\"EQ-JS\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.ProductId\" />\r\n        <Expr class=\"CONST\" type=\"Int32\" kind=\"Scalar\" value=\"5\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.VersionNum\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"5.4\" text=\"5.4\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.Uri\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"dme\" text=\"dme\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"NotTrue\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.IsProtected\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinPrevMonth\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.DateUpdated\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"IsTrue\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.IsBeta\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.Title\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"SqlQuery\" text=\"SqlQuery\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n  <ExtraData>{}</ExtraData>\r\n  <InnerData>{\"aggr\":{\"groups\":[],\"ugt\":false,\"urc\":false,\"csg\":false,\"aggregates\":[],\"enabled\":false}}</InnerData>\r\n</Query>"
+    },
+    {
+      "Id": 41,
+      "AccountId": 234,
+      "Key": "Logs.__LastQuery",
+      "Data": "<Query id=\"Logs.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisMonth\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"LogItemViewModel.Date\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"LogItemViewModel.Level\" />\r\n        <Expr class=\"CONST\" type=\"Unknown\" kind=\"Scalar\" value=\"4\" text=\"Error\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"LogItemViewModel.Message\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"PayPro\" text=\"PayPro\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 42,
+      "AccountId": 234,
+      "Key": "Orders.__LastQuery",
+      "Data": "<Query id=\"Orders.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisMonth\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.DateSold\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Account.LastName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"Tolar\" text=\"Tolar\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisMonth\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.DateShipped\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Product.Tag\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"EQ\" text=\"EQ\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Commodity.Tag\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"EQN-ASP-TEM\" text=\"EQN-ASP-TEM\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Kind\" />\r\n        <Expr class=\"CONST\" type=\"Unknown\" kind=\"Scalar\" value=\"0\" text=\"License\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"DateBeforePrecise\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.DateShipped\" />\r\n        <Expr class=\"CONST\" type=\"DateTime\" kind=\"Scalar\" value=\"2017-07-01 00:00\" text=\"1 July, 2017 00:00\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"PDCT\" enabled=\"False\" readOnly=\"False\" linking=\"Any\">\r\n      <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n        <Operator id=\"GreaterThan\" />\r\n        <Expressions>\r\n          <Expr class=\"ENTATTR\" id=\"Order.Commodity.Price\" />\r\n          <Expr class=\"CONST\" type=\"Currency\" kind=\"Scalar\" value=\"1300\" text=\"1300\" />\r\n        </Expressions>\r\n      </Condition>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Commodity.LicenseType.Tag\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"TEAM5\" text=\"TEAM5\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Account.Email\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"TemplateAutomation.com\" text=\"TemplateAutomation.com\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Account.Country\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"TR\" text=\"TR\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n  <ExtraData>{}</ExtraData>\r\n  <InnerData>{\"aggr\":{\"groups\":[],\"ugt\":false,\"urc\":false,\"csg\":false,\"aggregates\":[],\"enabled\":false}}</InnerData>\r\n</Query>"
+    },
+    {
+      "Id": 43,
+      "AccountId": 234,
+      "Key": "TicketListFilter",
+      "Data": "{\"Range\":0,\"Status\":1}"
+    },
+    {
+      "Id": 44,
+      "AccountId": 14425,
+      "Key": "TicketListFilter",
+      "Data": "{\"Range\":1,\"Status\":0}"
+    },
+    {
+      "Id": 45,
+      "AccountId": 11623,
+      "Key": "Accounts.__LastQuery",
+      "Data": "<Query id=\"Accounts.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisWeek\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.DateCreated\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Email\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"qbs\" text=\"qbs\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 46,
+      "AccountId": 11623,
+      "Key": "DownloadItems.__LastQuery",
+      "Data": "<Query id=\"DownloadItems.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"NotTrue\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.IsObsolete\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.ProductId\" />\r\n        <Expr class=\"CONST\" type=\"Int\" kind=\"Scalar\" value=\"5\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.Title\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"test\" text=\"test\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 47,
+      "AccountId": 11623,
+      "Key": "Logs.__LastQuery",
+      "Data": "<Query id=\"Logs.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinToday\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"LogItemViewModel.Date\" />\r\n        <Expr class=\"CONST\" type=\"DateTime\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 48,
+      "AccountId": 11623,
+      "Key": "Orders.__LastQuery",
+      "Data": "<Query id=\"Orders.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisMonth\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.DateSold\" />\r\n        <Expr class=\"CONST\" type=\"DateTime\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 49,
+      "AccountId": 11623,
+      "Key": "TicketListFilter",
+      "Data": "{\"Assignee\":0,\"Status\":1}"
+    },
+    {
+      "Id": 50,
+      "AccountId": 11623,
+      "Key": "accounts.queries.__LastQuery",
+      "Data": "<Query id=\"__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisMonth\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.DateCreated\" />\r\n        <Expr class=\"CONST\" type=\"DateTime\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.City\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.CompanyName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Email\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"IsTrue\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.EmailConfirmed\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Email2\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.FirstName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.FullName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 51,
+      "AccountId": 13236,
+      "Key": "Accounts.__LastQuery",
+      "Data": "<Query id=\"Accounts.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Email\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"lexisnexis\" text=\"lexisnexis\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 52,
+      "AccountId": 13236,
+      "Key": "DownloadItems.__LastQuery",
+      "Data": "<Query id=\"DownloadItems.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.Product.Id\" />\r\n        <Expr class=\"CONST\" type=\"Int\" kind=\"Scalar\" value=\"1\" text=\"1\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 53,
+      "AccountId": 13236,
+      "Key": "TicketListFilter",
+      "Data": "{\"Range\":1,\"Status\":0}"
+    },
+    {
+      "Id": 54,
+      "AccountId": 13191,
+      "Key": "Accounts.__LastQuery",
+      "Data": "<Query id=\"Accounts.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Id\" />\r\n        <Expr class=\"CONST\" type=\"Int64\" kind=\"Scalar\" value=\"12721\" text=\"12721\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Email\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"mesoni21ster@gmail.com\" text=\"mesoni21ster@gmail.com\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.CompanyName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"Plass Data\" text=\"Plass Data\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.NormalizedUserName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"Ponder\" text=\"Ponder\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 55,
+      "AccountId": 13191,
+      "Key": "DownloadItems.__LastQuery",
+      "Data": "<Query id=\"DownloadItems.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.VersionNum\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"4.15\" text=\"4.15\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.Product.Family.Name\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"Local\" text=\"Local\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.Uri\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"protected/eqs\" text=\"protected/eqs\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"NotContains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.Flags\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"Source\" text=\"Source\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 56,
+      "AccountId": 13191,
+      "Key": "Logs.__LastQuery",
+      "Data": "<Query id=\"Logs.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisWeek\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"LogItemViewModel.Date\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"LogItemViewModel.Level\" />\r\n        <Expr class=\"CONST\" type=\"Unknown\" kind=\"Scalar\" value=\"4\" text=\"Error\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 57,
+      "AccountId": 13191,
+      "Key": "Orders.__LastQuery",
+      "Data": "<Query id=\"Orders.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisMonth\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.DateSold\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"DatePeriodPrecise\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.DateSold\" />\r\n        <Expr class=\"CONST\" type=\"DateTime\" kind=\"Scalar\" value=\"2019-07-09 00:00\" text=\"9 July, 2019 00:00\" />\r\n        <Expr class=\"CONST\" type=\"DateTime\" kind=\"Scalar\" value=\"2019-07-11 00:00\" text=\"11 July, 2019 00:00\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Commodity.Kind\" />\r\n        <Expr class=\"CONST\" type=\"Unknown\" kind=\"Scalar\" value=\"0\" text=\"License\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Commodity.Product.Family.Name\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"EasyQuery\" text=\"EasyQuery\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Kind\" />\r\n        <Expr class=\"CONST\" type=\"Unknown\" kind=\"Scalar\" value=\"0\" text=\"License\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 58,
+      "AccountId": 13191,
+      "Key": "TicketListFilter",
+      "Data": "{\"Range\":0,\"Status\":0}"
+    },
+    {
+      "Id": 59,
+      "AccountId": 13239,
+      "Key": "Orders.__LastQuery",
+      "Data": "<Query id=\"Orders.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisMonth\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.DateShipped\" />\r\n        <Expr class=\"CONST\" type=\"DateTime\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 60,
+      "AccountId": 234,
+      "Key": "Accounts.__LastQuery",
+      "Data": "<Query id=\"Accounts.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisYear\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.DateCreated\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Email\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"ticm\" text=\"ticm\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Email2\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"novatel.com\" text=\"novatel.com\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.CompanyName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"lexis\" text=\"lexis\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.LastName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"Madrian\" text=\"Madrian\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.FirstName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"Charlie\" text=\"Charlie\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Country\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"CA\" text=\"CA\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"DateBeforePrecise\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.DateCreated\" />\r\n        <Expr class=\"CONST\" type=\"DateTime\" kind=\"Scalar\" value=\"2020-06-01 00:00\" text=\"1 June, 2020 00:00\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.City\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"Shreveport\" text=\"Shreveport\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"InList\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Id\" />\r\n        <Expr class=\"CONST\" type=\"Int64\" kind=\"List\" value=\"13234\" text=\"13234\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n  <ExtraData>{}</ExtraData>\r\n  <InnerData>{\"aggr\":{\"groups\":[],\"ugt\":false,\"urc\":false,\"csg\":false,\"aggregates\":[],\"enabled\":false}}</InnerData>\r\n</Query>"
+    },
+    {
+      "Id": 61,
+      "AccountId": 234,
+      "Key": "DownloadItems.__LastQuery",
+      "Data": "<Query id=\"DownloadItems.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.Product.Tag\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"EQN-ASP\" text=\"EQN-ASP\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.ProductId\" />\r\n        <Expr class=\"CONST\" type=\"Int\" kind=\"Scalar\" value=\"5\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.VersionNum\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"5.4\" text=\"5.4\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.Uri\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"dme\" text=\"dme\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"NotTrue\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.IsProtected\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinPrevMonth\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.DateUpdated\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"IsTrue\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.IsBeta\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"DownloadItem.Title\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"SqlQuery\" text=\"SqlQuery\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 62,
+      "AccountId": 234,
+      "Key": "Logs.__LastQuery",
+      "Data": "<Query id=\"Logs.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisMonth\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"LogItemViewModel.Date\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"LogItemViewModel.Level\" />\r\n        <Expr class=\"CONST\" type=\"Unknown\" kind=\"Scalar\" value=\"4\" text=\"Error\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"LogItemViewModel.Message\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"PayPro\" text=\"PayPro\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 63,
+      "AccountId": 234,
+      "Key": "Orders.__LastQuery",
+      "Data": "<Query id=\"Orders.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"All\">\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisMonth\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.DateSold\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Account.LastName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"Tolar\" text=\"Tolar\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"DateWithinThisYear\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.DateShipped\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Product.Tag\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"EQ\" text=\"EQ\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Commodity.Tag\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"EQN-ASP-TEM\" text=\"EQN-ASP-TEM\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Kind\" />\r\n        <Expr class=\"CONST\" type=\"Unknown\" kind=\"Scalar\" value=\"0\" text=\"License\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"PDCT\" enabled=\"False\" readOnly=\"False\" linking=\"Any\">\r\n      <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n        <Operator id=\"GreaterThan\" />\r\n        <Expressions>\r\n          <Expr class=\"ENTATTR\" id=\"Order.Commodity.Price\" />\r\n          <Expr class=\"CONST\" type=\"Currency\" kind=\"Scalar\" value=\"1300\" text=\"1300\" />\r\n        </Expressions>\r\n      </Condition>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Commodity.LicenseType.Tag\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"TEAM5\" text=\"TEAM5\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Account.Email\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"TemplateAutomation.com\" text=\"TemplateAutomation.com\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Order.Account.Country\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"TR\" text=\"TR\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n  <ExtraData>{}</ExtraData>\r\n  <InnerData>{\"aggr\":{\"groups\":[],\"ugt\":false,\"urc\":false,\"csg\":false,\"aggregates\":[],\"enabled\":false}}</InnerData>\r\n</Query>"
+    },
+    {
+      "Id": 64,
+      "AccountId": 234,
+      "Key": "TicketListFilter",
+      "Data": "{\"Range\":0,\"Status\":1}"
+    },
+    {
+      "Id": 65,
+      "AccountId": 389,
+      "Key": "Accounts.__LastQuery",
+      "Data": "<Query id=\"Accounts.__LastQuery\" name=\"\">\r\n  <Description />\r\n  <Columns />\r\n  <JustSortedColumns />\r\n  <Conditions linking=\"Any\">\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"DateAfterPrecise\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.DateCreated\" />\r\n        <Expr class=\"CONST\" type=\"DateTime\" kind=\"Scalar\" value=\"${FirstDayOfMonth}\" text=\"First day of the month\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"StartsWith\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Email\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"\" text=\"\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"True\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Email\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"go2vanguard.com\" text=\"go2vanguard.com\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.CompanyName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"PSNS Shipyard\" text=\"PSNS Shipyard\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Equal\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.Id\" />\r\n        <Expr class=\"CONST\" type=\"Int64\" kind=\"Scalar\" value=\"12341\" text=\"12341\" />\r\n      </Expressions>\r\n    </Condition>\r\n    <Condition class=\"SMPL\" enabled=\"False\" readOnly=\"False\">\r\n      <Operator id=\"Contains\" />\r\n      <Expressions>\r\n        <Expr class=\"ENTATTR\" id=\"Account.UserName\" />\r\n        <Expr class=\"CONST\" type=\"String\" kind=\"Scalar\" value=\"Elizabeth Malhiot\" text=\"Elizabeth Malhiot\" />\r\n      </Expressions>\r\n    </Condition>\r\n  </Conditions>\r\n</Query>"
+    },
+    {
+      "Id": 66,
+      "AccountId": 389,
+      "Key": "TicketListFilter",
+      "Data": "{\"Range\":1,\"Status\":0}"
+    }
+  ]
+}

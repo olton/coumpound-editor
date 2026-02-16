@@ -1,0 +1,85 @@
+{
+  "name": "GazdaPartials",
+  "schema": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "System.String"
+      },
+      {
+        "name": "DateUpdated",
+        "type": "System.DateTimeOffset"
+      },
+      {
+        "name": "SiteId",
+        "type": "System.String"
+      },
+      {
+        "name": "Name",
+        "type": "System.String"
+      },
+      {
+        "name": "Content",
+        "type": "System.String"
+      }
+    ]
+  },
+  "data": [
+    {
+      "Id": "8f6f71bf-d1f0-4465-a698-1acfd334641a",
+      "DateUpdated": "2023-04-02T17:59:20.6097962+03:00",
+      "SiteId": "dab7aed5-62fa-48a8-8cea-1b30b4f23c4c",
+      "Name": "default",
+      "Content": "<h1>{{ page.title }}</h1>"
+    },
+    {
+      "Id": "blog~__rt-md5b505xps82~BlogAdsPartial",
+      "DateUpdated": "2023-03-29T14:36:57.7877377+03:00",
+      "SiteId": "blog~__rt-md5b505xps82",
+      "Name": "BlogAdsPartial",
+      "Content": "    <div class=\"c-content-testimonials-1 c-option-2\" data-slider=\"owl\" data-single-item=\"true\" data-auto-play=\"15000\">\r\n        <!-- Begin: Owlcarousel -->\r\n        <div id=\"adsCarousel\" class=\"owl-carousel blog-ad-carousel dark\">\r\n\t\t\t<div class=\"blog-ad-block\">\r\n\t\t\t\t<a href=\"https://github.com/KorzhCom/EasyData?utm_source=blog&utm_medium=content&utm_campaign=kblog_banner\"><div class=\"blog-ad-text\">Adaptive CRUD for ASP.NET Core web apps. 10 minutes to set up. Open-source!</div></a>\r\n\t\t\t\t<div class=\"blog-ad-button\"> \r\n\t\t\t\t\t<a href=\"https://github.com/KorzhCom/EasyData?utm_source=blog&utm_medium=content&utm_campaign=kblog_banner\">Get EasyData now!</a>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"blog-ad-block\">\r\n\t\t\t\t<a href=\"https://korzh.com/easy-report-starter-kit?utm_source=blog&utm_medium=content&utm_campaign=kblog_banner\"><div class=\"blog-ad-text\">Don't build reporting functionality from scratch. Use our ready-made solution template for ASP.NET Core!</div></a>\r\n\t\t\t\t<div class=\"blog-ad-button\"> \r\n\t\t\t\t\t<a href=\"https://korzh.com/easy-report-starter-kit?utm_source=blog&utm_medium=content&utm_campaign=kblog_banner\">Get Easy Report Starter Kit</a>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"blog-ad-block\">\r\n\t\t\t\t<a href=\"https://korzh.com/easyquery?utm_source=blog&utm_medium=content&utm_campaign=kblog_banner\"><div class=\"blog-ad-text\">Need advanced search or data filtering functionality in your .NET project? EasyQuery to the resque!</div></a>\r\n\t\t\t\t<div class=\"blog-ad-button\"> \r\n\t\t\t\t\t<a href=\"https://korzh.com/easyquery?utm_source=blog&utm_medium=content&utm_campaign=kblog_banner\">Install EasyQuery</a>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n        </div>\r\n        <!-- End-->\r\n    </div>\r\n"
+    },
+    {
+      "Id": "blog~__rt-md5b505xps82~BlogRecentPostsPartial",
+      "DateUpdated": "2023-03-29T14:36:57.8136029+03:00",
+      "SiteId": "blog~__rt-md5b505xps82",
+      "Name": "BlogRecentPostsPartial",
+      "Content": "\t\t\t\t<div class=\"c-content-title-1 c-theme c-title-md\">\r\n\t\t\t\t\t<h3 class=\"c-font-bold c-font-uppercase\">Recent posts</h3>\r\n\t\t\t\t\t<div class=\"c-line-left c-theme-bg\"></div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"c-content-tab-1 c-theme c-margin-t-30\">\r\n\t\t\t\t\t<div class=\"nav-justified\">\r\n\t\t\t\t\t\t<div class=\"tab-content\">\r\n\t\t\t\t\t\t\t<div class=\"tab-pane active\" id=\"blog_recent_posts\">\r\n\t\t\t\t\t\t\t\t<ul class=\"c-content-recent-posts-1\">\r\n\t\t\t\t\t\t\t\t\t{% call recent_posts(5) to posts %}\r\n\t\t\t\t\t\t\t\t\t{% for pst in posts %}\r\n\t\t\t\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"c-post\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<a class=\"c-title\" href=\"{{ pst.fullPath }}\">{{ pst.title }}</a>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"c-date\">{{ pst.datePublished | date: \"%Y-%m-%d\" }}</div>\r\n\t\t\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t\t{% endfor %} \r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>"
+    },
+    {
+      "Id": "blog~__rt-md5b505xps82~BlogSubscribe",
+      "DateUpdated": "2023-03-29T14:36:57.8236819+03:00",
+      "SiteId": "blog~__rt-md5b505xps82",
+      "Name": "BlogSubscribe",
+      "Content": "<p class=\"subscr-header\">Subscribe to blog updates</p>\r\n<div class=\"form-group\">\r\n\t<input id=\"subscr-email\" type=\"email\" class=\"gazda-subscribe-email form-control input-sm\" placeholder=\"Your Email\">\r\n</div>\r\n<div class=\"form-group\">\r\n\t<input id=\"subscr-name\" type=\"email\" class=\"gazda-subscribe-name form-control input-sm\" placeholder=\"Your Name (optional)\">\r\n</div>\r\n<div class=\"input-group input-group-sm c-margin-t-10 subscr-checkbox-wrapper\">\r\n\t<div class=\"c-checkbox\">\r\n\t\t<input id=\"checkbox-agree\" name=\"AgreeWithTerms\" class=\"gazda-subscribe-consent c-check\" type=\"checkbox\">\r\n\t\t<label for=\"checkbox-agree\">\r\n\t\t\t<span></span>\r\n\t\t\t<span class=\"check\"></span>\r\n\t\t\t<span class=\"box\"></span>\r\n\t\t\tI agree to receive email communications from Korzh.com. I admit that my data will be used according to <a href=\"/privacy\">Privacy Policy</a>.\r\n\t\t</label>\r\n\t</div>\r\n    <div class=\"form-group c-right subscr-button-wrapper\">\r\n    \t<button id=\"subscr-submit\" data-gazda-subscribe-channel=\"BLOG-KRH.News\" data-ga-page-path=\"/subscribe/blog\" class=\"gazda-subscribe-button btn c-btn-white c-btn-uppercase btn-sm c-btn-bold c-btn-square disabled\">SUBSCRIBE</button>\r\n    </div>\r\n</div>\r\n<div id=\"subscr-alert\" class=\"gazda-subscribe-alert flash-alerts c-margin-t-10\">\r\n</div>\r\n"
+    },
+    {
+      "Id": "blog~__rt-md5b505xps82~GoogleTagBody",
+      "DateUpdated": "2023-03-29T14:36:57.8330191+03:00",
+      "SiteId": "blog~__rt-md5b505xps82",
+      "Name": "GoogleTagBody",
+      "Content": "<!-- Google Tag Manager (noscript) -->\r\n<noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-KWL8N67\"\r\nheight=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\r\n<!-- End Google Tag Manager (noscript) -->\r\n"
+    },
+    {
+      "Id": "blog~__rt-md5b505xps82~GoogleTagHead",
+      "DateUpdated": "2023-03-29T14:36:57.8422408+03:00",
+      "SiteId": "blog~__rt-md5b505xps82",
+      "Name": "GoogleTagHead",
+      "Content": "<!-- Google Tag Manager -->\r\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\r\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-KWL8N67');</script>\r\n<!-- End Google Tag Manager -->"
+    },
+    {
+      "Id": "site~__rt-kx6q8cbzfjlg~default",
+      "DateUpdated": "2023-03-29T14:44:53.7469122+03:00",
+      "SiteId": "site~__rt-kx6q8cbzfjlg",
+      "Name": "default",
+      "Content": "<h1>{{ page.title }}</h1>"
+    },
+    {
+      "Id": "site~__rt-sy5dc3yqvivx~default",
+      "DateUpdated": "2023-03-29T14:55:21.9654081+03:00",
+      "SiteId": "site~__rt-sy5dc3yqvivx",
+      "Name": "default",
+      "Content": "<h1>{{ page.title }}</h1>"
+    }
+  ]
+}

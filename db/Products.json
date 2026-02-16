@@ -1,0 +1,442 @@
+{
+  "name": "Products",
+  "schema": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "System.Int32"
+      },
+      {
+        "name": "IsObsolete",
+        "type": "System.Boolean"
+      },
+      {
+        "name": "Priority",
+        "type": "System.Int32"
+      },
+      {
+        "name": "NeedKey",
+        "type": "System.Boolean"
+      },
+      {
+        "name": "PerksJson",
+        "type": "System.String"
+      },
+      {
+        "name": "ReleaseNotesBlogId",
+        "type": "System.String"
+      },
+      {
+        "name": "Tag",
+        "type": "System.String"
+      },
+      {
+        "name": "Name",
+        "type": "System.String"
+      },
+      {
+        "name": "Description",
+        "type": "System.String"
+      },
+      {
+        "name": "Uri",
+        "type": "System.String"
+      },
+      {
+        "name": "FamilyId",
+        "type": "System.String"
+      },
+      {
+        "name": "ParentId",
+        "type": "System.Int32"
+      }
+    ]
+  },
+  "data": [
+    {
+      "Id": 1,
+      "IsObsolete": false,
+      "Priority": 102,
+      "NeedKey": true,
+      "Tag": "EQN-ASP",
+      "Name": "EasyQuery for ASP.NET",
+      "Description": "EasyQuery for ASP.NET",
+      "Uri": "https://korzh.com/easyquery",
+      "FamilyId": "EQ",
+      "ParentId": 100
+    },
+    {
+      "Id": 2,
+      "IsObsolete": false,
+      "Priority": 103,
+      "NeedKey": true,
+      "Tag": "EQN-WIN",
+      "Name": "EasyQuery WinForms",
+      "Description": "EasyQuery for Windows Forms",
+      "Uri": "https://korzh.com/easyquery",
+      "FamilyId": "EQ",
+      "ParentId": 100
+    },
+    {
+      "Id": 3,
+      "IsObsolete": false,
+      "Priority": 104,
+      "NeedKey": true,
+      "Tag": "EQN-WPF",
+      "Name": "EasyQuery WPF",
+      "Description": "EasyQuery for Windows Presentation Foundation",
+      "Uri": "https://korzh.com/easyquery",
+      "FamilyId": "EQ",
+      "ParentId": 100
+    },
+    {
+      "Id": 4,
+      "IsObsolete": false,
+      "Priority": 105,
+      "NeedKey": false,
+      "Tag": "EQN-SL",
+      "Name": "EasyQuery Silverlight",
+      "Description": "EasyQuery for Silverlight",
+      "Uri": "https://korzh.com/easyquery",
+      "FamilyId": "EQ",
+      "ParentId": 100
+    },
+    {
+      "Id": 5,
+      "IsObsolete": false,
+      "Priority": 170,
+      "NeedKey": true,
+      "Tag": "EQ-JS",
+      "Name": "EasyQuery.JS",
+      "Description": "EasyQuery for JavaScript",
+      "Uri": "https://korzh.com/easyquery",
+      "FamilyId": "EQ"
+    },
+    {
+      "Id": 6,
+      "IsObsolete": false,
+      "Priority": 201,
+      "NeedKey": false,
+      "Tag": "LOCVCL-PRO",
+      "Name": "Localizer Pro",
+      "Description": "Localizer for Delphi, Pro edition",
+      "Uri": "https://korzh.com/localizer",
+      "FamilyId": "LOC",
+      "ParentId": 200
+    },
+    {
+      "Id": 7,
+      "IsObsolete": false,
+      "Priority": 202,
+      "NeedKey": false,
+      "Tag": "LOCVCL-STD",
+      "Name": "Localizer Standard",
+      "Description": "Localizer for Delphi, Standard edition",
+      "Uri": "https://korzh.com/localizer",
+      "FamilyId": "LOC",
+      "ParentId": 200
+    },
+    {
+      "Id": 8,
+      "IsObsolete": false,
+      "Priority": 301,
+      "NeedKey": false,
+      "Tag": "SQ-PRO",
+      "Name": "SimpleQuery Pro",
+      "Description": "Simple Query library (Pro Edition)",
+      "Uri": "https://korzh.com/easyquery",
+      "FamilyId": "EQ",
+      "ParentId": 300
+    },
+    {
+      "Id": 9,
+      "IsObsolete": false,
+      "Priority": 302,
+      "NeedKey": false,
+      "Tag": "SQ-STD",
+      "Name": "SimpleQuery Standard",
+      "Description": "Simple Query library (Standard Edition)",
+      "Uri": "https://korzh.com/easyquery",
+      "FamilyId": "EQ",
+      "ParentId": 300
+    },
+    {
+      "Id": 10,
+      "IsObsolete": true,
+      "Priority": 360,
+      "NeedKey": false,
+      "Tag": "EQAX",
+      "Name": "Active Query",
+      "Description": "ActiveX version of EasyQuery solution",
+      "Uri": "https://korzh.com/easyquery",
+      "FamilyId": "EQ",
+      "ParentId": 300
+    },
+    {
+      "Id": 11,
+      "IsObsolete": true,
+      "Priority": 109,
+      "NeedKey": false,
+      "Tag": "EQB",
+      "Name": "EasyQueryBuilder",
+      "Description": "Easy Query Builder",
+      "Uri": "https://korzh.com/easyquery",
+      "FamilyId": "EQ",
+      "ParentId": 100
+    },
+    {
+      "Id": 12,
+      "IsObsolete": true,
+      "Priority": 205,
+      "NeedKey": false,
+      "Tag": "APPLOC",
+      "Name": "AppLocalizer",
+      "Description": "AppLocalizer allows you to synchronize and translate all string resources in your Visual Studion projects.\r\nInstead of routine editing each .resx file separately you can now manage all of them from one place with friendly UI.\r\n",
+      "Uri": "https://korzh.com/localizer",
+      "FamilyId": "LOC",
+      "ParentId": 200
+    },
+    {
+      "Id": 13,
+      "IsObsolete": true,
+      "Priority": 435,
+      "NeedKey": false,
+      "Tag": "CLAR",
+      "Name": "Clarity",
+      "Description": "Project management, issue/bug tracking system and wiki platform for software developer teams.\r\n",
+      "Uri": "http://devtools.korzh.com/clarity/"
+    },
+    {
+      "Id": 14,
+      "IsObsolete": true,
+      "Priority": 430,
+      "NeedKey": false,
+      "Tag": "COGTRAN",
+      "Name": "CogniTrainer",
+      "Description": "CogniTrainer is a small program that provides a new method of learning foreign languages, prepare for exams or tests. ",
+      "Uri": "http://software.korzh.com/cognitrainer/",
+      "FamilyId": "COGTRAN"
+    },
+    {
+      "Id": 15,
+      "IsObsolete": true,
+      "Priority": 431,
+      "NeedKey": false,
+      "Tag": "CRMR",
+      "Name": "Crammer",
+      "Description": "Crammer is a flashcards software that provides a new method of learning foreign languages, prepare for exams or tests. ",
+      "Uri": "http://software.korzh.com/crammer/",
+      "FamilyId": "COGTRAN",
+      "ParentId": 14
+    },
+    {
+      "Id": 16,
+      "IsObsolete": true,
+      "Priority": 425,
+      "NeedKey": false,
+      "Tag": "DBFILL",
+      "Name": "DBFiller",
+      "Description": "Database Filler",
+      "Uri": "http://devtools.korzh.com/dbutils/",
+      "FamilyId": "DBUTIL"
+    },
+    {
+      "Id": 17,
+      "IsObsolete": true,
+      "Priority": 420,
+      "NeedKey": false,
+      "Tag": "DBSTR",
+      "Name": "DBStructure",
+      "Description": "Database Structurer",
+      "Uri": "http://devtools.korzh.com/dbutils/",
+      "FamilyId": "DBUTIL"
+    },
+    {
+      "Id": 18,
+      "IsObsolete": true,
+      "Priority": 410,
+      "NeedKey": false,
+      "Tag": "EQJ",
+      "Name": "EasyQuery.J",
+      "Description": "Ad-hoc query builder library for Java",
+      "Uri": "https://korzh.com/easyquery",
+      "FamilyId": "EQ"
+    },
+    {
+      "Id": 19,
+      "IsObsolete": true,
+      "Priority": 405,
+      "NeedKey": false,
+      "Tag": "EQN",
+      "Name": "EasyQuery",
+      "Description": "Old .NET version of EasyQuery solution",
+      "Uri": "https://korzh.com/easyquery",
+      "FamilyId": "EQ"
+    },
+    {
+      "Id": 20,
+      "IsObsolete": true,
+      "Priority": 415,
+      "NeedKey": false,
+      "Tag": "KML",
+      "Name": "KMultiLanguage",
+      "Description": "KMultiLanguage",
+      "Uri": "http://devtools.korzh.com/localizer/"
+    },
+    {
+      "Id": 21,
+      "IsObsolete": true,
+      "Priority": 204,
+      "NeedKey": false,
+      "Tag": "LOCVCL",
+      "Name": "Localizer",
+      "Description": "Localization/globalization tool kit for Delphi\\VCL projects.",
+      "Uri": "https://korzh.com/localizer",
+      "FamilyId": "LOC",
+      "ParentId": 200
+    },
+    {
+      "Id": 22,
+      "IsObsolete": true,
+      "Priority": 440,
+      "NeedKey": false,
+      "Tag": "NPPR",
+      "Name": "NewsPiper",
+      "Description": "RSS/ATOM feed reader, aggregator and news ticker in one environment",
+      "Uri": "http://software.korzh.com/newspiper/",
+      "FamilyId": "NPPR"
+    },
+    {
+      "Id": 23,
+      "IsObsolete": true,
+      "Priority": 350,
+      "NeedKey": false,
+      "Tag": "SQ",
+      "Name": "Simple Query (OLD)",
+      "Description": "Delphi/VCL version of EasyQuery solution",
+      "Uri": "https://korzh.com/easyquery",
+      "FamilyId": "EQ",
+      "ParentId": 300
+    },
+    {
+      "Id": 24,
+      "IsObsolete": true,
+      "Priority": 445,
+      "NeedKey": false,
+      "Tag": "WNTV",
+      "Name": "WebNews.TV",
+      "Description": "WebNews.TV",
+      "Uri": "http://www.webnews.tv"
+    },
+    {
+      "Id": 25,
+      "IsObsolete": true,
+      "Priority": 432,
+      "NeedKey": false,
+      "Tag": "WEB-KRH",
+      "Name": "Korzh.com web-site",
+      "FamilyId": "COGTRAN"
+    },
+    {
+      "Id": 100,
+      "IsObsolete": false,
+      "Priority": 100,
+      "NeedKey": false,
+      "Tag": "EQNET",
+      "Name": "EasyQuery for .NET Framework 4.x",
+      "Description": "EasyQuery product family",
+      "Uri": "https://korzh.com/easyquery",
+      "FamilyId": "EQ"
+    },
+    {
+      "Id": 150,
+      "IsObsolete": false,
+      "Priority": 150,
+      "NeedKey": false,
+      "ReleaseNotesBlogId": "easyquery_release-notes",
+      "Tag": "EQCORE",
+      "Name": "EasyQuery for .NET Core",
+      "Description": "EasyQuery for .NET Core product family",
+      "Uri": "https://korzh.com/easyquery",
+      "FamilyId": "EQ"
+    },
+    {
+      "Id": 200,
+      "IsObsolete": false,
+      "Priority": 200,
+      "NeedKey": false,
+      "Tag": "LOC",
+      "Name": "Localizer",
+      "Description": "Localizer product family",
+      "Uri": "https://korzh.com/localizer"
+    },
+    {
+      "Id": 300,
+      "IsObsolete": false,
+      "Priority": 300,
+      "NeedKey": false,
+      "Tag": "SQVCL",
+      "Name": "SimpleQuery",
+      "Description": "SimpleQuery components for Delphi/C++Builder",
+      "Uri": "https://korzh.com/easyquery",
+      "FamilyId": "EQ"
+    },
+    {
+      "Id": 301,
+      "IsObsolete": false,
+      "Priority": 151,
+      "NeedKey": true,
+      "ReleaseNotesBlogId": "easyquery_release-notes",
+      "Tag": "EQN-ANC",
+      "Name": "EasyQuery for ASP.NET Core",
+      "Description": "EasyQuery for ASP.NET Core",
+      "Uri": "https://korzh.com/easyquery",
+      "FamilyId": "EQ",
+      "ParentId": 150
+    },
+    {
+      "Id": 307,
+      "IsObsolete": false,
+      "Priority": 180,
+      "NeedKey": true,
+      "Tag": "EQ-SERV",
+      "Name": "EasyQuery Server",
+      "Description": "EasyQuery sever webapp",
+      "Uri": "/easyquery",
+      "FamilyId": "EQ"
+    },
+    {
+      "Id": 308,
+      "IsObsolete": false,
+      "Priority": 190,
+      "NeedKey": false,
+      "Tag": "ERSK",
+      "Name": "Easy Report Starter Kit",
+      "Description": "Easy Report Starter Kit",
+      "Uri": "/ersk",
+      "FamilyId": "EQ"
+    },
+    {
+      "Id": 311,
+      "IsObsolete": false,
+      "Priority": 500,
+      "NeedKey": false,
+      "Tag": "METUI",
+      "Name": "MetroUI",
+      "Description": "MetroUI frontend toolkit",
+      "Uri": "/metroui",
+      "FamilyId": "METROUI"
+    },
+    {
+      "Id": 324,
+      "IsObsolete": false,
+      "Priority": 501,
+      "NeedKey": false,
+      "Tag": "METROUI",
+      "Name": "MetroUI support subscription",
+      "Description": "MetroUI support subscription",
+      "FamilyId": "METROUI",
+      "ParentId": 311
+    }
+  ]
+}

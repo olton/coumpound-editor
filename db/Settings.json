@@ -1,0 +1,352 @@
+{
+  "name": "Settings",
+  "schema": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "System.String"
+      },
+      {
+        "name": "SettingType",
+        "type": "System.Int32"
+      },
+      {
+        "name": "IsHidden",
+        "type": "System.Boolean"
+      },
+      {
+        "name": "ValuesJson",
+        "type": "System.String"
+      },
+      {
+        "name": "RolesJson",
+        "type": "System.String"
+      },
+      {
+        "name": "Value",
+        "type": "System.String"
+      },
+      {
+        "name": "Caption",
+        "type": "System.String"
+      }
+    ]
+  },
+  "data": [
+    {
+      "Id": "client.ConfirmRegistrationUri",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "signup-confirm",
+      "Caption": "client.ConfirmRegistrationUri"
+    },
+    {
+      "Id": "client.LoginUri",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "login",
+      "Caption": "client.LoginUri"
+    },
+    {
+      "Id": "client.ProtectedAreaPrefix",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "client",
+      "Caption": "client.ProtectedAreaPrefix"
+    },
+    {
+      "Id": "client.RegisterUri",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "register",
+      "Caption": "client.RegisterUri"
+    },
+    {
+      "Id": "client.RegistrationCompleteUri",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "signup-complete",
+      "Caption": "client.RegistrationCompleteUri"
+    },
+    {
+      "Id": "client.RegistrationVerifiedUri",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "signup-verified",
+      "Caption": "client.RegistrationVerifiedUri"
+    },
+    {
+      "Id": "client.SubscribeUri",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "subscribe",
+      "Caption": "client.SubscribeUri"
+    },
+    {
+      "Id": "content.BlogTags",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "[{\"id\":\"asp-net\",\"name\":\"ASP.NET\"},{\"id\":\"asp-net-core\",\"name\":\"ASP.NET Core\"},{\"id\":\"data-model\",\"name\":\"Data Model\"},{\"id\":\"entity-framework\",\"name\":\"Entity Framework\"},{\"id\":\"javascript\",\"name\":\"JavaScript\"},{\"id\":\"mvc\",\"name\":\"MVC\"},{\"id\":\"silverlight\",\"name\":\"Silverlight\"},{\"id\":\"winforms\",\"name\":\"Windows Forms\"},{\"id\":\"webforms\",\"name\":\"Web Forms\"},{\"id\":\"wpf\",\"name\":\"WPF\"}]",
+      "Caption": "content.BlogTags"
+    },
+    {
+      "Id": "content.CanonicalHost",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "korzh.com",
+      "Caption": "content.CanonicalHost"
+    },
+    {
+      "Id": "content.DownloadActionPrefix",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "download",
+      "Caption": "content.DownloadActionPrefix"
+    },
+    {
+      "Id": "content.NewsBaseUri",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "news",
+      "Caption": "content.NewsBaseUri"
+    },
+    {
+      "Id": "content.NewsBlogId",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "__default~news",
+      "Caption": "content.NewsBlogId"
+    },
+    {
+      "Id": "content.Page404",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "404",
+      "Caption": "content.Page404"
+    },
+    {
+      "Id": "email.AdminEmail",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "",
+      "Caption": "email.AdminEmail"
+    },
+    {
+      "Id": "email.BccAllToEmail",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "",
+      "Caption": "email.BccAllToEmail"
+    },
+    {
+      "Id": "email.ClientManagerEmail",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "",
+      "Caption": "email.ClientManagerEmail"
+    },
+    {
+      "Id": "email.ContentManagerEmail",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "",
+      "Caption": "email.ContentManagerEmail"
+    },
+    {
+      "Id": "email.DefaultFromEmail",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "admin@gazda.co",
+      "Caption": "email.DefaultFromEmail"
+    },
+    {
+      "Id": "email.DefaultFromName",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "Gazda CMS",
+      "Caption": "email.DefaultFromName"
+    },
+    {
+      "Id": "email.Smpt.Password",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "",
+      "Caption": "email.Smpt.Password"
+    },
+    {
+      "Id": "email.Smpt.PortNumber",
+      "SettingType": 1,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "25",
+      "Caption": "email.Smpt.PortNumber"
+    },
+    {
+      "Id": "email.Smpt.ServerAddress",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "localhost",
+      "Caption": "email.Smpt.ServerAddress"
+    },
+    {
+      "Id": "email.Smpt.UserName",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "guest",
+      "Caption": "email.Smpt.UserName"
+    },
+    {
+      "Id": "email.SupportManagerEmail",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "",
+      "Caption": "email.SupportManagerEmail"
+    },
+    {
+      "Id": "email.TestingToEmail",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "croc.dile@gmail.com",
+      "Caption": "email.TestingToEmail"
+    },
+    {
+      "Id": "GazdaDbVersion",
+      "SettingType": 1,
+      "IsHidden": true,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "150",
+      "Caption": "GazdaDbVersion"
+    },
+    {
+      "Id": "general.LogGazdaOnly",
+      "SettingType": 2,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "True",
+      "Caption": "general.LogGazdaOnly"
+    },
+    {
+      "Id": "general.LogLevel",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{\"Trace\":\"Trace\",\"Debug\":\"Debug\",\"Information\":\"Information\",\"Warning\":\"Warning\",\"Error\":\"Error\",\"Critical\":\"Critical\",\"None\":\"None\"}",
+      "RolesJson": "[]",
+      "Value": "Debug",
+      "Caption": "general.LogLevel"
+    },
+    {
+      "Id": "general.SendIPNToAdmin",
+      "SettingType": 2,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "False",
+      "Caption": "general.SendIPNToAdmin"
+    },
+    {
+      "Id": "general.TestMode",
+      "SettingType": 2,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "True",
+      "Caption": "general.TestMode"
+    },
+    {
+      "Id": "store.CurrentMerchant",
+      "SettingType": 1,
+      "IsHidden": false,
+      "ValuesJson": "{\"1\":\"PayPro 1\",\"2\":\"PayPro 2\"}",
+      "RolesJson": "[]",
+      "Value": "1",
+      "Caption": "store.CurrentMerchant"
+    },
+    {
+      "Id": "store.DynamicProductId1",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "44534",
+      "Caption": "store.DynamicProductId1"
+    },
+    {
+      "Id": "store.DynamicProductId2",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "51172",
+      "Caption": "store.DynamicProductId2"
+    },
+    {
+      "Id": "store.OrderPagePrefix",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "orderform",
+      "Caption": "store.OrderPagePrefix"
+    },
+    {
+      "Id": "support.DefaultManager",
+      "SettingType": 0,
+      "IsHidden": false,
+      "ValuesJson": "{}",
+      "RolesJson": "[]",
+      "Value": "supportman",
+      "Caption": "support.DefaultManager"
+    }
+  ]
+}

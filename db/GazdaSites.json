@@ -1,0 +1,87 @@
+{
+  "name": "GazdaSites",
+  "schema": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "System.String"
+      },
+      {
+        "name": "Kind",
+        "type": "System.Int32"
+      },
+      {
+        "name": "DefaultLayoutId",
+        "type": "System.String"
+      },
+      {
+        "name": "AuthorId",
+        "type": "System.String"
+      },
+      {
+        "name": "NewsChannel",
+        "type": "System.String"
+      },
+      {
+        "name": "NewsTemplate",
+        "type": "System.String"
+      },
+      {
+        "name": "Moniker",
+        "type": "System.String"
+      },
+      {
+        "name": "Path",
+        "type": "System.String"
+      },
+      {
+        "name": "Host",
+        "type": "System.String"
+      },
+      {
+        "name": "Name",
+        "type": "System.String"
+      },
+      {
+        "name": "Description",
+        "type": "System.String"
+      }
+    ]
+  },
+  "data": [
+    {
+      "Id": "blog~__rt-md5b505xps82",
+      "Kind": 1,
+      "DefaultLayoutId": "blog~__rt-md5b505xps82~BlogPost",
+      "Path": "/blog",
+      "Host": "",
+      "Name": "Korzh.com Blog",
+      "Description": "A blog from the authors of <a href=\"https://github.com/KorzhCom/EasyData\">EasyData</a> and <a href=\"https://korzh.com/easyquery\">EasyQuery</a> libraries about .NET development, creating database-related applications, and software architecture in general. "
+    },
+    {
+      "Id": "dab7aed5-62fa-48a8-8cea-1b30b4f23c4c",
+      "Kind": 1,
+      "DefaultLayoutId": "de09656d-0ce1-4eb2-a056-8579fb26d0f9",
+      "Path": "/blog",
+      "Host": "",
+      "Name": "Default Site"
+    },
+    {
+      "Id": "site~__rt-kx6q8cbzfjlg",
+      "Kind": 1,
+      "DefaultLayoutId": "site~__rt-kx6q8cbzfjlg~SiteNewsPost",
+      "Path": "/news",
+      "Host": "",
+      "Name": "Korzh.com News",
+      "Description": "Korzh.com news"
+    },
+    {
+      "Id": "site~__rt-sy5dc3yqvivx",
+      "Kind": 0,
+      "DefaultLayoutId": "site~__rt-sy5dc3yqvivx~Default_Layout",
+      "Path": "/",
+      "Host": "",
+      "Name": "Default Site"
+    }
+  ]
+}

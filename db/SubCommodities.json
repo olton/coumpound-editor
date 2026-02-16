@@ -1,0 +1,81 @@
+{
+  "name": "SubCommodities",
+  "schema": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "System.Int32"
+      },
+      {
+        "name": "ParentId",
+        "type": "System.Int32"
+      },
+      {
+        "name": "ChildId",
+        "type": "System.Int32"
+      }
+    ]
+  },
+  "data": [
+    {
+      "Id": 3,
+      "ParentId": 94,
+      "ChildId": 17
+    },
+    {
+      "Id": 4,
+      "ParentId": 96,
+      "ChildId": 17
+    },
+    {
+      "Id": 5,
+      "ParentId": 98,
+      "ChildId": 111
+    },
+    {
+      "Id": 6,
+      "ParentId": 100,
+      "ChildId": 112
+    },
+    {
+      "Id": 7,
+      "ParentId": 1,
+      "ChildId": 17
+    },
+    {
+      "Id": 8,
+      "ParentId": 2,
+      "ChildId": 17
+    },
+    {
+      "Id": 9,
+      "ParentId": 3,
+      "ChildId": 111
+    },
+    {
+      "Id": 10,
+      "ParentId": 4,
+      "ChildId": 112
+    },
+    {
+      "Id": 11,
+      "ParentId": 113,
+      "ChildId": 100
+    },
+    {
+      "Id": 12,
+      "ParentId": 113,
+      "ChildId": 93
+    },
+    {
+      "Id": 13,
+      "ParentId": 100,
+      "ChildId": 113
+    },
+    {
+      "Id": 14,
+      "ParentId": 117,
+      "ChildId": 111
+    }
+  ]
+}

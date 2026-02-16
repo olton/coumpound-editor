@@ -1,0 +1,43 @@
+{
+  "name": "Merchants",
+  "schema": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "System.Int32"
+      },
+      {
+        "name": "Name",
+        "type": "System.String"
+      },
+      {
+        "name": "Url",
+        "type": "System.String"
+      },
+      {
+        "name": "CheckoutUrl",
+        "type": "System.String"
+      },
+      {
+        "name": "ExtraParams",
+        "type": "System.String"
+      }
+    ]
+  },
+  "data": [
+    {
+      "Id": 1,
+      "Name": "PayPro 1",
+      "Url": "http://payproglobal.com",
+      "CheckoutUrl": "https://store.payproglobal.com/checkout?",
+      "ExtraParams": "display-quote=true"
+    },
+    {
+      "Id": 2,
+      "Name": "PayPro 2",
+      "Url": "http://payproglobal.com",
+      "CheckoutUrl": "https://store.payproglobal.com/checkout?",
+      "ExtraParams": "display-quote=true"
+    }
+  ]
+}

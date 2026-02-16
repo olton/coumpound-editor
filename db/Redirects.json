@@ -1,0 +1,1141 @@
+{
+  "name": "Redirects",
+  "schema": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "System.Int32"
+      },
+      {
+        "name": "UriPattern",
+        "type": "System.String"
+      },
+      {
+        "name": "UriTo",
+        "type": "System.String"
+      },
+      {
+        "name": "IsPermanent",
+        "type": "System.Boolean"
+      },
+      {
+        "name": "IsEnabled",
+        "type": "System.Boolean"
+      },
+      {
+        "name": "IsRewrite",
+        "type": "System.Boolean"
+      },
+      {
+        "name": "Kind",
+        "type": "System.Int32"
+      },
+      {
+        "name": "Notes",
+        "type": "System.String"
+      }
+    ]
+  },
+  "data": [
+    {
+      "Id": 1,
+      "UriPattern": "^/easyquery/docs/tutorials/common-queries/?$",
+      "UriTo": "/easyquery/docs/tutorials/common-sql-queries",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 2,
+      "UriPattern": "^/blogs/dotnet-stories(.*)$",
+      "UriTo": "/blog$1",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 3,
+      "UriPattern": "^/support\\/?$",
+      "UriTo": "/account/ticket/create",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 4,
+      "UriPattern": "^/easyquery/docs/version-5-0/?$",
+      "UriTo": "/easyquery/docs/getting-started/version-5-x",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 5,
+      "UriPattern": "^/order.shtml$",
+      "UriTo": "/easyquery/licensing",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 6,
+      "UriPattern": "^/sections/eq/eq-intro1.htm",
+      "UriTo": "/easyquery",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 7,
+      "UriPattern": "^/en/(.*)$",
+      "UriTo": "/$1",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 8,
+      "UriPattern": "^/easyquery/docs/how-to/add-new-operator-in-model",
+      "UriTo": "/easyquery/docs/tutorials/add-new-operator-in-model",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 9,
+      "UriPattern": "^/localizer/purchase(.*)$",
+      "UriTo": "/localizer/licensing$1",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 10,
+      "UriPattern": "^/delphi/localizer",
+      "UriTo": "/localizer",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 11,
+      "UriPattern": "^/eq/?$",
+      "UriTo": "/easyquery",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 12,
+      "UriPattern": "^/easyquery/release-notes(.*)$",
+      "UriTo": "/easyquery/docs/release-notes$1",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 13,
+      "UriPattern": "^/easyquery/docs/tutorials/how-to-set-up-javascript-widgets-mvc-version",
+      "UriTo": "/easyquery/docs/tutorials/javascript-widgets-settings-formats",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 14,
+      "UriPattern": "^/easyquery/docs/how-to/add-columns-and-conditions-by-code",
+      "UriTo": "https://korzh.com/easyquery/docs/how-to/add-columns-conditions-with-code",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 15,
+      "UriPattern": "^/easyquery/docs/fundamentals/what-is-easyquery",
+      "UriTo": "/easyquery/docs/introduction",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 16,
+      "UriPattern": "^/easyquery/dotnet",
+      "UriTo": "/easyquery",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 17,
+      "UriPattern": "^/localizer/docs",
+      "UriTo": "http://docs.korzh.com/localizer/index",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 18,
+      "UriPattern": "^/easyquery/javascript/docs/getting-started-query-builder-php$",
+      "UriTo": "/easyquery/javascript/docs/getting-started/query-builder-php",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 19,
+      "UriPattern": "^/news/easyquery-version-(\\d)-(\\d\\d?)-(\\d)",
+      "UriTo": "https://korzh.com/news/easyquery-version-$1.$2.$3",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 20,
+      "UriPattern": "^/easyquery/purchase(.*)$",
+      "UriTo": "/easyquery/licensing$1",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 21,
+      "UriPattern": "^/easyquery/docs/fundamentals/about-data-model",
+      "UriTo": "/easyquery/docs/fundamentals/data-model",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 22,
+      "UriPattern": "^/easyquery/docs/getting-started/asp-net-webforms",
+      "UriTo": "/easyquery/docs/getting-started/asp-net-4-mvc-or-webforms",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 23,
+      "UriPattern": "^/query-builder-net-asp",
+      "UriTo": "/easyquery",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 24,
+      "UriPattern": "^/easyquery/docs/how-to/customizing-query-format.?",
+      "UriTo": "/easyquery/docs/how-to/customizing-sql-query-formats",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 25,
+      "UriPattern": "^/purchase.jsp(.*)$",
+      "UriTo": "/easyquery/purchase",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 26,
+      "UriPattern": "^/easyquery/docs/tutorials/building-dynamic-queries-with-easyquery-and-entity-framework",
+      "UriTo": "/easyquery/docs/tutorials/dynamic-queries-ui-aspnet-core-entity-framework",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 27,
+      "UriPattern": "^/easyquery/docs/javascript/javascript-query-builder-with-nodejs",
+      "UriTo": "/easyquery/javascript/docs/getting-started/javascript-query-builder-with-nodejs",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 28,
+      "UriPattern": "^/easyquery/screenshots.jsp",
+      "UriTo": "/easyquery",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 29,
+      "UriPattern": "^/easyquery/usecase/easyquery-entity-framework-entity-SQL",
+      "UriTo": "/easyquery/docs/use-cases/building-dynamic-queries-with-easyquery-and-entity-framework",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 30,
+      "UriPattern": "^/admin/account/register$",
+      "UriTo": "/admin",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 31,
+      "UriPattern": "^/easyquery/vcl",
+      "UriTo": "/easyquery",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 32,
+      "UriPattern": "^/easyquery/changelog-(?!js$).*$",
+      "UriTo": "/easyquery/docs/changelog",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 33,
+      "UriPattern": "^/delphi",
+      "UriTo": "https://korzh.com/localizer",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 34,
+      "UriPattern": "^/__gazdablogpost____default~net-tricks~a3b1afdfc5554dc0893f30c476104c0f",
+      "UriTo": "/blog/aspnet-identity-migrate-membership-passwords",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 35,
+      "UriPattern": "^/query-builder-net",
+      "UriTo": "/easyquery",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 36,
+      "UriPattern": "^/docs/(.*)$",
+      "UriTo": "/docs",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": true,
+      "Kind": 11,
+      "Notes": "Catch-all page"
+    },
+    {
+      "Id": 37,
+      "UriPattern": "^/blog/dependency-Injection-explanation-in-simple-words",
+      "UriTo": "/blog/dependency-injection-explanation-in-simple-words",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 38,
+      "UriPattern": "^/blogs/dotnnet-stories/aspnet-identity-store-user-data-in-claims",
+      "UriTo": "/blog/add-extra-user-claims-aspnet-core-webapp",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 39,
+      "UriPattern": "^/easyquery/docs/getting-started/version-5-x",
+      "UriTo": "/easyquery/docs/getting-started/asp-net-core",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 40,
+      "UriPattern": "^/easyquery/docs/javascript/query-builder-php",
+      "UriTo": "/easyquery/javascript/docs/getting-started/query-builder-php",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 41,
+      "UriPattern": "^/easyquery/docs/developer-guide(.*)$",
+      "UriTo": "/easyquery/docs/fundamentals$1",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 42,
+      "UriPattern": "^/easyquery/winforms",
+      "UriTo": "/easyquery",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 43,
+      "UriPattern": "^/blogs/net-tricks(.*)$",
+      "UriTo": "/blog$1",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 44,
+      "UriPattern": "^/easyquery/docs/use-cases/building-dynamic-queries-with-easyquery-and-entity-framework$",
+      "UriTo": "/easyquery/docs/tutorials/building-dynamic-queries-with-easyquery-and-entity-framework",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 45,
+      "UriPattern": "^/easyquery/changelog-js$",
+      "UriTo": "/easyquery/javascript/docs/changelog",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 46,
+      "UriPattern": "^/news/localizer-version-(\\d)-(\\d\\d?)-(\\d)",
+      "UriTo": "https://korzh.com/news/localizer-version-$1.$2.$3",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 47,
+      "UriPattern": "^/ersk(.*)",
+      "UriTo": "/easy-report-starter-kit/$1",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 48,
+      "UriPattern": "^/easyquery/docs/how-to/add-virtual-attribute-in-model",
+      "UriTo": "/easyquery/docs/tutorials/add-virtual-attribute-in-model",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 49,
+      "UriPattern": "^/blogs/?$",
+      "UriTo": "/blogs/dotnet-stories",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 50,
+      "UriPattern": "^/easyquery/docs/getting-started/new-data-model",
+      "UriTo": "/easyquery/docs/getting-started/working-with-data-model",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 51,
+      "UriPattern": "^/delphi/eq",
+      "UriTo": "/easyquery",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 52,
+      "UriPattern": "^/easyquery/docs/getting-started/asp-net-mvc",
+      "UriTo": "/easyquery/docs/getting-started/asp-net-4-mvc-or-webforms",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 53,
+      "UriPattern": "^/easyquery/LICENSE.txt",
+      "UriTo": "/static/easyquery/eula.txt",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 54,
+      "UriPattern": "^/blogs/rus/why_yuschenko.html$",
+      "UriTo": "/blogs/dotnet-stories",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 55,
+      "UriPattern": "^/easyquery/docs/common-queries/gridview-filtering-with-easyquery-aspnet-webforms",
+      "UriTo": "/easyquery/docs/use-cases/gridview-filtering-with-easyquery-aspnet-webforms",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 56,
+      "UriPattern": "^/easyquery/docs/javascript(.*)$",
+      "UriTo": "/easyquery/javascript/docs/getting-started$1",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 57,
+      "UriPattern": "^/easyquery/docs/javascript-query-builder-php",
+      "UriTo": "/easyquery/javascript/docs/getting-started/query-builder-php",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 58,
+      "UriPattern": "^/easyquery/downloads",
+      "UriTo": "/easyquery",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 59,
+      "UriPattern": "^/easyquery/demo1.htm",
+      "UriTo": "/easyquery",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 60,
+      "UriPattern": "^/easyquery/docs/how-to/add-columns-by-code",
+      "UriTo": "/easyquery/docs/how-to/add-columns-and-conditions-by-code",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 61,
+      "UriPattern": "^/eq/activex",
+      "UriTo": "/easyquery",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 916,
+      "UriPattern": "^/easyquery/docs/tutorials/common-queries/?$",
+      "UriTo": "/easyquery/docs/tutorials/common-sql-queries",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 917,
+      "UriPattern": "^/blogs/dotnet-stories(.*)$",
+      "UriTo": "/blog$1",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 918,
+      "UriPattern": "^/support\\/?$",
+      "UriTo": "/account/ticket/create",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 919,
+      "UriPattern": "^/easyquery/docs/version-5-0/?$",
+      "UriTo": "/easyquery/docs/getting-started/version-5-x",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 920,
+      "UriPattern": "^/order.shtml$",
+      "UriTo": "/easyquery/licensing",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 921,
+      "UriPattern": "^/sections/eq/eq-intro1.htm",
+      "UriTo": "/easyquery",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 922,
+      "UriPattern": "^/en/(.*)$",
+      "UriTo": "/$1",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 923,
+      "UriPattern": "^/easyquery/docs/how-to/add-new-operator-in-model",
+      "UriTo": "/easyquery/docs/tutorials/add-new-operator-in-model",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 924,
+      "UriPattern": "^/localizer/purchase(.*)$",
+      "UriTo": "/localizer/licensing$1",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 925,
+      "UriPattern": "^/delphi/localizer",
+      "UriTo": "/localizer",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 926,
+      "UriPattern": "^/eq/?$",
+      "UriTo": "/easyquery",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 927,
+      "UriPattern": "^/easyquery/release-notes(.*)$",
+      "UriTo": "/easyquery/docs/release-notes$1",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 928,
+      "UriPattern": "^/easyquery/docs/tutorials/how-to-set-up-javascript-widgets-mvc-version",
+      "UriTo": "/easyquery/docs/tutorials/javascript-widgets-settings-formats",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 929,
+      "UriPattern": "^/easyquery/docs/how-to/add-columns-and-conditions-by-code",
+      "UriTo": "https://korzh.com/easyquery/docs/how-to/add-columns-conditions-with-code",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 930,
+      "UriPattern": "^/easyquery/docs/fundamentals/what-is-easyquery",
+      "UriTo": "/easyquery/docs/introduction",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 931,
+      "UriPattern": "^/easyquery/dotnet",
+      "UriTo": "/easyquery",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 932,
+      "UriPattern": "^/localizer/docs",
+      "UriTo": "http://docs.korzh.com/localizer/index",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 933,
+      "UriPattern": "^/easyquery/javascript/docs/getting-started-query-builder-php$",
+      "UriTo": "/easyquery/javascript/docs/getting-started/query-builder-php",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 934,
+      "UriPattern": "^/news/easyquery-version-(\\d)-(\\d\\d?)-(\\d)",
+      "UriTo": "https://korzh.com/news/easyquery-version-$1.$2.$3",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 935,
+      "UriPattern": "^/easyquery/purchase(.*)$",
+      "UriTo": "/easyquery/licensing$1",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 936,
+      "UriPattern": "^/easyquery/docs/fundamentals/about-data-model",
+      "UriTo": "/easyquery/docs/fundamentals/data-model",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 937,
+      "UriPattern": "^/easyquery/docs/getting-started/asp-net-webforms",
+      "UriTo": "/easyquery/docs/getting-started/asp-net-4-mvc-or-webforms",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 938,
+      "UriPattern": "^/query-builder-net-asp",
+      "UriTo": "/easyquery",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 939,
+      "UriPattern": "^/easyquery/docs/how-to/customizing-query-format.?",
+      "UriTo": "/easyquery/docs/how-to/customizing-sql-query-formats",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 940,
+      "UriPattern": "^/purchase.jsp(.*)$",
+      "UriTo": "/easyquery/purchase",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 941,
+      "UriPattern": "^/easyquery/docs/tutorials/building-dynamic-queries-with-easyquery-and-entity-framework",
+      "UriTo": "/easyquery/docs/tutorials/dynamic-queries-ui-aspnet-core-entity-framework",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 942,
+      "UriPattern": "^/easyquery/docs/javascript/javascript-query-builder-with-nodejs",
+      "UriTo": "/easyquery/javascript/docs/getting-started/javascript-query-builder-with-nodejs",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 943,
+      "UriPattern": "^/easyquery/screenshots.jsp",
+      "UriTo": "/easyquery",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 944,
+      "UriPattern": "^/easyquery/usecase/easyquery-entity-framework-entity-SQL",
+      "UriTo": "/easyquery/docs/use-cases/building-dynamic-queries-with-easyquery-and-entity-framework",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 945,
+      "UriPattern": "^/admin/account/register$",
+      "UriTo": "/admin",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 946,
+      "UriPattern": "^/easyquery/vcl",
+      "UriTo": "/easyquery",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 947,
+      "UriPattern": "^/easyquery/changelog-(?!js$).*$",
+      "UriTo": "/easyquery/docs/changelog",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 948,
+      "UriPattern": "^/delphi",
+      "UriTo": "https://korzh.com/localizer",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 949,
+      "UriPattern": "^/__gazdablogpost____default~net-tricks~a3b1afdfc5554dc0893f30c476104c0f",
+      "UriTo": "/blog/aspnet-identity-migrate-membership-passwords",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 950,
+      "UriPattern": "^/query-builder-net",
+      "UriTo": "/easyquery",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 951,
+      "UriPattern": "^/docs/(.*)$",
+      "UriTo": "/docs",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": true,
+      "Kind": 11,
+      "Notes": "Catch-all page"
+    },
+    {
+      "Id": 952,
+      "UriPattern": "^/blog/dependency-Injection-explanation-in-simple-words",
+      "UriTo": "/blog/dependency-injection-explanation-in-simple-words",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 953,
+      "UriPattern": "^/blogs/dotnnet-stories/aspnet-identity-store-user-data-in-claims",
+      "UriTo": "/blog/add-extra-user-claims-aspnet-core-webapp",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 954,
+      "UriPattern": "^/easyquery/docs/getting-started/version-5-x",
+      "UriTo": "/easyquery/docs/getting-started/asp-net-core",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 955,
+      "UriPattern": "^/easyquery/docs/javascript/query-builder-php",
+      "UriTo": "/easyquery/javascript/docs/getting-started/query-builder-php",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 956,
+      "UriPattern": "^/easyquery/docs/developer-guide(.*)$",
+      "UriTo": "/easyquery/docs/fundamentals$1",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 957,
+      "UriPattern": "^/easyquery/winforms",
+      "UriTo": "/easyquery",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 958,
+      "UriPattern": "^/blogs/net-tricks(.*)$",
+      "UriTo": "/blog$1",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 959,
+      "UriPattern": "^/easyquery/docs/use-cases/building-dynamic-queries-with-easyquery-and-entity-framework$",
+      "UriTo": "/easyquery/docs/tutorials/building-dynamic-queries-with-easyquery-and-entity-framework",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 960,
+      "UriPattern": "^/easyquery/changelog-js$",
+      "UriTo": "/easyquery/javascript/docs/changelog",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 961,
+      "UriPattern": "^/news/localizer-version-(\\d)-(\\d\\d?)-(\\d)",
+      "UriTo": "https://korzh.com/news/localizer-version-$1.$2.$3",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 962,
+      "UriPattern": "^/ersk(.*)",
+      "UriTo": "/easy-report-starter-kit/$1",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 963,
+      "UriPattern": "^/easyquery/docs/how-to/add-virtual-attribute-in-model",
+      "UriTo": "/easyquery/docs/tutorials/add-virtual-attribute-in-model",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 964,
+      "UriPattern": "^/blogs/?$",
+      "UriTo": "/blogs/dotnet-stories",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 965,
+      "UriPattern": "^/easyquery/docs/getting-started/new-data-model",
+      "UriTo": "/easyquery/docs/getting-started/working-with-data-model",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 966,
+      "UriPattern": "^/delphi/eq",
+      "UriTo": "/easyquery",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 967,
+      "UriPattern": "^/easyquery/docs/getting-started/asp-net-mvc",
+      "UriTo": "/easyquery/docs/getting-started/asp-net-4-mvc-or-webforms",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 968,
+      "UriPattern": "^/easyquery/LICENSE.txt",
+      "UriTo": "/static/easyquery/eula.txt",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 969,
+      "UriPattern": "^/blogs/rus/why_yuschenko.html$",
+      "UriTo": "/blogs/dotnet-stories",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 970,
+      "UriPattern": "^/easyquery/docs/common-queries/gridview-filtering-with-easyquery-aspnet-webforms",
+      "UriTo": "/easyquery/docs/use-cases/gridview-filtering-with-easyquery-aspnet-webforms",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 971,
+      "UriPattern": "^/easyquery/docs/javascript(.*)$",
+      "UriTo": "/easyquery/javascript/docs/getting-started$1",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 972,
+      "UriPattern": "^/easyquery/docs/javascript-query-builder-php",
+      "UriTo": "/easyquery/javascript/docs/getting-started/query-builder-php",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 973,
+      "UriPattern": "^/easyquery/downloads",
+      "UriTo": "/easyquery",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    },
+    {
+      "Id": 974,
+      "UriPattern": "^/easyquery/demo1.htm",
+      "UriTo": "/easyquery",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 975,
+      "UriPattern": "^/easyquery/docs/how-to/add-columns-by-code",
+      "UriTo": "/easyquery/docs/how-to/add-columns-and-conditions-by-code",
+      "IsPermanent": true,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 301
+    },
+    {
+      "Id": 976,
+      "UriPattern": "^/eq/activex",
+      "UriTo": "/easyquery",
+      "IsPermanent": false,
+      "IsEnabled": true,
+      "IsRewrite": false,
+      "Kind": 302
+    }
+  ]
+}

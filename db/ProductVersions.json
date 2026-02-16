@@ -1,0 +1,1965 @@
+{
+  "name": "ProductVersions",
+  "schema": {
+    "columns": [
+      {
+        "name": "DatePublished",
+        "type": "System.DateTime"
+      },
+      {
+        "name": "DateUpdated",
+        "type": "System.DateTime"
+      },
+      {
+        "name": "Status",
+        "type": "System.Int32"
+      },
+      {
+        "name": "Id",
+        "type": "System.Int32"
+      },
+      {
+        "name": "ProductId",
+        "type": "System.Int32"
+      },
+      {
+        "name": "VersionNum",
+        "type": "System.String"
+      },
+      {
+        "name": "Notes",
+        "type": "System.String"
+      },
+      {
+        "name": "ReleaseNotesLink",
+        "type": "System.String"
+      },
+      {
+        "name": "NewsLink",
+        "type": "System.String"
+      }
+    ]
+  },
+  "data": [
+    {
+      "DatePublished": "2007-11-26T22:00:00",
+      "DateUpdated": "2007-11-26T22:00:00",
+      "Status": 3,
+      "Id": 1,
+      "ProductId": 100,
+      "VersionNum": "1.10.2",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2015-06-16T21:00:00",
+      "DateUpdated": "2016-02-09T22:00:00",
+      "Status": 3,
+      "Id": 2,
+      "ProductId": 100,
+      "VersionNum": "3.7.1",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2015-03-23T22:00:00",
+      "DateUpdated": "2015-05-26T21:00:00",
+      "Status": 3,
+      "Id": 3,
+      "ProductId": 100,
+      "VersionNum": "3.7.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2014-12-15T22:00:00",
+      "DateUpdated": "2015-02-15T22:00:00",
+      "Status": 3,
+      "Id": 4,
+      "ProductId": 100,
+      "VersionNum": "3.6.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2014-05-25T21:00:00",
+      "DateUpdated": "2014-10-20T21:00:00",
+      "Status": 3,
+      "Id": 5,
+      "ProductId": 100,
+      "VersionNum": "3.5.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2013-11-10T22:00:00",
+      "DateUpdated": "2014-04-13T21:00:00",
+      "Status": 3,
+      "Id": 6,
+      "ProductId": 100,
+      "VersionNum": "3.4.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2013-06-13T21:00:00",
+      "DateUpdated": "2013-09-15T21:00:00",
+      "Status": 3,
+      "Id": 7,
+      "ProductId": 100,
+      "VersionNum": "3.3.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2013-03-28T22:00:00",
+      "DateUpdated": "2013-06-07T21:00:00",
+      "Status": 3,
+      "Id": 8,
+      "ProductId": 100,
+      "VersionNum": "3.2.5",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2013-02-26T22:00:00",
+      "DateUpdated": "2012-03-18T22:00:00",
+      "Status": 3,
+      "Id": 9,
+      "ProductId": 100,
+      "VersionNum": "3.2.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2012-12-25T22:00:00",
+      "DateUpdated": "2013-02-25T22:00:00",
+      "Status": 3,
+      "Id": 10,
+      "ProductId": 100,
+      "VersionNum": "3.1.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2012-12-11T22:00:00",
+      "DateUpdated": "2012-12-20T22:00:00",
+      "Status": 3,
+      "Id": 11,
+      "ProductId": 100,
+      "VersionNum": "3.0.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2012-08-22T21:00:00",
+      "DateUpdated": "2012-12-18T22:00:00",
+      "Status": 3,
+      "Id": 12,
+      "ProductId": 100,
+      "VersionNum": "2.14.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2012-03-14T22:00:00",
+      "DateUpdated": "2012-08-15T21:00:00",
+      "Status": 3,
+      "Id": 13,
+      "ProductId": 100,
+      "VersionNum": "2.12.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2011-10-12T21:00:00",
+      "DateUpdated": "2011-11-09T22:00:00",
+      "Status": 3,
+      "Id": 14,
+      "ProductId": 100,
+      "VersionNum": "2.10.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2011-08-15T21:00:00",
+      "DateUpdated": "2011-09-10T21:00:00",
+      "Status": 3,
+      "Id": 15,
+      "ProductId": 100,
+      "VersionNum": "2.9.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2011-01-10T22:00:00",
+      "DateUpdated": "2011-05-08T21:00:00",
+      "Status": 3,
+      "Id": 16,
+      "ProductId": 100,
+      "VersionNum": "2.8.2",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2010-08-08T21:00:00",
+      "DateUpdated": "2010-11-10T22:00:00",
+      "Status": 3,
+      "Id": 17,
+      "ProductId": 100,
+      "VersionNum": "2.7.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2010-03-22T22:00:00",
+      "DateUpdated": "2010-07-19T21:00:00",
+      "Status": 3,
+      "Id": 18,
+      "ProductId": 100,
+      "VersionNum": "2.6.1",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2009-06-30T21:00:00",
+      "DateUpdated": "2009-06-30T21:00:00",
+      "Status": 3,
+      "Id": 19,
+      "ProductId": 100,
+      "VersionNum": "2.5.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2009-02-11T22:00:00",
+      "DateUpdated": "2009-02-11T22:00:00",
+      "Status": 3,
+      "Id": 20,
+      "ProductId": 100,
+      "VersionNum": "2.4.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2008-10-13T21:00:00",
+      "DateUpdated": "2008-10-13T21:00:00",
+      "Status": 3,
+      "Id": 21,
+      "ProductId": 100,
+      "VersionNum": "2.3.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2008-08-19T21:00:00",
+      "DateUpdated": "2008-08-19T21:00:00",
+      "Status": 3,
+      "Id": 22,
+      "ProductId": 100,
+      "VersionNum": "2.2.1",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2008-08-04T21:00:00",
+      "DateUpdated": "2008-08-04T21:00:00",
+      "Status": 3,
+      "Id": 23,
+      "ProductId": 100,
+      "VersionNum": "2.2.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2008-07-09T21:00:00",
+      "DateUpdated": "2008-07-09T21:00:00",
+      "Status": 3,
+      "Id": 24,
+      "ProductId": 100,
+      "VersionNum": "2.1.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2008-02-24T22:00:00",
+      "DateUpdated": "2008-02-24T22:00:00",
+      "Status": 3,
+      "Id": 25,
+      "ProductId": 100,
+      "VersionNum": "1.11.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2007-12-07T22:00:00",
+      "DateUpdated": "2007-12-07T22:00:00",
+      "Status": 3,
+      "Id": 26,
+      "ProductId": 100,
+      "VersionNum": "1.10.3",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2016-03-13T22:00:00",
+      "DateUpdated": "2016-09-26T10:35:29.4844715",
+      "Status": 3,
+      "Id": 27,
+      "ProductId": 100,
+      "VersionNum": "3.7.2",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2016-08-18T16:46:29",
+      "DateUpdated": "2016-10-09T22:00:13.3307337",
+      "Status": 3,
+      "Id": 28,
+      "ProductId": 100,
+      "VersionNum": "3.7.3",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2005-11-01T22:00:00",
+      "DateUpdated": "2005-11-01T22:00:00",
+      "Status": 3,
+      "Id": 29,
+      "ProductId": 200,
+      "VersionNum": "3.5.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2015-05-27T21:00:00",
+      "DateUpdated": "2015-05-27T21:00:00",
+      "Status": 3,
+      "Id": 30,
+      "ProductId": 200,
+      "VersionNum": "4.12.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2014-09-30T21:00:00",
+      "DateUpdated": "2015-01-07T22:00:00",
+      "Status": 3,
+      "Id": 31,
+      "ProductId": 200,
+      "VersionNum": "4.11.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2014-05-03T21:00:00",
+      "DateUpdated": "2014-05-28T21:00:00",
+      "Status": 3,
+      "Id": 32,
+      "ProductId": 200,
+      "VersionNum": "4.10.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2013-10-14T21:00:00",
+      "DateUpdated": "2014-02-23T22:00:00",
+      "Status": 3,
+      "Id": 33,
+      "ProductId": 200,
+      "VersionNum": "4.9.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2013-06-09T21:00:00",
+      "DateUpdated": "2013-08-23T21:00:00",
+      "Status": 3,
+      "Id": 34,
+      "ProductId": 200,
+      "VersionNum": "4.8.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2012-10-22T21:00:00",
+      "DateUpdated": "2013-03-17T22:00:00",
+      "Status": 3,
+      "Id": 35,
+      "ProductId": 200,
+      "VersionNum": "4.7.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2012-05-15T21:00:00",
+      "DateUpdated": "2012-07-22T21:00:00",
+      "Status": 3,
+      "Id": 36,
+      "ProductId": 200,
+      "VersionNum": "4.6.1",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2011-11-11T22:00:00",
+      "DateUpdated": "2012-02-25T22:00:00",
+      "Status": 3,
+      "Id": 37,
+      "ProductId": 200,
+      "VersionNum": "4.6.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2011-01-01T22:00:00",
+      "DateUpdated": "2011-07-24T21:00:00",
+      "Status": 3,
+      "Id": 38,
+      "ProductId": 200,
+      "VersionNum": "4.5.2",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2015-10-11T21:00:00",
+      "DateUpdated": "2016-09-02T16:26:18.1019453",
+      "Status": 3,
+      "Id": 39,
+      "ProductId": 200,
+      "VersionNum": "4.13.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2010-09-09T21:00:00",
+      "DateUpdated": "2010-11-30T22:00:00",
+      "Status": 3,
+      "Id": 40,
+      "ProductId": 200,
+      "VersionNum": "4.5.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2009-12-10T22:00:00",
+      "DateUpdated": "2010-01-17T22:00:00",
+      "Status": 3,
+      "Id": 41,
+      "ProductId": 200,
+      "VersionNum": "4.3.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2009-09-24T21:00:00",
+      "DateUpdated": "2009-09-24T21:00:00",
+      "Status": 3,
+      "Id": 42,
+      "ProductId": 200,
+      "VersionNum": "4.2.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2009-06-23T21:00:00",
+      "DateUpdated": "2009-07-06T21:00:00",
+      "Status": 3,
+      "Id": 43,
+      "ProductId": 200,
+      "VersionNum": "4.1.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2009-03-05T22:00:00",
+      "DateUpdated": "2009-03-05T22:00:00",
+      "Status": 3,
+      "Id": 44,
+      "ProductId": 200,
+      "VersionNum": "4.0.2",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2008-12-15T22:00:00",
+      "DateUpdated": "2008-12-15T22:00:00",
+      "Status": 3,
+      "Id": 45,
+      "ProductId": 200,
+      "VersionNum": "4.0.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2008-09-09T21:00:00",
+      "DateUpdated": "2011-01-13T22:00:00",
+      "Status": 3,
+      "Id": 46,
+      "ProductId": 200,
+      "VersionNum": "3.8.2",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2008-01-29T22:00:00",
+      "DateUpdated": "2008-01-29T22:00:00",
+      "Status": 3,
+      "Id": 47,
+      "ProductId": 200,
+      "VersionNum": "3.8.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2007-10-16T21:00:00",
+      "DateUpdated": "2007-10-16T21:00:00",
+      "Status": 3,
+      "Id": 48,
+      "ProductId": 200,
+      "VersionNum": "3.7.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2006-01-31T22:00:00",
+      "DateUpdated": "2006-01-31T22:00:00",
+      "Status": 3,
+      "Id": 49,
+      "ProductId": 200,
+      "VersionNum": "3.5.5",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2010-05-30T21:00:00",
+      "DateUpdated": "2010-05-30T21:00:00",
+      "Status": 3,
+      "Id": 50,
+      "ProductId": 200,
+      "VersionNum": "4.4.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2016-05-13T21:00:00",
+      "DateUpdated": "2016-09-20T18:00:24.7894218",
+      "Status": 3,
+      "Id": 51,
+      "ProductId": 200,
+      "VersionNum": "4.14.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2006-05-04T21:00:00",
+      "DateUpdated": "2006-05-04T21:00:00",
+      "Status": 3,
+      "Id": 52,
+      "ProductId": 300,
+      "VersionNum": "4.3.3",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2015-04-22T21:00:00",
+      "DateUpdated": "2015-04-22T21:00:00",
+      "Status": 3,
+      "Id": 53,
+      "ProductId": 300,
+      "VersionNum": "4.16.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2014-09-30T21:00:00",
+      "DateUpdated": "2015-03-10T22:00:00",
+      "Status": 3,
+      "Id": 54,
+      "ProductId": 300,
+      "VersionNum": "4.15.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2014-06-17T21:00:00",
+      "DateUpdated": "2014-06-17T21:00:00",
+      "Status": 3,
+      "Id": 55,
+      "ProductId": 300,
+      "VersionNum": "4.14.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2013-10-10T21:00:00",
+      "DateUpdated": "2014-01-16T22:00:00",
+      "Status": 3,
+      "Id": 56,
+      "ProductId": 300,
+      "VersionNum": "4.12.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2013-09-18T21:00:00",
+      "DateUpdated": "2013-09-18T21:00:00",
+      "Status": 3,
+      "Id": 57,
+      "ProductId": 300,
+      "VersionNum": "4.11.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2013-01-21T22:00:00",
+      "DateUpdated": "2013-03-17T22:00:00",
+      "Status": 3,
+      "Id": 58,
+      "ProductId": 300,
+      "VersionNum": "4.10.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2015-10-14T21:00:00",
+      "DateUpdated": "2016-09-02T16:24:14.5553785",
+      "Status": 3,
+      "Id": 59,
+      "ProductId": 300,
+      "VersionNum": "4.17.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2011-12-13T22:00:00",
+      "DateUpdated": "2011-12-13T22:00:00",
+      "Status": 3,
+      "Id": 60,
+      "ProductId": 300,
+      "VersionNum": "4.9.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2010-11-21T22:00:00",
+      "DateUpdated": "2010-12-01T22:00:00",
+      "Status": 3,
+      "Id": 61,
+      "ProductId": 300,
+      "VersionNum": "4.8.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2009-10-08T21:00:00",
+      "DateUpdated": "2010-01-19T22:00:00",
+      "Status": 3,
+      "Id": 62,
+      "ProductId": 300,
+      "VersionNum": "4.7.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2009-03-11T22:00:00",
+      "DateUpdated": "2009-03-11T22:00:00",
+      "Status": 3,
+      "Id": 63,
+      "ProductId": 300,
+      "VersionNum": "4.6.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2008-04-22T21:00:00",
+      "DateUpdated": "2008-04-22T21:00:00",
+      "Status": 3,
+      "Id": 64,
+      "ProductId": 300,
+      "VersionNum": "4.4.1",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2007-12-16T22:00:00",
+      "DateUpdated": "2007-12-16T22:00:00",
+      "Status": 3,
+      "Id": 65,
+      "ProductId": 300,
+      "VersionNum": "4.4.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2007-03-04T22:00:00",
+      "DateUpdated": "2007-03-04T22:00:00",
+      "Status": 3,
+      "Id": 66,
+      "ProductId": 300,
+      "VersionNum": "4.3.5",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2011-01-12T22:00:00",
+      "DateUpdated": "2011-03-05T22:00:00",
+      "Status": 3,
+      "Id": 67,
+      "ProductId": 300,
+      "VersionNum": "4.8.1",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2016-06-08T21:00:00",
+      "DateUpdated": "2016-09-02T16:23:54.8156524",
+      "Status": 3,
+      "Id": 68,
+      "ProductId": 300,
+      "VersionNum": "4.18.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2007-01-23T22:00:00",
+      "DateUpdated": "2007-01-23T22:00:00",
+      "Status": 3,
+      "Id": 69,
+      "ProductId": 100,
+      "VersionNum": "1.6.2",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2007-07-09T21:00:00",
+      "DateUpdated": "2007-07-09T21:00:00",
+      "Status": 3,
+      "Id": 70,
+      "ProductId": 100,
+      "VersionNum": "1.9.2",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2007-11-05T22:00:00",
+      "DateUpdated": "2007-11-05T22:00:00",
+      "Status": 3,
+      "Id": 71,
+      "ProductId": 100,
+      "VersionNum": "1.10.1",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2008-06-02T21:00:00",
+      "DateUpdated": "2008-06-02T21:00:00",
+      "Status": 3,
+      "Id": 72,
+      "ProductId": 100,
+      "VersionNum": "2.0.0",
+      "ReleaseNotesLink": ""
+    },
+    {
+      "DatePublished": "2017-02-08T00:00:00",
+      "DateUpdated": "2017-02-08T00:00:00",
+      "Status": 3,
+      "Id": 77,
+      "ProductId": 100,
+      "VersionNum": "3.8.0",
+      "NewsLink": "/news/easyquery-version-3.8.0"
+    },
+    {
+      "DatePublished": "2017-04-11T00:00:00",
+      "DateUpdated": "2017-04-11T00:00:00",
+      "Status": 3,
+      "Id": 78,
+      "ProductId": 300,
+      "VersionNum": "4.19.0",
+      "NewsLink": "/news/simplequery-version-4.19.0"
+    },
+    {
+      "DatePublished": "2017-04-15T00:00:00",
+      "DateUpdated": "2017-04-15T00:00:00",
+      "Status": 3,
+      "Id": 79,
+      "ProductId": 200,
+      "VersionNum": "4.15.0",
+      "NewsLink": "/news/localizer-version-4.15.0"
+    },
+    {
+      "DatePublished": "2017-07-21T00:00:00",
+      "DateUpdated": "2017-07-21T00:00:00",
+      "Status": 3,
+      "Id": 83,
+      "ProductId": 150,
+      "VersionNum": "4.0.0",
+      "ReleaseNotesLink": "https://korzh.com/easyquery/release-notes/version-4.0"
+    },
+    {
+      "DatePublished": "2017-08-22T00:00:00",
+      "DateUpdated": "2017-08-22T00:00:00",
+      "Status": 3,
+      "Id": 84,
+      "ProductId": 100,
+      "VersionNum": "3.9.0",
+      "NewsLink": "/news/easyquery-version-3.9.0"
+    },
+    {
+      "DatePublished": "2017-11-09T00:00:00",
+      "DateUpdated": "2017-11-09T00:00:00",
+      "Status": 3,
+      "Id": 85,
+      "ProductId": 150,
+      "VersionNum": "4.1.0",
+      "ReleaseNotesLink": "/easyquery/release-notes/version-4.1.0",
+      "NewsLink": "/news/easyquery-new-version-4.1.0"
+    },
+    {
+      "DatePublished": "2018-02-02T00:00:00",
+      "DateUpdated": "2018-02-02T00:00:00",
+      "Status": 3,
+      "Id": 86,
+      "ProductId": 150,
+      "VersionNum": "4.2.0",
+      "ReleaseNotesLink": "/easyquery/docs/release-notes/version-4.2.0",
+      "NewsLink": "/news/easyquery-version-4.2.0"
+    },
+    {
+      "DatePublished": "2018-03-19T00:00:00",
+      "DateUpdated": "2018-03-19T00:00:00",
+      "Status": 3,
+      "Id": 87,
+      "ProductId": 150,
+      "VersionNum": "4.3.0",
+      "NewsLink": "/news/easyquery 4.0 (for .net core)-version-4.3.0"
+    },
+    {
+      "DatePublished": "2018-04-12T00:00:00",
+      "DateUpdated": "2018-04-13T00:00:00",
+      "Status": 3,
+      "Id": 88,
+      "ProductId": 100,
+      "VersionNum": "3.10.0",
+      "NewsLink": "/news/easyquery 3.x (for .net framework)-version-3.10.0"
+    },
+    {
+      "DatePublished": "2018-07-19T00:00:00",
+      "DateUpdated": "2018-07-19T00:00:00",
+      "Status": 3,
+      "Id": 89,
+      "ProductId": 150,
+      "VersionNum": "4.3.1",
+      "ReleaseNotesLink": "/easyquery/docs/release-notes/version-4-3-1",
+      "NewsLink": "/news/"
+    },
+    {
+      "DatePublished": "2018-09-25T00:00:00",
+      "DateUpdated": "2018-09-25T00:00:00",
+      "Status": 3,
+      "Id": 90,
+      "ProductId": 150,
+      "VersionNum": "4.4.0",
+      "NewsLink": "/news/easyquery 4.0 (for .net core)-version-4.4.0"
+    },
+    {
+      "DatePublished": "2018-11-28T00:00:00",
+      "DateUpdated": "2018-11-28T00:00:00",
+      "Status": 3,
+      "Id": 91,
+      "ProductId": 200,
+      "VersionNum": "4.16.0",
+      "NewsLink": "/news/localizer-version-4.16.0"
+    },
+    {
+      "DatePublished": "2018-12-10T00:00:00",
+      "DateUpdated": "2018-12-10T00:00:00",
+      "Status": 3,
+      "Id": 93,
+      "ProductId": 300,
+      "VersionNum": "4.20.0",
+      "NewsLink": "/news/simplequery-version-4.20.0"
+    },
+    {
+      "DatePublished": "2018-12-28T00:00:00",
+      "DateUpdated": "2019-01-25T00:00:00",
+      "Status": 3,
+      "Id": 94,
+      "ProductId": 150,
+      "VersionNum": "4.4.1",
+      "ReleaseNotesLink": "/easyquery/docs/release-notes/version-4-4-1",
+      "NewsLink": "/news/easyquery-version-4.4.1"
+    },
+    {
+      "DatePublished": "2019-02-26T00:00:00",
+      "DateUpdated": "2019-02-26T00:00:00",
+      "Status": 3,
+      "Id": 95,
+      "ProductId": 150,
+      "VersionNum": "4.4.2",
+      "ReleaseNotesLink": "/easyquery/docs/release-notes/version-4-4-2",
+      "NewsLink": "/news/easyquery-4-4-2-release"
+    },
+    {
+      "DatePublished": "2019-03-29T00:00:00",
+      "DateUpdated": "2019-03-29T00:00:00",
+      "Status": 3,
+      "Id": 96,
+      "ProductId": 150,
+      "VersionNum": "5.0.0",
+      "ReleaseNotesLink": "/easyquery/release-notes/version-5.0.0",
+      "NewsLink": "/news/easyquery 4.0 (for .net core)-version-5.0.0"
+    },
+    {
+      "DatePublished": "2019-05-31T00:00:00",
+      "DateUpdated": "2019-05-31T00:00:00",
+      "Status": 3,
+      "Id": 97,
+      "ProductId": 150,
+      "VersionNum": "5.1.0",
+      "NewsLink": "/news/easyquery 4.0 (for .net core)-version-5.1.0"
+    },
+    {
+      "DatePublished": "2019-06-24T00:00:00",
+      "DateUpdated": "2019-07-01T00:00:00",
+      "Status": 3,
+      "Id": 98,
+      "ProductId": 150,
+      "VersionNum": "5.1.1",
+      "NewsLink": "https://korzh.com/news/easyquery-release-5-1-1"
+    },
+    {
+      "DatePublished": "2019-07-01T00:00:00",
+      "DateUpdated": "2019-07-01T00:00:00",
+      "Status": 3,
+      "Id": 99,
+      "ProductId": 150,
+      "VersionNum": "5.1.2",
+      "NewsLink": "https://korzh.com/news/easyquery-release-5-1-2"
+    },
+    {
+      "DatePublished": "2019-08-01T00:00:00",
+      "DateUpdated": "2019-08-01T00:00:00",
+      "Status": 3,
+      "Id": 100,
+      "ProductId": 100,
+      "VersionNum": "5.2.0",
+      "ReleaseNotesLink": "https://korzh.com/easyquery/docs/release-notes/version-5-2",
+      "NewsLink": "/news/easyquery for .net framework 4.x-version-5.2.0"
+    },
+    {
+      "DatePublished": "2019-08-05T00:00:00",
+      "DateUpdated": "2019-08-05T00:00:00",
+      "Status": 3,
+      "Id": 101,
+      "ProductId": 150,
+      "VersionNum": "5.2.0",
+      "ReleaseNotesLink": "https://korzh.com/easyquery/docs/release-notes/version-5-2",
+      "NewsLink": "https://korzh.com/news/easyquery-release-5-2-0"
+    },
+    {
+      "DatePublished": "2019-08-15T00:00:00",
+      "DateUpdated": "2019-08-15T00:00:00",
+      "Status": 3,
+      "Id": 102,
+      "ProductId": 150,
+      "VersionNum": "5.2.1",
+      "NewsLink": "/news/easyquery for .net core-version-5.2.1"
+    },
+    {
+      "DatePublished": "2019-09-23T00:00:00",
+      "DateUpdated": "2019-09-23T00:00:00",
+      "Status": 3,
+      "Id": 105,
+      "ProductId": 100,
+      "VersionNum": "5.2.4",
+      "NewsLink": "/news/easyquery-version-5.2.4"
+    },
+    {
+      "DatePublished": "2019-09-23T00:00:00",
+      "DateUpdated": "2019-09-23T00:00:00",
+      "Status": 3,
+      "Id": 106,
+      "ProductId": 150,
+      "VersionNum": "5.2.4"
+    },
+    {
+      "DatePublished": "2019-09-25T00:00:00",
+      "DateUpdated": "2019-09-25T00:00:00",
+      "Status": 3,
+      "Id": 107,
+      "ProductId": 100,
+      "VersionNum": "5.2.5",
+      "ReleaseNotesLink": "https://korzh.com/easyquery/docs/release-notes/version-5-2",
+      "NewsLink": "https://korzh.com/news/easyquery-release-5-2-5"
+    },
+    {
+      "DatePublished": "2019-09-25T00:00:00",
+      "DateUpdated": "2019-09-25T00:00:00",
+      "Status": 3,
+      "Id": 108,
+      "ProductId": 150,
+      "VersionNum": "5.2.5",
+      "ReleaseNotesLink": "https://korzh.com/easyquery/docs/release-notes/version-5-2",
+      "NewsLink": "https://korzh.com/news/easyquery-release-5-2-5"
+    },
+    {
+      "DatePublished": "2019-10-09T00:00:00",
+      "DateUpdated": "2019-10-09T00:00:00",
+      "Status": 3,
+      "Id": 109,
+      "ProductId": 150,
+      "VersionNum": "5.2.6"
+    },
+    {
+      "DatePublished": "2019-11-06T00:00:00",
+      "DateUpdated": "2019-11-06T00:00:00",
+      "Status": 3,
+      "Id": 110,
+      "ProductId": 100,
+      "VersionNum": "5.2.7",
+      "NewsLink": "https://korzh.com/news/easyquery-release-5-2-7"
+    },
+    {
+      "DatePublished": "2019-11-01T00:00:00",
+      "DateUpdated": "2019-11-09T00:00:00",
+      "Status": 3,
+      "Id": 111,
+      "ProductId": 150,
+      "VersionNum": "5.2.7",
+      "NewsLink": "https://korzh.com/news/easyquery-release-5-2-7"
+    },
+    {
+      "DatePublished": "2019-11-05T00:00:00",
+      "DateUpdated": "2019-11-05T00:00:00",
+      "Status": 3,
+      "Id": 112,
+      "ProductId": 5,
+      "VersionNum": "5.1.15"
+    },
+    {
+      "DatePublished": "2019-05-02T00:00:00",
+      "DateUpdated": "2019-05-02T00:00:00",
+      "Status": 3,
+      "Id": 113,
+      "ProductId": 5,
+      "VersionNum": "5.0.0"
+    },
+    {
+      "DatePublished": "2019-12-02T00:00:00",
+      "DateUpdated": "2019-12-02T00:00:00",
+      "Status": 3,
+      "Id": 114,
+      "ProductId": 5,
+      "VersionNum": "6.0.0",
+      "NewsLink": "/news/easyquery.js-version-6.0.0"
+    },
+    {
+      "DatePublished": "2019-12-02T00:00:00",
+      "DateUpdated": "2019-12-02T00:00:00",
+      "Status": 3,
+      "Id": 115,
+      "ProductId": 150,
+      "VersionNum": "5.3.0",
+      "NewsLink": "/news/easyquery for .net core-version-5.3.0"
+    },
+    {
+      "DatePublished": "2019-12-02T00:00:00",
+      "DateUpdated": "2019-12-02T00:00:00",
+      "Status": 3,
+      "Id": 116,
+      "ProductId": 100,
+      "VersionNum": "5.3.0",
+      "NewsLink": "/news/easyquery for .net framework 4.x-version-5.3.0"
+    },
+    {
+      "DatePublished": "2020-01-17T00:00:00",
+      "DateUpdated": "2020-01-17T00:00:00",
+      "Status": 3,
+      "Id": 117,
+      "ProductId": 100,
+      "VersionNum": "5.3.1"
+    },
+    {
+      "DatePublished": "2020-01-16T00:00:00",
+      "DateUpdated": "2020-01-16T00:00:00",
+      "Status": 3,
+      "Id": 118,
+      "ProductId": 150,
+      "VersionNum": "5.3.1"
+    },
+    {
+      "DatePublished": "2020-01-03T00:00:00",
+      "DateUpdated": "2020-01-03T00:00:00",
+      "Status": 3,
+      "Id": 119,
+      "ProductId": 5,
+      "VersionNum": "6.0.1"
+    },
+    {
+      "DatePublished": "2020-01-13T00:00:00",
+      "DateUpdated": "2020-01-13T00:00:00",
+      "Status": 3,
+      "Id": 120,
+      "ProductId": 5,
+      "VersionNum": "6.0.2"
+    },
+    {
+      "DatePublished": "2020-01-21T00:00:00",
+      "DateUpdated": "2020-01-24T00:00:00",
+      "Status": 3,
+      "Id": 122,
+      "ProductId": 5,
+      "VersionNum": "6.0.3"
+    },
+    {
+      "DatePublished": "2017-12-24T00:00:00",
+      "DateUpdated": "2017-12-24T00:00:00",
+      "Status": 3,
+      "Id": 123,
+      "ProductId": 307,
+      "VersionNum": "4.1.0"
+    },
+    {
+      "DatePublished": "2019-04-10T00:00:00",
+      "DateUpdated": "2019-04-10T00:00:00",
+      "Status": 3,
+      "Id": 124,
+      "ProductId": 307,
+      "VersionNum": "4.4.2"
+    },
+    {
+      "DatePublished": "2020-01-21T00:00:00",
+      "DateUpdated": "2020-01-21T00:00:00",
+      "Status": 2,
+      "Id": 125,
+      "ProductId": 307,
+      "VersionNum": "5.3.1"
+    },
+    {
+      "DatePublished": "2020-01-28T00:00:00",
+      "DateUpdated": "2020-01-28T00:00:00",
+      "Status": 3,
+      "Id": 126,
+      "ProductId": 308,
+      "VersionNum": "1.0.0"
+    },
+    {
+      "DatePublished": "2020-02-10T00:00:00",
+      "DateUpdated": "2020-02-10T00:00:00",
+      "Status": 3,
+      "Id": 127,
+      "ProductId": 100,
+      "VersionNum": "5.3.3"
+    },
+    {
+      "DatePublished": "2020-02-10T00:00:00",
+      "DateUpdated": "2020-02-10T00:00:00",
+      "Status": 3,
+      "Id": 128,
+      "ProductId": 150,
+      "VersionNum": "5.3.3"
+    },
+    {
+      "DatePublished": "2020-02-13T00:00:00",
+      "DateUpdated": "2020-02-13T00:00:00",
+      "Status": 3,
+      "Id": 129,
+      "ProductId": 5,
+      "VersionNum": "6.0.4"
+    },
+    {
+      "DatePublished": "2020-02-14T00:00:00",
+      "DateUpdated": "2020-03-06T00:00:00",
+      "Status": 3,
+      "Id": 130,
+      "ProductId": 5,
+      "VersionNum": "6.0.5"
+    },
+    {
+      "DatePublished": "2020-03-05T00:00:00",
+      "DateUpdated": "2020-03-05T00:00:00",
+      "Status": 3,
+      "Id": 131,
+      "ProductId": 150,
+      "VersionNum": "5.3.4"
+    },
+    {
+      "DatePublished": "2020-03-04T00:00:00",
+      "DateUpdated": "2020-03-05T00:00:00",
+      "Status": 3,
+      "Id": 132,
+      "ProductId": 150,
+      "VersionNum": "5.2.8"
+    },
+    {
+      "DatePublished": "2020-03-06T00:00:00",
+      "DateUpdated": "2020-03-06T00:00:00",
+      "Status": 3,
+      "Id": 133,
+      "ProductId": 100,
+      "VersionNum": "5.3.4"
+    },
+    {
+      "DatePublished": "2020-04-09T00:00:00",
+      "DateUpdated": "2020-04-09T00:00:00",
+      "Status": 3,
+      "Id": 134,
+      "ProductId": 100,
+      "VersionNum": "5.3.6"
+    },
+    {
+      "DatePublished": "2020-03-10T00:00:00",
+      "DateUpdated": "2020-03-10T00:00:00",
+      "Status": 3,
+      "Id": 135,
+      "ProductId": 150,
+      "VersionNum": "5.3.5"
+    },
+    {
+      "DatePublished": "2020-03-10T00:00:00",
+      "DateUpdated": "2020-03-10T00:00:00",
+      "Status": 3,
+      "Id": 136,
+      "ProductId": 5,
+      "VersionNum": "6.0.6"
+    },
+    {
+      "DatePublished": "2020-03-11T00:00:00",
+      "DateUpdated": "2020-03-11T00:00:00",
+      "Status": 3,
+      "Id": 137,
+      "ProductId": 308,
+      "VersionNum": "1.0.1"
+    },
+    {
+      "DatePublished": "2020-03-26T00:00:00",
+      "DateUpdated": "2020-03-26T00:00:00",
+      "Status": 3,
+      "Id": 138,
+      "ProductId": 5,
+      "VersionNum": "6.0.7"
+    },
+    {
+      "DatePublished": "2020-04-09T00:00:00",
+      "DateUpdated": "2020-04-09T00:00:00",
+      "Status": 3,
+      "Id": 139,
+      "ProductId": 150,
+      "VersionNum": "5.3.6"
+    },
+    {
+      "DatePublished": "2020-04-25T00:00:00",
+      "DateUpdated": "2020-04-25T00:00:00",
+      "Status": 3,
+      "Id": 140,
+      "ProductId": 5,
+      "VersionNum": "6.0.8"
+    },
+    {
+      "DatePublished": "2020-04-30T00:00:00",
+      "DateUpdated": "2020-04-30T00:00:00",
+      "Status": 3,
+      "Id": 141,
+      "ProductId": 5,
+      "VersionNum": "6.0.9"
+    },
+    {
+      "DatePublished": "2020-05-01T00:00:00",
+      "DateUpdated": "2020-05-01T00:00:00",
+      "Status": 3,
+      "Id": 142,
+      "ProductId": 100,
+      "VersionNum": "5.3.7"
+    },
+    {
+      "DatePublished": "2020-05-18T00:00:00",
+      "DateUpdated": "2020-05-18T00:00:00",
+      "Status": 2,
+      "Id": 143,
+      "ProductId": 100,
+      "VersionNum": "5.3.9"
+    },
+    {
+      "DatePublished": "2020-04-26T00:00:00",
+      "DateUpdated": "2020-04-26T00:00:00",
+      "Status": 3,
+      "Id": 144,
+      "ProductId": 150,
+      "VersionNum": "5.3.7"
+    },
+    {
+      "DatePublished": "2020-05-12T00:00:00",
+      "DateUpdated": "2020-05-12T00:00:00",
+      "Status": 3,
+      "Id": 145,
+      "ProductId": 150,
+      "VersionNum": "5.3.8"
+    },
+    {
+      "DatePublished": "2020-05-12T00:00:00",
+      "DateUpdated": "2020-05-12T00:00:00",
+      "Status": 3,
+      "Id": 146,
+      "ProductId": 5,
+      "VersionNum": "6.0.10"
+    },
+    {
+      "DatePublished": "2020-05-18T00:00:00",
+      "DateUpdated": "2020-05-18T00:00:00",
+      "Status": 2,
+      "Id": 147,
+      "ProductId": 150,
+      "VersionNum": "5.3.9"
+    },
+    {
+      "DatePublished": "2020-11-06T00:00:00",
+      "DateUpdated": "2020-11-06T00:00:00",
+      "Status": 3,
+      "Id": 148,
+      "ProductId": 308,
+      "VersionNum": "2.0.0"
+    },
+    {
+      "DatePublished": "2021-10-15T00:00:00",
+      "DateUpdated": "2021-10-15T00:00:00",
+      "Status": 3,
+      "Id": 149,
+      "ProductId": 308,
+      "VersionNum": "2.1.0"
+    },
+    {
+      "DatePublished": "2021-11-06T00:00:00",
+      "DateUpdated": "2021-11-06T00:00:00",
+      "Status": 2,
+      "Id": 150,
+      "ProductId": 308,
+      "VersionNum": "3.0.0"
+    },
+    {
+      "DatePublished": "2022-02-01T00:00:00",
+      "DateUpdated": "2022-02-01T00:00:00",
+      "Status": 3,
+      "Id": 151,
+      "ProductId": 150,
+      "VersionNum": "7.2.0"
+    },
+    {
+      "DatePublished": "2020-06-26T00:00:00",
+      "DateUpdated": "2020-06-26T00:00:00",
+      "Status": 3,
+      "Id": 152,
+      "ProductId": 5,
+      "VersionNum": "6.0.13"
+    },
+    {
+      "DatePublished": "2020-07-14T00:00:00",
+      "DateUpdated": "2020-07-14T00:00:00",
+      "Status": 3,
+      "Id": 153,
+      "ProductId": 5,
+      "VersionNum": "6.0.14"
+    },
+    {
+      "DatePublished": "2020-08-06T00:00:00",
+      "DateUpdated": "2020-08-06T00:00:00",
+      "Status": 3,
+      "Id": 154,
+      "ProductId": 5,
+      "VersionNum": "6.0.15"
+    },
+    {
+      "DatePublished": "2020-08-17T00:00:00",
+      "DateUpdated": "2020-08-18T00:00:00",
+      "Status": 3,
+      "Id": 155,
+      "ProductId": 5,
+      "VersionNum": "6.1.0"
+    },
+    {
+      "DatePublished": "2020-08-14T00:00:00",
+      "DateUpdated": "2020-08-14T00:00:00",
+      "Status": 3,
+      "Id": 156,
+      "ProductId": 5,
+      "VersionNum": "6.0.16"
+    },
+    {
+      "DatePublished": "2020-08-21T00:00:00",
+      "DateUpdated": "2020-08-21T00:00:00",
+      "Status": 3,
+      "Id": 157,
+      "ProductId": 100,
+      "VersionNum": "5.4.1"
+    },
+    {
+      "DatePublished": "2020-08-21T00:00:00",
+      "DateUpdated": "2020-08-21T00:00:00",
+      "Status": 3,
+      "Id": 158,
+      "ProductId": 150,
+      "VersionNum": "5.4.1"
+    },
+    {
+      "DatePublished": "2020-09-18T00:00:00",
+      "DateUpdated": "2020-09-18T00:00:00",
+      "Status": 3,
+      "Id": 159,
+      "ProductId": 5,
+      "VersionNum": "6.1.1"
+    },
+    {
+      "DatePublished": "2020-09-25T00:00:00",
+      "DateUpdated": "2020-09-25T00:00:00",
+      "Status": 3,
+      "Id": 160,
+      "ProductId": 5,
+      "VersionNum": "6.1.2"
+    },
+    {
+      "DatePublished": "2020-09-30T00:00:00",
+      "DateUpdated": "2020-09-30T00:00:00",
+      "Status": 3,
+      "Id": 161,
+      "ProductId": 100,
+      "VersionNum": "5.4.2"
+    },
+    {
+      "DatePublished": "2020-10-16T00:00:00",
+      "DateUpdated": "2020-10-16T00:00:00",
+      "Status": 3,
+      "Id": 162,
+      "ProductId": 100,
+      "VersionNum": "5.4.3"
+    },
+    {
+      "DatePublished": "2020-09-30T00:00:00",
+      "DateUpdated": "2020-09-30T00:00:00",
+      "Status": 3,
+      "Id": 163,
+      "ProductId": 150,
+      "VersionNum": "5.4.2"
+    },
+    {
+      "DatePublished": "2020-10-16T00:00:00",
+      "DateUpdated": "2020-10-16T00:00:00",
+      "Status": 3,
+      "Id": 164,
+      "ProductId": 150,
+      "VersionNum": "5.4.3"
+    },
+    {
+      "DatePublished": "2020-10-16T00:00:00",
+      "DateUpdated": "2020-10-16T00:00:00",
+      "Status": 3,
+      "Id": 165,
+      "ProductId": 5,
+      "VersionNum": "6.1.3"
+    },
+    {
+      "DatePublished": "2020-11-12T00:00:00",
+      "DateUpdated": "2020-11-12T00:00:00",
+      "Status": 3,
+      "Id": 166,
+      "ProductId": 5,
+      "VersionNum": "6.1.4"
+    },
+    {
+      "DatePublished": "2020-11-09T00:00:00",
+      "DateUpdated": "2020-11-11T00:00:00",
+      "Status": 3,
+      "Id": 167,
+      "ProductId": 100,
+      "VersionNum": "5.4.4"
+    },
+    {
+      "DatePublished": "2020-11-09T00:00:00",
+      "DateUpdated": "2020-11-12T00:00:00",
+      "Status": 3,
+      "Id": 168,
+      "ProductId": 150,
+      "VersionNum": "5.4.4"
+    },
+    {
+      "DatePublished": "2021-01-10T00:00:00",
+      "DateUpdated": "2021-01-10T00:00:00",
+      "Status": 3,
+      "Id": 169,
+      "ProductId": 150,
+      "VersionNum": "5.4.5"
+    },
+    {
+      "DatePublished": "2021-01-10T00:00:00",
+      "DateUpdated": "2021-01-10T00:00:00",
+      "Status": 3,
+      "Id": 170,
+      "ProductId": 100,
+      "VersionNum": "5.4.5"
+    },
+    {
+      "DatePublished": "2021-02-01T00:00:00",
+      "DateUpdated": "2021-02-01T00:00:00",
+      "Status": 3,
+      "Id": 171,
+      "ProductId": 100,
+      "VersionNum": "7.0.0"
+    },
+    {
+      "DatePublished": "2021-02-01T00:00:00",
+      "DateUpdated": "2021-02-01T00:00:00",
+      "Status": 3,
+      "Id": 172,
+      "ProductId": 150,
+      "VersionNum": "7.0.0"
+    },
+    {
+      "DatePublished": "2021-01-11T00:00:00",
+      "DateUpdated": "2021-01-18T00:00:00",
+      "Status": 3,
+      "Id": 173,
+      "ProductId": 5,
+      "VersionNum": "7.0.0"
+    },
+    {
+      "DatePublished": "2021-01-19T00:00:00",
+      "DateUpdated": "2021-01-19T00:00:00",
+      "Status": 3,
+      "Id": 174,
+      "ProductId": 100,
+      "VersionNum": "5.4.6"
+    },
+    {
+      "DatePublished": "2021-01-27T00:00:00",
+      "DateUpdated": "2021-01-27T00:00:00",
+      "Status": 3,
+      "Id": 175,
+      "ProductId": 100,
+      "VersionNum": "5.4.7"
+    },
+    {
+      "DatePublished": "2021-01-19T00:00:00",
+      "DateUpdated": "2021-01-19T00:00:00",
+      "Status": 3,
+      "Id": 176,
+      "ProductId": 150,
+      "VersionNum": "5.4.6"
+    },
+    {
+      "DatePublished": "2021-01-27T00:00:00",
+      "DateUpdated": "2021-01-27T00:00:00",
+      "Status": 3,
+      "Id": 177,
+      "ProductId": 150,
+      "VersionNum": "5.4.7"
+    },
+    {
+      "DatePublished": "2021-02-09T00:00:00",
+      "DateUpdated": "2021-02-09T00:00:00",
+      "Status": 3,
+      "Id": 178,
+      "ProductId": 308,
+      "VersionNum": "2.0.0"
+    },
+    {
+      "DatePublished": "2021-03-09T00:00:00",
+      "DateUpdated": "2021-03-09T00:00:00",
+      "Status": 3,
+      "Id": 179,
+      "ProductId": 5,
+      "VersionNum": "7.0.1"
+    },
+    {
+      "DatePublished": "2021-03-09T00:00:00",
+      "DateUpdated": "2021-03-09T00:00:00",
+      "Status": 3,
+      "Id": 180,
+      "ProductId": 100,
+      "VersionNum": "7.0.1"
+    },
+    {
+      "DatePublished": "2021-03-09T00:00:00",
+      "DateUpdated": "2021-03-09T00:00:00",
+      "Status": 3,
+      "Id": 181,
+      "ProductId": 150,
+      "VersionNum": "7.0.1"
+    },
+    {
+      "DatePublished": "2021-03-16T00:00:00",
+      "DateUpdated": "2021-03-16T00:00:00",
+      "Status": 3,
+      "Id": 182,
+      "ProductId": 100,
+      "VersionNum": "7.0.2"
+    },
+    {
+      "DatePublished": "2021-03-16T00:00:00",
+      "DateUpdated": "2021-03-16T00:00:00",
+      "Status": 3,
+      "Id": 183,
+      "ProductId": 150,
+      "VersionNum": "7.0.2"
+    },
+    {
+      "DatePublished": "2021-03-18T00:00:00",
+      "DateUpdated": "2021-03-18T00:00:00",
+      "Status": 3,
+      "Id": 184,
+      "ProductId": 5,
+      "VersionNum": "7.0.2"
+    },
+    {
+      "DatePublished": "2021-03-24T00:00:00",
+      "DateUpdated": "2021-03-24T00:00:00",
+      "Status": 3,
+      "Id": 185,
+      "ProductId": 100,
+      "VersionNum": "7.0.4"
+    },
+    {
+      "DatePublished": "2021-03-24T00:00:00",
+      "DateUpdated": "2021-03-24T00:00:00",
+      "Status": 3,
+      "Id": 186,
+      "ProductId": 150,
+      "VersionNum": "7.0.4"
+    },
+    {
+      "DatePublished": "2021-03-24T00:00:00",
+      "DateUpdated": "2021-03-24T00:00:00",
+      "Status": 3,
+      "Id": 187,
+      "ProductId": 5,
+      "VersionNum": "7.0.4"
+    },
+    {
+      "DatePublished": "2021-03-31T00:00:00",
+      "DateUpdated": "2021-03-31T00:00:00",
+      "Status": 3,
+      "Id": 188,
+      "ProductId": 5,
+      "VersionNum": "7.0.5"
+    },
+    {
+      "DatePublished": "2021-03-31T00:00:00",
+      "DateUpdated": "2021-03-31T00:00:00",
+      "Status": 3,
+      "Id": 189,
+      "ProductId": 100,
+      "VersionNum": "7.0.5"
+    },
+    {
+      "DatePublished": "2021-03-31T00:00:00",
+      "DateUpdated": "2021-03-31T00:00:00",
+      "Status": 3,
+      "Id": 190,
+      "ProductId": 150,
+      "VersionNum": "7.0.5"
+    },
+    {
+      "DatePublished": "2021-04-09T00:00:00",
+      "DateUpdated": "2021-04-09T00:00:00",
+      "Status": 3,
+      "Id": 191,
+      "ProductId": 100,
+      "VersionNum": "7.0.6"
+    },
+    {
+      "DatePublished": "2021-04-09T00:00:00",
+      "DateUpdated": "2021-04-09T00:00:00",
+      "Status": 3,
+      "Id": 192,
+      "ProductId": 150,
+      "VersionNum": "7.0.6"
+    },
+    {
+      "DatePublished": "2021-04-09T00:00:00",
+      "DateUpdated": "2021-04-09T00:00:00",
+      "Status": 3,
+      "Id": 193,
+      "ProductId": 5,
+      "VersionNum": "7.0.6"
+    },
+    {
+      "DatePublished": "2021-04-22T00:00:00",
+      "DateUpdated": "2021-04-22T00:00:00",
+      "Status": 3,
+      "Id": 194,
+      "ProductId": 100,
+      "VersionNum": "7.0.7"
+    },
+    {
+      "DatePublished": "2021-04-22T00:00:00",
+      "DateUpdated": "2021-04-22T00:00:00",
+      "Status": 3,
+      "Id": 195,
+      "ProductId": 150,
+      "VersionNum": "7.0.7"
+    },
+    {
+      "DatePublished": "2021-07-27T00:00:00",
+      "DateUpdated": "2021-07-27T00:00:00",
+      "Status": 3,
+      "Id": 197,
+      "ProductId": 100,
+      "VersionNum": "7.1.0"
+    },
+    {
+      "DatePublished": "2021-07-27T00:00:00",
+      "DateUpdated": "2021-07-27T00:00:00",
+      "Status": 3,
+      "Id": 198,
+      "ProductId": 150,
+      "VersionNum": "7.1.0"
+    },
+    {
+      "DatePublished": "2021-04-22T00:00:00",
+      "DateUpdated": "2021-04-22T00:00:00",
+      "Status": 3,
+      "Id": 199,
+      "ProductId": 5,
+      "VersionNum": "7.0.7"
+    },
+    {
+      "DatePublished": "2021-07-27T00:00:00",
+      "DateUpdated": "2021-07-27T00:00:00",
+      "Status": 3,
+      "Id": 200,
+      "ProductId": 5,
+      "VersionNum": "7.1.0"
+    },
+    {
+      "DatePublished": "2021-07-28T00:00:00",
+      "DateUpdated": "2021-07-28T00:00:00",
+      "Status": 3,
+      "Id": 201,
+      "ProductId": 308,
+      "VersionNum": "2.1.0"
+    },
+    {
+      "DatePublished": "2021-05-20T00:00:00",
+      "DateUpdated": "2021-05-20T00:00:00",
+      "Status": 3,
+      "Id": 202,
+      "ProductId": 5,
+      "VersionNum": "7.0.8"
+    },
+    {
+      "DatePublished": "2021-05-20T00:00:00",
+      "DateUpdated": "2021-05-20T00:00:00",
+      "Status": 3,
+      "Id": 203,
+      "ProductId": 100,
+      "VersionNum": "7.0.8"
+    },
+    {
+      "DatePublished": "2021-05-20T00:00:00",
+      "DateUpdated": "2021-05-20T00:00:00",
+      "Status": 3,
+      "Id": 204,
+      "ProductId": 150,
+      "VersionNum": "7.0.8"
+    },
+    {
+      "DatePublished": "2020-09-10T00:00:00",
+      "DateUpdated": "2020-09-10T00:00:00",
+      "Status": 3,
+      "Id": 205,
+      "ProductId": 307,
+      "VersionNum": "5.4.0"
+    },
+    {
+      "DatePublished": "2021-04-10T00:00:00",
+      "DateUpdated": "2021-04-10T00:00:00",
+      "Status": 3,
+      "Id": 206,
+      "ProductId": 307,
+      "VersionNum": "7.0.0"
+    },
+    {
+      "DatePublished": "2021-05-28T00:00:00",
+      "DateUpdated": "2021-05-28T00:00:00",
+      "Status": 3,
+      "Id": 207,
+      "ProductId": 5,
+      "VersionNum": "7.0.9"
+    },
+    {
+      "DatePublished": "2021-05-28T00:00:00",
+      "DateUpdated": "2021-05-28T00:00:00",
+      "Status": 3,
+      "Id": 208,
+      "ProductId": 150,
+      "VersionNum": "7.0.9"
+    },
+    {
+      "DatePublished": "2021-05-28T00:00:00",
+      "DateUpdated": "2021-05-28T00:00:00",
+      "Status": 3,
+      "Id": 209,
+      "ProductId": 100,
+      "VersionNum": "7.0.9"
+    },
+    {
+      "DatePublished": "2021-06-16T00:00:00",
+      "DateUpdated": "2021-06-16T00:00:00",
+      "Status": 3,
+      "Id": 211,
+      "ProductId": 150,
+      "VersionNum": "7.0.11"
+    },
+    {
+      "DatePublished": "2021-06-16T00:00:00",
+      "DateUpdated": "2021-06-16T00:00:00",
+      "Status": 3,
+      "Id": 212,
+      "ProductId": 5,
+      "VersionNum": "7.0.11"
+    },
+    {
+      "DatePublished": "2021-06-16T00:00:00",
+      "DateUpdated": "2021-06-16T00:00:00",
+      "Status": 3,
+      "Id": 213,
+      "ProductId": 100,
+      "VersionNum": "7.0.11"
+    },
+    {
+      "DatePublished": "2021-06-30T00:00:00",
+      "DateUpdated": "2021-06-30T00:00:00",
+      "Status": 3,
+      "Id": 214,
+      "ProductId": 5,
+      "VersionNum": "7.0.12"
+    },
+    {
+      "DatePublished": "2021-08-20T00:00:00",
+      "DateUpdated": "2021-09-01T00:00:00",
+      "Status": 3,
+      "Id": 215,
+      "ProductId": 100,
+      "VersionNum": "7.1.1"
+    },
+    {
+      "DatePublished": "2021-08-20T00:00:00",
+      "DateUpdated": "2021-09-01T00:00:00",
+      "Status": 3,
+      "Id": 216,
+      "ProductId": 5,
+      "VersionNum": "7.1.1"
+    },
+    {
+      "DatePublished": "2021-08-20T00:00:00",
+      "DateUpdated": "2021-09-01T00:00:00",
+      "Status": 3,
+      "Id": 217,
+      "ProductId": 150,
+      "VersionNum": "7.1.1"
+    },
+    {
+      "DatePublished": "2021-09-09T00:00:00",
+      "DateUpdated": "2021-09-09T00:00:00",
+      "Status": 3,
+      "Id": 218,
+      "ProductId": 5,
+      "VersionNum": "7.1.2"
+    },
+    {
+      "DatePublished": "2021-09-09T00:00:00",
+      "DateUpdated": "2021-09-09T00:00:00",
+      "Status": 3,
+      "Id": 219,
+      "ProductId": 100,
+      "VersionNum": "7.1.2"
+    },
+    {
+      "DatePublished": "2021-09-09T00:00:00",
+      "DateUpdated": "2021-09-09T00:00:00",
+      "Status": 3,
+      "Id": 220,
+      "ProductId": 150,
+      "VersionNum": "7.1.2"
+    },
+    {
+      "DatePublished": "2021-09-22T00:00:00",
+      "DateUpdated": "2021-09-22T00:00:00",
+      "Status": 3,
+      "Id": 221,
+      "ProductId": 200,
+      "VersionNum": "4.18.0"
+    },
+    {
+      "DatePublished": "2021-12-15T00:00:00",
+      "DateUpdated": "2021-11-15T00:00:00",
+      "Status": 3,
+      "Id": 223,
+      "ProductId": 308,
+      "VersionNum": "3.0.0"
+    },
+    {
+      "DatePublished": "2021-12-27T00:00:00",
+      "DateUpdated": "2021-12-27T00:00:00",
+      "Status": 3,
+      "Id": 224,
+      "ProductId": 5,
+      "VersionNum": "7.2.0"
+    },
+    {
+      "DatePublished": "2021-12-27T00:00:00",
+      "DateUpdated": "2021-12-27T00:00:00",
+      "Status": 3,
+      "Id": 225,
+      "ProductId": 100,
+      "VersionNum": "7.2.0"
+    },
+    {
+      "DatePublished": "2021-12-27T00:00:00",
+      "DateUpdated": "2021-12-27T00:00:00",
+      "Status": 3,
+      "Id": 226,
+      "ProductId": 150,
+      "VersionNum": "7.2.0"
+    },
+    {
+      "DatePublished": "2022-02-16T00:00:00",
+      "DateUpdated": "2022-02-16T00:00:00",
+      "Status": 3,
+      "Id": 227,
+      "ProductId": 5,
+      "VersionNum": "7.2.1"
+    },
+    {
+      "DatePublished": "2022-02-16T00:00:00",
+      "DateUpdated": "2022-02-16T00:00:00",
+      "Status": 3,
+      "Id": 228,
+      "ProductId": 150,
+      "VersionNum": "7.2.1"
+    },
+    {
+      "DatePublished": "2022-02-16T00:00:00",
+      "DateUpdated": "2022-02-16T00:00:00",
+      "Status": 3,
+      "Id": 229,
+      "ProductId": 100,
+      "VersionNum": "7.2.1"
+    },
+    {
+      "DatePublished": "2022-05-04T00:00:00",
+      "DateUpdated": "2022-05-04T00:00:00",
+      "Status": 3,
+      "Id": 230,
+      "ProductId": 300,
+      "VersionNum": "4.22.0"
+    },
+    {
+      "DatePublished": "2022-05-13T00:00:00",
+      "DateUpdated": "2022-07-05T00:00:00",
+      "Status": 3,
+      "Id": 231,
+      "ProductId": 307,
+      "VersionNum": "7.2.2"
+    },
+    {
+      "DatePublished": "2022-05-13T00:00:00",
+      "DateUpdated": "2022-07-05T00:00:00",
+      "Status": 3,
+      "Id": 232,
+      "ProductId": 100,
+      "VersionNum": "7.2.2"
+    },
+    {
+      "DatePublished": "2022-05-13T00:00:00",
+      "DateUpdated": "2022-07-05T00:00:00",
+      "Status": 3,
+      "Id": 233,
+      "ProductId": 150,
+      "VersionNum": "7.2.2"
+    },
+    {
+      "DatePublished": "2022-05-13T00:00:00",
+      "DateUpdated": "2022-07-05T00:00:00",
+      "Status": 3,
+      "Id": 234,
+      "ProductId": 5,
+      "VersionNum": "7.2.2"
+    },
+    {
+      "DatePublished": "2023-03-15T00:00:00",
+      "DateUpdated": "2023-03-15T00:00:00",
+      "Status": 3,
+      "Id": 235,
+      "ProductId": 100,
+      "VersionNum": "7.2.3"
+    },
+    {
+      "DatePublished": "2023-03-15T00:00:00",
+      "DateUpdated": "2023-03-15T00:00:00",
+      "Status": 3,
+      "Id": 236,
+      "ProductId": 150,
+      "VersionNum": "7.2.3"
+    },
+    {
+      "DatePublished": "2023-03-15T00:00:00",
+      "DateUpdated": "2023-03-15T00:00:00",
+      "Status": 3,
+      "Id": 237,
+      "ProductId": 5,
+      "VersionNum": "7.2.3"
+    },
+    {
+      "DatePublished": "2023-04-04T00:00:00",
+      "DateUpdated": "2023-04-04T00:00:00",
+      "Status": 2,
+      "Id": 238,
+      "ProductId": 5,
+      "VersionNum": "7.2.4"
+    },
+    {
+      "DatePublished": "2023-04-04T00:00:00",
+      "DateUpdated": "2023-04-04T00:00:00",
+      "Status": 2,
+      "Id": 239,
+      "ProductId": 100,
+      "VersionNum": "7.2.4"
+    },
+    {
+      "DatePublished": "2023-04-04T00:00:00",
+      "DateUpdated": "2023-04-04T00:00:00",
+      "Status": 2,
+      "Id": 240,
+      "ProductId": 150,
+      "VersionNum": "7.2.4"
+    }
+  ]
+}

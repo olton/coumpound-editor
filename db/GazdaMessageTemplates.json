@@ -1,0 +1,748 @@
+{
+  "name": "GazdaMessageTemplates",
+  "schema": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "System.Int64"
+      },
+      {
+        "name": "IsObsolete",
+        "type": "System.Boolean"
+      },
+      {
+        "name": "DateUpdated",
+        "type": "System.DateTimeOffset"
+      },
+      {
+        "name": "ExtraDataValue",
+        "type": "System.String"
+      },
+      {
+        "name": "TagsValue",
+        "type": "System.String"
+      },
+      {
+        "name": "Moniker",
+        "type": "System.String"
+      },
+      {
+        "name": "Subject",
+        "type": "System.String"
+      },
+      {
+        "name": "Content",
+        "type": "System.String"
+      },
+      {
+        "name": "ContentType",
+        "type": "System.String"
+      },
+      {
+        "name": "LayoutId",
+        "type": "System.Int64"
+      },
+      {
+        "name": "BaseId",
+        "type": "System.String"
+      },
+      {
+        "name": "Folder",
+        "type": "System.String"
+      }
+    ]
+  },
+  "data": [
+    {
+      "Id": 6,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "ERSK.Subscribe",
+      "Subject": "EasyReport Starter Kit subscription confirmation ",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n<p> Hello <strong>{{ contact.name }}</strong>, </p>\r\n\r\n<p>Somebody (we hope it was you) subscribed your e-mail ({{ contact.email }}) to <strong>EasyReport Starter Kit</strong> (ERSK) newsletter.</p>\r\n<p>\r\n    In case it was not you, or if you decided not to receive such an information for any reason, you may unsubscribe at any time - just click the following link: <a href=\"https://korzh.com/account/subscriptions?m={{ channel.moniker }}&a={{ contact.token }}\">unsubscribe here</a>.\r\n</p>\r\n<p>\r\n    This messaged is aimed to confirm that your subscription is activated. But not only that. As promised, we give you a <strong>10% discount</strong><sup>*</sup> on ERSK Company License.\r\n</p>\r\n<p>\r\n    Just go to <a href=\"https://korzh.com/orderform?c=ERST-COM\">order page</a> and apply the following coupon: <span style=\"font-weight: 700; color: #9b9b9b;\">ERSKLNCH10</span>\r\n</p>\r\n<p>\r\n    <a style=\"padding:12px 30px; text-align: center; display: block; background: #5893dd; color: #fff; text-decoration: none; text-transform: uppercase;width: max-content;margin: 50px auto;max-width: 200px;\" href=\"https://korzh.com/orderform?c=ERST-COM&coupon=ERSKLNCH10\">Purchase Now</a>\r\n</p>\r\n<p>\r\n    Please note, that purchasing an EasyReport Starter Kit license, you also get licenses for <a href=\"https://korzh.com/easyquery\">EasyQuery for ASP.NET Core</a> and <a href=\"https://korzh.com/easyquery/javascript\">EasyQuery.JS</a> at the same time.\r\n</p>\r\n\r\n<div style=\"margin-top: 40px; padding-top: 10px; border-top: 2px solid #f3f3f3; color: #3a3f46;\">\r\n\tKind regards, <a href=\"https://korzh.com/easy-report-starter-kit\">EasyReport Starter Kit</a> team\r\n</div>\r\n{% endmarkdown %}\r\n",
+      "ContentType": "text/html",
+      "LayoutId": 1,
+      "Folder": "Transactions"
+    },
+    {
+      "Id": 13,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Order.Renewal",
+      "Subject": "Subscription renewal for {{ product.name }}",
+      "Content": "Dear {{ contact.name }},\r\n\r\nYour software maintenance subscription for {{ product.name }} has been extended till {{ license.expired }}.\r\n\r\nYou can access the Client Area section of our website (https://korzh.com/account) to get the keys for the latest versions of the product or to download the assets available for your type of license (source code or additional tools).\r\n\r\nThank you for using our service.\r\n\r\n--\r\nBest regards, {{ product.name }} team\r\nhttps://korzh.com",
+      "ContentType": "text/plain",
+      "Folder": "Transactions"
+    },
+    {
+      "Id": 44,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "BLOG-KRH.Subscribe",
+      "Subject": "Korzh.com blog newsletter - subscription confirmation ",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n<p> Hello <strong>{{ contact.name }}</strong>, </p>\r\n\r\n<p>Somebody (we hope it was you) subscribed your e-mail ({{ contact.email }}) to <strong>Korzh.com Blog newsletter</strong>.</p>\r\n<p>\r\n    This messaged is aimed to confirm that your subscription is activated. \r\n    We promise not to spam you with useless messages - only notifications about new blog posts.\r\n</p>\r\n<p>\r\n    In case it was not you, or if you decided not to receive such an information for any reason, you may unsubscribe at any time - just click the following link: <a href=\"https://korzh.com/account/subscriptions?m={{ channel.moniker }}&a={{ contact.token }}\">unsubscribe here</a>.\r\n</p>\r\n<p>\r\n    As a bonus we give you a 10% discount coupon to all Korzh.com products. \r\n</p>\r\n<p>\r\n    Here it is: <span style=\"font-weight: 700; color: #9b9b9b;\">KRHBLOG10</span>\r\n</p>\r\n<p>\r\n    You can apply it on the order page after <a href=\"https://korzh.com/easyquery/licensing\" target=\"_blank\">selecting the product and the license type</a>.\r\n</p>\r\n<p>\r\n    We hope you will find our blog articles useful. Good luck!\r\n</p>\r\n\r\n<div style=\"margin-top: 40px; padding-top: 10px; border-top: 2px solid #f3f3f3; color: #3a3f46;\">\r\n\tKind regards, <a href=\"https://korzh.com\">Korzh.com</a> team\r\n</div>\r\n{% endmarkdown %}\r\n\r\n",
+      "ContentType": "text/html",
+      "LayoutId": 1,
+      "Folder": "Transactions"
+    },
+    {
+      "Id": 45,
+      "IsObsolete": true,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Product.NewVersion.EasyQueryJS610",
+      "Subject": "EasyQuery.NET 5.4.1 + EasyQuery.JS 6.1.0 release",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n\r\nDear {{ contact.name }}\r\n\r\nWe are happy to announce the release of version 5.4.1 of EasyQuery.NET together with version 6.1.0 of EasyQuery.JS! \r\n\r\nWith these updates, you get a lot of changes both on the client-side and server-side parts: new data grid, new \"facets\" panel, pivot tables, and other great features together with the improved performance and fixed bugs.  \r\n \r\nFor more information please refer to the [Release Notes](https://korzh.com/easyquery/docs/release-notes/easyquery-net-5-4-1-easyquery-js-6-1-0) and the [Changelog](https://korzh.com/easyquery/docs/changelog).\r\n\r\nThe sample projects for the new version are available on the GitHub as usual: https://github.com/easyquery\r\n\r\n--    \r\nKind regards, EasyQuery team.\r\nhttps://korzh.com/easyquery\r\n\r\n{% endmarkdown %}\r\n",
+      "ContentType": "text/html",
+      "LayoutId": 1,
+      "Folder": "Product-NewVersion"
+    },
+    {
+      "Id": 49,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Promo.BlackFriday",
+      "Subject": "EasyQuery Black Friday Sale. 35% off",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n\r\nDear {{ contact.name }}\r\n\r\nWe noticed that you tested our EasyQuery library but haven't got a license yet. \r\n\r\nIf you are still interested in acquiring the license, we have a good offer for you: Black Friday sale with 35% discount for any type of EasyQuery. \r\n\r\nTo get the discount, use the button below to open [EasyQuery Pricing](https://korzh.com/easyquery/licensing?coupon=BLCKFRD20) page and click on 'Buy Now' for the chosen edition and license type of EasyQuery.\r\n<p>\r\n\t<a\r\n\t\tstyle=\"\r\n\t\t  padding: 12px 10px;\r\n\t\t  text-align: center;\r\n\t\t  display: block;\r\n\t\t  background: #5893dd;\r\n\t\t  color: #fff;\r\n\t\t  text-decoration: none;\r\n\t\t  text-transform: uppercase;\r\n\t\t  width: max-content;\r\n\t\t  margin: 40px auto;\r\n\t\t  max-width: 300px;\r\n\t\t\"\r\n\t\thref=\"https://korzh.com/easyquery/licensing?coupon=BLCKFRD20\"\r\n\t>Buy EasyQuery with 35% discount\r\n\t</a>\r\n</p>\r\n\r\nThe offer is valid until Nov 30. After that date, the regular price will apply.\r\n\r\n--    \r\nKind regards, EasyQuery team.  \r\nhttps://korzh.com/easyquery\r\n\r\n{% endmarkdown %}\r\n",
+      "ContentType": "text/html",
+      "LayoutId": 2,
+      "Folder": "Promo"
+    },
+    {
+      "Id": 52,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Trial.EQN.Message05",
+      "Subject": "EasyQuery: let us know what you think",
+      "Content": "{% assign text_style = 'color: #3A3F46; font-size: 16px; line-height: 24px; margin-block-start: 1em; margin-block-end: 1em;' %}\r\n{% markdown p_style: text_style, li_style: text_style %}\r\n<p> Hello <strong>{{ contact.name }}</strong>, </p>\r\n\r\n<p>You signed up for EasyQuery framework trial some time ago. We appreciate it a lot. May we ask you to share your experience with us?</p>\r\n<p>The survey has only 3 questions, and it will take no more than 2 minutes of your time.</p>\r\n<br />\r\n<div style=\"text-align: center;\">\r\n\t<a style=\" text-decoration: none;\" href=\"https://forms.office.com/r/gzRz5CL678\">\r\n\t\t<span style=\"color: #ffffff; background: #5893dd; border-color: #5893dd; font-size: 16px; padding: 10px 20px 9px 20px; font-weight: bold; outline: none !important;  cursor: pointer; border: 1px solid transparent; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -ms-touch-action: manipulation; touch-action: manipulation;\">\r\n\t\t\tStart the survey\r\n\t\t</span>\r\n\t</a>\r\n</div>\r\n<br />\r\n<p>\r\n    Thank you in advance!\r\n</p>\r\n\r\n<div style=\"margin-top: 20px; padding-top: 10px; color: #3a3f46; font-size: 14px;\">\r\n    <strong>NB:</strong> And of course you can always <a href=\"https://korzh.com/support\">contact our support team</a> if you have any questions or suggestions regarding EasyQuery. \r\n</div>\r\n<div style=\"margin-top: 40px; padding-top: 10px; border-top: 2px solid #f3f3f3; color: #3a3f46; font-size: 16px;\">\r\n\tKind regards, <a href=\"https://korzh.com/easyquery\">EasyQuery</a> team\r\n</div>\r\n{% endmarkdown %}",
+      "ContentType": "text/html",
+      "LayoutId": 1,
+      "Folder": "Product-Trial"
+    },
+    {
+      "Id": 53,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Trial.EQN.Message01",
+      "Subject": "EasyQuery: how is the trial going?",
+      "Content": "{% assign text_style = 'color: #3A3F46; font-size: 16px; line-height: 24px; margin-block-start: 1em; margin-block-end: 1em;' %}\r\n{% markdown p_style: text_style, li_style: text_style %}\r\n<p> Hello <strong>{{ contact.name }}</strong>, </p>\r\n\r\n<p>We hope your EasyQuery trial is going well, and you have managed to implement the necessary scenario in your project, or to build a proof-of-concept application to show your employer or clients.</p>\r\n\r\n<p>However, in case you have any trouble with your implementation - we are here to help.</p>\r\n\r\n<ul>\r\n    <li>\r\n        <p>First of all, we would like to remind about the <a href=\"https://korzh.com/account/help/lic-{{license.id}}\">Help page in your account on Korzh.com</a>.</p>\r\n        <p>It contains detailed step-by-step instructions on how to choose one of the scenarios implemented in our sample projects, and to copy the same behavior to your own.</p>\r\n    </li>\r\n    <li>\r\n\t\t<p>Also, you can always <a href=\"https://korzh.com/support\">contact us</a> with a <a href=\"https://korzh.com/support\">support request</a> in case you have any problems with the framework.</p>\r\n    </li>\r\n</ul>\r\n\r\n<p>In addition, here are a few links you might find useful:</p>\r\n<ul>\r\n    <li><a href=\"https://korzh.com/easyquery/docs\">EasyQuery.NET documentation home page</a></li>\r\n    <li><a href=\"https://korzh.com/easyquery/javascript/docs\">EasyQuery.JS documentation home page</a></li>\r\n    <li><a href=\"https://korzh.com/easyquery/docs/getting-started\">EasyQuery Getting started articles</a></li>\r\n    <li><a href=\"https://korzh.com/easyquery/docs/getting-started/working-with-data-model\">Working with data models</a></li>\r\n</ul>\r\n\r\n<div style=\"margin-top: 40px; padding-top: 10px; border-top: 2px solid #f3f3f3; color: #3a3f46; font-size: 16px;\">\r\n\tKind regards, <a href=\"https://korzh.com/easyquery\">EasyQuery</a> team\r\n</div>\r\n{% endmarkdown %}",
+      "ContentType": "text/html",
+      "LayoutId": 1,
+      "Folder": "Product-Trial"
+    },
+    {
+      "Id": 54,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{\"version\":\"7.1.1\",\"edVersion\":\"1.3.4\"}",
+      "Moniker": "Product.MinorUpdate.EasyQuery",
+      "Subject": "EasyQuery version {{ version }} release",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n\r\nDear {{ contact.name }}\r\n\r\nWe would like to let you know about a minor update of EasyQuery library, version {{ version }} \r\nBoth EasyQuery .NET packages and JS scripts were updated and have the synchronized version number. \r\n\r\nAs usual, we highly recommend upgrading to the new version to keep your codebase up to date.   \r\nSince it's a minor update, there are no breaking changes and so, you just need to update EasyQuery NuGet packages in your .NET projects \r\nand the version of EasyQuery.JS script on your pages (here is the direct link to the new script: https://cdn.korzh.com/eq/{{ version }}/eq.enterprise.min.js)\r\n\r\nIf you are using EasyQuery.JS NPM packages (@easyquery/...), you also need to update their versions to {{ version }} in your package.json file \r\nand run `npm install` command after that.\r\nDon't forget to upgrade the version of EasyData packages (@easydata/...) to the latest one ({{ edVersion }}) as well.\r\n\r\nAll [our examples](https://github.com/easyquery/DotNetSamples) were upgraded to {{ version }} already\r\n\r\nHere is the [Changelog](https://korzh.com/easyquery/docs/changelog) document that contains the detailed list changes in the latest update and all previous ones.\r\n\r\nPlease [let us know](https://korzh.com/support) if you have any questions or comments about this release.\r\n\r\n--    \r\nKind regards, EasyQuery team.\r\nhttps://korzh.com/easyquery\r\n\r\n{% endmarkdown %}\r\n",
+      "ContentType": "text/html",
+      "LayoutId": 2,
+      "Folder": "Product-NewVersion"
+    },
+    {
+      "Id": 55,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Promo.Halloween2021",
+      "Subject": "EasyQuery Halloween Sale. 20% off",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n\r\nDear {{ contact.name }},\r\n\r\nWe noticed that you tried our EasyQuery library, but haven't got a license yet. \r\n\r\nIf you are still interested in acquiring the license, we have a good offer for you.\r\nToday we've started a Halloween sale with 20% discount for all editions of EasyQuery. \r\n\r\nTo get the discount, use the button below. Select the edition and click 'Buy Now' for the chosen license type of EasyQuery.\r\n<p>\r\n\t<a\r\n\t\tstyle=\"\r\n\t\t  padding: 12px 10px;\r\n\t\t  text-align: center;\r\n\t\t  display: block;\r\n\t\t  background: #5893dd;\r\n\t\t  color: #fff;\r\n\t\t  text-decoration: none;\r\n\t\t  text-transform: uppercase;\r\n\t\t  width: max-content;\r\n\t\t  margin: 40px auto;\r\n\t\t  max-width: 300px;\r\n\t\t\"\r\n\t\thref=\"https://korzh.com/easyquery/licensing?coupon=HALLWN21\"\r\n\t>Buy EasyQuery with 20% discount\r\n\t</a>\r\n</p>\r\n\r\nThe offer is valid until Oct 31. After that date, the regular price will apply.\r\n\r\nHope to see you among our clients soon!\r\n\r\n--    \r\nKind regards, EasyQuery team.  \r\nhttps://korzh.com/easyquery\r\n\r\n{% endmarkdown %}\r\n",
+      "ContentType": "text/html",
+      "LayoutId": 2,
+      "Folder": "Promo"
+    },
+    {
+      "Id": 56,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Trial.ERSK.Message00",
+      "Subject": "Easy Report Starter Kit first steps",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n<p> Hello <strong>{{ contact.name }}</strong>, </p>\r\n\r\n<p>Thank you for your interest in Easy Report Starter Kit (ERSK).</p> \r\n<p>We're sure you will find our solution template useful for creating your next ASP.NET Core reporting application.</p>\r\n<p>\r\n    To get the source code for ERSK solution just click the button below. You will need to set up the password fo your account before the download starts.\r\n</p>\r\n<p>\r\n\t<a\r\n\t\tstyle=\"\r\n\t\t  padding: 12px 10px;\r\n\t\t  text-align: center;\r\n\t\t  display: block;\r\n\t\t  background: #5893dd;\r\n\t\t  color: #fff;\r\n\t\t  text-decoration: none;\r\n\t\t  text-transform: uppercase;\r\n\t\t  width: max-content;\r\n\t\t  margin: 40px auto;\r\n\t\t  max-width: 300px;\r\n\t\t\"\r\n\t\thref=\"https://korzh.com/account/assets?a={{ contact.token }}&dl=ersk_community.zip\"\r\n\t>Download ERSK source code\r\n\t</a>\r\n</p>\r\n<p>\r\nPlease take a look at <a href=\"https://korzh.com/easy-report-starter-kit/docs/geting-started\">getting started instructions</a> to run the application for the first time.\r\n</p>\r\n<p>\r\nTo learn more about the application architecture, basic concepts, domain object and services, please read \r\n<a href=\"https://korzh.com/easy-report-starter-kit/docs/solution-structure\">Solution Structure</a> section on ERSK documentation website.\r\n</p>\r\n\r\n\r\n<div style=\"margin-top: 40px; padding-top: 10px; border-top: 2px solid #f3f3f3; color: #3a3f46;\">\r\n\tKind regards, <a href=\"https://korzh.com/easy-report-starter-kit\">EasyReport Starter Kit</a> team\r\n</div>\r\n{% endmarkdown %}\r\n",
+      "ContentType": "text/html",
+      "LayoutId": 1,
+      "Folder": "Product-Trial"
+    },
+    {
+      "Id": 63,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "War",
+      "Subject": "Support Ukraine against Russian invasion",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n\r\nDear {{ contact.name }},\r\n\r\nWe really wanted to write you about [the latest updates and new features in our products](https://korzh.com/easyquery/docs/release-notes/version-7-2). \r\nInstead, we ought to cry for your help in our fight against the Russian invasion of Ukraine.\r\n\r\n## What happened\r\n\r\nOn February 24th, with the help of Belarus, the Russian Army invaded Ukraine with aviation, artillery, and missiles. \r\nCities and civilians - children, women, and elder people - are being bombed, with battles happening across Ukrainian cities. \r\nNo preliminary demands or ultimatums were made.\r\n\r\nThe number of victims among the civilian population has already exceeded 350 people, among them - more than 20 children. \r\nMore than 2,000 civilians got injuries. And this number is growing every hour. \r\nIt’s clear that Russia won't stop until faced heavy losses due to strong military resistance.\r\n\r\n## Why it's important\r\n\r\nUkraine is on the frontline, defending Europe and democracy itself. \r\nOur Army and volunteer battalions are strong and determined, but they are still under-equipped. \r\nCivilians are stopping the tanks with bare hands to help the army and territorial defense forces. \r\nThat's why now we need your support to cover the real-time needs of defending Ukraine more than ever.\r\n\r\n## How you can help\r\n\r\n### 1. Share the truth\r\n\r\nPeople of the world should know more about this situation and get full information about war crimes and atrocities of the Russian military.\r\nVisit [#StandWithUkraine](https://ukraine.ua/news/stand-with-ukraine/) resource that contains links to the websites and social network accounts of all main Ukrainian institutions.\r\n\r\n### 2. Donate to Ukrainian Army and volunteers\r\n\r\nYou can make a transfer to the [official fundraising account of the National Bank of Ukraine](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi) (in any currency) \r\nor the biggest foundation providing help to the Ukrainian Armed Forces - [__Come Back Alive (CBA)__](https://www.comebackalive.in.ua/)\r\n\r\n### 3. Reach out to your authorities and governments.\r\n\r\nUkraine needs any kind of help and it needs it right now to break the backbone of the Russian war machine and prevent more deaths among civilians.\r\n\r\nFirst of all, we ask for defensive weapons, ammunition, equipment, and medicine but, of course, any kind of help will be greatly appreciated!\r\n\r\n--    \r\nBest regards, [Korzh.com](https://korzh.com) team\r\n\r\n{% endmarkdown %}\r\n",
+      "ContentType": "text/html",
+      "LayoutId": 2
+    },
+    {
+      "Id": 64,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "War.LOC",
+      "Subject": "Support Ukraine against Russian invasion",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n\r\nDear {{ contact.name }},\r\n\r\nWe really wanted to write you about the latest updates and new features in our products. \r\nInstead, we ought to cry for your help in our fight against the Russian invasion of Ukraine.\r\n\r\n## What happened\r\n\r\nOn February 24th, with the help of Belarus, the Russian Army invaded Ukraine with aviation, artillery, and missiles. \r\nCities and civilians - children, women, and elder people - are being bombed, with battles happening across Ukrainian cities. \r\nNo preliminary demands or ultimatums were made.\r\n\r\nThe number of victims among the civilian population has already exceeded 350 people, among them - more than 20 children. \r\nMore than 2,000 civilians got injuries. And this number is growing every hour. \r\nIt’s clear that Russia won't stop until faced heavy losses due to strong military resistance.\r\n\r\n## Why it's important\r\n\r\nUkraine is on the frontline, defending Europe and democracy itself. \r\nOur Army and volunteer battalions are strong and determined, but they are still under-equipped. \r\nCivilians are stopping the tanks with bare hands to help the army and territorial defense forces. \r\nThat's why now we need your support to cover the real-time needs of defending Ukraine more than ever.\r\n\r\n## How you can help\r\n\r\n### 1. Share the truth\r\n\r\nPeople of the world should know more about this situation and get full information about war crimes and atrocities of the Russian military.\r\nVisit [#StandWithUkraine](https://ukraine.ua/news/stand-with-ukraine/) resource that contains links to the websites and social network accounts of all main Ukrainian institutions.\r\n\r\n### 2. Donate to Ukrainian Army and volunteers\r\n\r\nYou can make a transfer to the [official fundraising account of the National Bank of Ukraine](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi) (in any currency) \r\nor the biggest foundation providing help to the Ukrainian Armed Forces - [__Come Back Alive (CBA)__](https://www.comebackalive.in.ua/)\r\n\r\n### 3. Reach out to your authorities and governments.\r\n\r\nUkraine needs any kind of help and it needs it right now to break the backbone of the Russian war machine and prevent more deaths among civilians.\r\n\r\nFirst of all, we ask for defensive weapons, ammunition, equipment, and medicine but, of course, any kind of help will be greatly appreciated!\r\n\r\n--    \r\nBest regards, [Korzh.com](https://korzh.com) team\r\n\r\n{% endmarkdown %}\r\n",
+      "ContentType": "text/html",
+      "LayoutId": 2
+    },
+    {
+      "Id": 83,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Account.CreatedByLicenseOwner",
+      "Subject": "Your account on Korzh.com",
+      "Content": "Dear {{ contact.name }},\r\n\r\nA new account on Korzh.com was successfully created for you. \r\nIf you didn't create it yourself then most possibly it was created by a license owner of one of our products to provide you an access to that license.\r\nIn this case, you will get another email about that soon.\r\n\r\nTo access your account please open the following URL in your browser: \r\nhttp://korzh.com/account \r\n\r\nYou can log in using e-mail address ({{ contact.email }}) as a user name.\r\nYour password: @Account.Password (can be changed later).\r\n\r\nAfter logging in you will see a client's panel with your profile information and all licenses associated with your account.\r\n\r\nFeel free to contact us using Support link on our website with any questions.\r\n\r\n--\r\nBest regards, Korzh.com team\r\nhttps://korzh.com",
+      "ContentType": "text/plain"
+    },
+    {
+      "Id": 84,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Account.GDPR",
+      "Subject": "Updated Privacy Policy",
+      "Content": "<html>\r\n\r\n<head>\r\n</head>\r\n\r\n<body>\r\n<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t<tr><td>\r\n\t\t<table width=\"800\" align=\"center\" bgcolor=\"white\" cellpadding=\"0\" cellspacing=\"0\" style=\"font-family:arial,helvetica,sans-serif\">\r\n\t\t\t<tr bgcolor=\"white\"><td colspan=\"2\" style=\"width:100%; color:white; padding:20px; font-size:32px; text-align:center; font-family:Georgia, 'Times New Roman', Times, serif; font-weight:100; letter-spacing: 4px; border:1px solid #5893dd;\">\r\n\t\t\t\t<a href=\"https://korzh.com\"><img alt=\"KORZH.COM\" src=\"https://korzh.com/static/images/logos/korzh_logo.png\" /></a>\r\n\t\t\t</td>\r\n            <td></td></tr>\r\n\t\t\t<tr><td colspan=\"2\" style=\"text-align:justify; padding:10px 30px 50px 30px;font-size:16px;line-height: 1.3;color:#4B5054; border-left:1px solid #5893dd; border-right:1px solid #5893dd;\">\r\n\t\t\t\t<p style=\"color: #5893dd;font-size: 28px;font-weight: bold;text-align: left; margin-top: 20px;\">Updated Privacy Policy</p>\r\n\t\t\t\t<p>Dear {{ contact.name }},</p>\r\n\t\t\t\t<p>On 25 May 2018, the new General Data Protection Regulation (GDPR) takes effect. The GDPR gives individuals in the European Union more control over how personal data is used.</p>\r\n\t\t\t\t<p>In order to comply the GDPR requirements, we updated our <a href=\"https://korzh.com/privacy\">Privacy Policy</a> and <a href=\"https://korzh.com/terms-of-use\">Terms of Use</a>. Please take the time to review our updated policies.</p>\r\n\t\t\t\t<p>For all questions about these policies or for the requests about exporting your profile data or removing your account, you may <a href=\"https://korzh.com/support\">contact us</a>.</p>\r\n\t\t\t\t<p>Please click the button below to update your email preferences:</p>\r\n\t\t\t\t<p style=\"text-align: center; margin: 30px auto;\">\r\n\t\t\t\t\t<a style=\" text-decoration: none;\" href=\"https://korzh.com/account/emailprefs?a={{ contact.email }}Hash\">\r\n\t\t\t\t\t\t<span style=\"color: #ffffff; background: #5893dd; border-color: #5893dd; font-size: 16px; padding: 10px 20px 9px 20px; font-weight: bold; outline: none !important;  cursor: pointer; border: 1px solid transparent; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -ms-touch-action: manipulation; touch-action: manipulation;\">\r\n\t\t\t\t\t\t\tUpdate email preferences\r\n\t\t\t\t\t\t</span>\r\n\t\t\t\t\t</a>\r\n\t\t\t\t</p>\r\n\t\t\t\t<p>We also strongly encourage you to revise your personal data and email subscriptions in order to make all necessary changes, if that may be the case. You may do it on Korzh.com <a href=\"https://korzh.com/account\">client's area page</a>.</p>\r\n\t\t\t\t<p style=\"margin-top: 40px;\">\r\n\t\t\t\t\tBest regards, Korzh.com team.<br />\r\n\t\t\t\t\t<a href=\"https://korzh.com\">https://korzh.com</a>\r\n\t\t\t\t</p>\r\n\t\t\t<tr bgcolor=\"#5893dd\">\r\n\t\t\t\t<td width=\"100%\" style=\"color:white; padding:10px 30px; font-size:12px;line-height: 1.5; text-align: center;\">\r\n\t\t\t\t\t<strong>&#169; 2018, Korzh.com</strong><br>\r\n\t\t\t\t</td>\r\n\t\t\t</tr>\r\n\t\t\t<tr><td colspan=\"2\" style=\"font-size:11px;color:#5893dd;text-align:center;padding-top:10px;\">\r\n\t\t\t\t\tYou received this message as a registered user of Korzh.com website.<br />\r\n\t\t\t\t\tThis is one time email, you don't need to do anything in order to unsubscribe.\r\n\t\t\t</td></tr>\r\n\t\t</table>\r\n\t</td></tr>\r\n\t<tr height=\"30px\"><td></td></tr>\r\n</table>\r\n  \r\n</body>\r\n</html>",
+      "ContentType": "text/html"
+    },
+    {
+      "Id": 85,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Account.Register.GetTrial",
+      "Subject": "EasyQuery getting started instructions",
+      "Content": "Hello, {{ contact.name }},\r\n\r\nIt’s great to see your interest in EasyQuery framework!\r\n\r\nDetailed instructions on how to apply EasyQuery with your project can be found on our website:\r\nhttps://korzh.com/easyquery/docs/getting-started\r\n\r\nWe’ve created an account for you - so you could get your license keys, product downloads, and support. \r\nHere is the direct link to your account: https://korzh.com/account/\r\n\r\nIn case you have any questions or suggestions - please use \"Support request\" form at https://korzh.com/support \r\n\r\nWelcome on board!\r\n\r\n--\r\nKind regards, EasyQuery team\r\nhttps://korzh.com/easyquery\r\n",
+      "ContentType": "text/plain"
+    },
+    {
+      "Id": 86,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "AccountCreated",
+      "Subject": "Subject: AccountCreated",
+      "Content": "Content: AccountCreated",
+      "ContentType": "text/plain"
+    },
+    {
+      "Id": 87,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Aistant.ReleaseMsg",
+      "Subject": "Aistant - a smart help center for your product. 50% discount for EasyQuery users",
+      "Content": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" height=\"100%\" id=\"m_6864141595821023926email_body\" style=\"margin:0px;padding:0px;border:0px;background-color:#f3f3f3;font-family:BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:20px\"\r\n    width=\"100%\">\r\n    <tbody>\r\n        <tr>\r\n            <td align=\"center\" valign=\"top\">\r\n                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"m_6864141595821023926responsive_table\" style=\"margin:0px;padding:0px;border:0px;width:600px\"\r\n                    width=\"600px\">\r\n                    <tbody>\r\n                        <tr>\r\n                            <td style=\"padding-top:50px;padding-right:16px;padding-bottom:50px;padding-left:16px\">\r\n\r\n                            </td>\r\n                        </tr>\r\n                        <tr style=\"background-color:#ffffff;\">\r\n                            <td style=\"padding: 55px 70px; \">\r\n                                <p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\">Hello, <strong>{{ contact.name }}</strong>,</p>\r\n                                <p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\">This is Sergiy Korzh, head of EasyQuery project.</p>\r\n                                <p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\">As you probably noticed already, <a href=\"https://korzh.com/easyquery/docs\">EasyQuery\r\n                                        documentation</a> has been completely renewed recently, got a new style,\r\n                                    advanced search, and navigation.</p>\r\n                                <p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\">\r\n                                    It became possible because of our new project - <a href=\"https://aistant.com/?utm_source=equs&utm_medium=email&utm_campaign=release-announce\">Aistant</a>\r\n                                    which is designed to reduce the burden on your support team. Therefore, we would\r\n                                    like to invite you to try it yourself.\r\n                                </p>\r\n                                <p style=\"color: #3A3F46; font-size: 20px;\tline-height: 24px; text-align: center\"><strong>WE OFFER:</strong></p>\r\n                                <table width=\"520px\">\r\n                                    <tr>\r\n                                        <td style=\"width:50px\"></td>\r\n                                        <td>\r\n                                            <table style=\"width: 100%;\">\r\n                                                <tr>\r\n                                                    <td style=\"text-align:center;width:50%; padding: 20px; vertical-align: top\">\r\n                                                            <img style=\"height: 54px\" src=\"https://cdn.korzh.com/aistant/icons/ic_help_center_3x.png\" >\r\n                                                        <p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px; \">\r\n                                                            Branded help center\r\n                                                        </p>\r\n                                                    </td>\r\n                                                    <td style=\"text-align:center;width:50%; padding: 20px; vertical-align: top\">\r\n                                                        <img style=\"height: 54px\" src=\"https://cdn.korzh.com/aistant/icons/ic_custom_3x.png\">\r\n                                                        <p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\">\r\n                                                            Custom domain / <br />in-site integration\r\n                                                        </p>\r\n\r\n                                                    </td>\r\n                                                </tr>\r\n                                                <tr>\r\n                                                    <td style=\"text-align:center;width:50%; padding: 20px; vertical-align: top\">\r\n                                                        <img style=\"height: 54px\" src=\"https://cdn.korzh.com/aistant/icons/ic_search_3x.png\">\r\n                                                        <p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\">\r\n                                                            AI-powered search\r\n                                                        </p>\r\n                                                    </td>\r\n                                                    <td style=\"text-align:center;width:50%; padding: 20px; vertical-align: top\">\r\n                                                        <img style=\"height: 54px\" src=\"https://cdn.korzh.com/aistant/icons/is_inside_3x.png\">\r\n                                                        <p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\">\r\n                                                            ... and many <a href=\"https://docs.aistant.com/en/overview/features?utm_source=equs&utm_medium=email&utm_campaign=release-announce\">other features</a>.\r\n                                                        </p>\r\n                                                    </td>\r\n                                                </tr>\r\n                                                <tr>\r\n                                                    <td style=\"padding:10px\"></td>\r\n                                                </tr>\r\n                                                <tr  >\r\n                                                    <td colspan=\"2\" style=\"width: 100%\">\r\n                                                            <a style=\"padding:15px; text-align: center; display: block; background: #18C29C; color: #fff; text-decoration: none; text-transform: uppercase;\" href=\"https://aistant.com?utm_source=equs&utm_medium=email&utm_campaign=release-announce\">Try aistant</a>\r\n                                                    </td>\r\n\r\n                                                </tr>\r\n                                      \r\n                                            </table>\r\n                                        </td>\r\n\r\n\r\n                                        <td style=\"width:50px\" ></td>\r\n                                    </tr>\r\n\r\n                                </table>\r\n                                <p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\">\r\n                                        Registration in Aistant is free (no credit card required).  \r\n                                        For EasyQuery users, we offer a <a href=\"https://aistant.com/subscriptions?coupon=EQ50&utm_source=equs&utm_medium=email&utm_campaign=release-announce\">Premium subscription</a> for the first year with a twice smaller price ($49 only!). This offer is limited in time. The price will increase as soon as we add new functionality to the service.\r\n                                    </p>    \r\n                                    <p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\">For all .NET developers, we also provide a special tool which allows you to publish the documentation for your C# code in a few minutes. Here is a \r\n                                        <a href=\"https://docs.aistant.com/en/tutorials/publish-api-reference-net-class-library?utm_source=equs&utm_medium=email&utm_campaign=release-announce\">detailed tutorial</a> for this task.</p>\r\n                                    <p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\">Your <a href=\"https://aistant.com/contact?utm_source=equs&utm_medium=email&utm_campaign=release-announce\">feedback</a> is highly appreciated and will help us to improve the service to better suit your needs.</p>\r\n                                    <hr>\r\n                                    <p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\">\r\n                                            Best regards,<br>\r\n                                            Sergiy Korzh,<br>\r\n                                            Head of <a href=\"https://korzh.com/easyquery\">EasyQuery</a>, CEO at <a href=\"https://aistant.com/?utm_source=equs&utm_medium=email&utm_campaign=release-announce\">Aistant</a> \r\n                                    </p>   \r\n                            </td>\r\n\r\n                        </tr>\r\n                        <tr>\r\n                            <td style=\"padding-top:50px;padding-right:16px;padding-bottom:50px;padding-left:16px\">\r\n\r\n                            </td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>",
+      "ContentType": "text/html"
+    },
+    {
+      "Id": 88,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Channel.ERSK.Subscribe",
+      "Subject": "EasyReport Starter Kit subscription confirmation ",
+      "Content": "<html>\r\n\r\n<head>\r\n</head>\r\n\r\n<body>\r\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" height=\"100%\"  style=\"margin:0px;padding:0px;border:0px;background-color:#f3f3f3;font-family:BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:20px\"\r\n    width=\"100%\">\r\n    <tbody>\r\n        <tr>\r\n            <td align=\"center\" valign=\"top\">\r\n                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"margin:0px;padding:0px;border:0px;width:800px\"\r\n                    width=\"600px\">\r\n                    <tbody>\r\n                        <tr>\r\n                            <td style=\"padding-top:50px;padding-right:16px;padding-bottom:50px;padding-left:16px\">\r\n\r\n                            </td>\r\n                        </tr>\r\n                        <tr style=\"background-color:#ffffff;\">\r\n                            <td style=\"padding: 55px 70px; \">\r\n                                <p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\">Hello <strong>{{ contact.name }}</strong>,</p>\r\n                                <p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\">Somebody (we hope it was you) subscribed your e-mail to <strong>EasyReport Starter Kit</strong> (ERSK) newsletter.</p>\r\n                                <p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\">This messaged is aimed to confirm that your subscription is activated. But not only that. As promised, we give you a <strong>10% discount</strong><sup>*</sup> on ERSK Company License. </p>\r\n                                <p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\">Just go to <a href=\"https://korzh.com/orderform?c=ERST-COM\">order page</a> and apply the following coupon: <span style=\"font-weight: 700; color: #9b9b9b;\">ERSKLNCH10</span></p>\r\n\t\t\t\t\t\t\t\t<p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\"><a style=\"padding:12px 30px; text-align: center; display: block; background: #5893dd; color: #fff; text-decoration: none; text-transform: uppercase;width: max-content;margin: 50px auto;max-width: 200px;\" href=\"https://korzh.com/orderform?c=ERST-COM&coupon=ERSKLNCH10\">Purchase Now</a></p>\r\n                                <p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\">Please note, that purchasing an EasyReport Starter Kit license, you also get licenses for <a href=\"https://korzh.com/easyquery\">EasyQuery for ASP.NET Core</a> and <a href=\"https://korzh.com/easyquery/javascript\">EasyQuery.JS</a> at the same time.</p>\r\n                                <p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\">* This offer is valid until the end of year 2020.</p>\r\n\r\n\t\t\t\t\t\t\t\t<hr>\r\n\t\t\t\t\t\t\t\t<p style=\"color: #3A3F46; font-size: 16px;\tline-height: 24px;\">\r\n\t\t\t\t\t\t\t\t\tKind regards,<br>\r\n\t\t\t\t\t\t\t\t\t<a href=\"https://korzh.com/easy-report-starter-kit\">EasyReport Starter Kit</a> team\r\n\t\t\t\t\t\t\t\t</p>   \r\n                            </td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td style=\"padding-top:50px;padding-right:16px;padding-bottom:50px;padding-left:16px\">\r\n\r\n                            </td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>  \r\n</body>\r\n</html>",
+      "ContentType": "text/html"
+    },
+    {
+      "Id": 89,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "ERSK.Release.EqAnc",
+      "Subject": "EasyReport Starter Kit - new product from EasyQuery team",
+      "Content": "<html>\r\n  <head> </head>\r\n\r\n  <body>\r\n    <table\r\n      border=\"0\"\r\n      cellpadding=\"0\"\r\n      cellspacing=\"0\"\r\n      height=\"100%\"\r\n      style=\"\r\n        margin: 0px;\r\n        padding: 0px;\r\n        border: 0px;\r\n        background-color: #f3f3f3;\r\n        font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;\r\n        font-size: 16px;\r\n        line-height: 20px;\r\n      \"\r\n      width=\"100%\"\r\n    >\r\n      <tbody>\r\n        <tr>\r\n          <td align=\"center\" valign=\"top\">\r\n            <table\r\n              border=\"0\"\r\n              cellpadding=\"0\"\r\n              cellspacing=\"0\"\r\n              style=\"margin: 0px; padding: 0px; border: 0px; width: 800px;\"\r\n              width=\"600px\"\r\n            >\r\n              <tbody>\r\n                <tr>\r\n                  <td\r\n                    style=\"\r\n                      padding-top: 50px;\r\n                      padding-right: 16px;\r\n                      padding-bottom: 50px;\r\n                      padding-left: 16px;\r\n                    \"\r\n                  ></td>\r\n                </tr>\r\n                <tr\r\n                  style=\"\r\n                    background-color: #ffffff;\r\n                    color: #3a3f46;\r\n                    font-size: 16px;\r\n                    line-height: 24px;\r\n                  \"\r\n                >\r\n                  <td style=\"padding: 55px 70px;\">\r\n                    <p>Hello <strong>{{ contact.name }}</strong>,</p>\r\n                    <p>\r\n                      We&#39;ve just released a new product and would like to share the joy with you.\r\n                    </p>\r\n                    <p>\r\n                      Why should you care?\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t  As a user of EasyQuery library, you for sure understand the power of adhoc reporting applications and the benefits they bring to customers.\r\n\t\t\t\t\t</p>\r\n                    <p>\r\n                      <a href=\"https://korzh.com/easy-report-starter-kit\">EasyReport Starter Kit</a> (or <b>ERSK</b>) makes it much easier to create such solutions.\r\n                    </p>\r\n                    <h2>What is ERSK?</h2>\r\n                    <p>\r\n                      Have you ever seen our\r\n                      <a href=\"http://easy.report\">Easy.Report</a> service? (you definitely have to, if you have not yet).\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t  EasyReport Starter Kit is an ASP.NET Core solution template for creating web-application that behaves like Easy.Report. Inother words, it is a great starting point for your own solution for adhoc reporting.\r\n                    </p>\r\n                    <h2>\r\n                      What benefits you can get with ERSK?\r\n                    </h2>\r\n                    <p>\r\n                      We built ERSK with the best architectural principles and practices in mind. Both multi-tenant and single-tenant applications are supported. Your users will be able to work with any of the most popular databases: SQL Server, MySQL, Postgre SQL, Oracle or SQLite.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t  So, using ERSK saves your time and money. Instead of creating everything from scratch, you get a ready-to-use solution built on proven architecture and patterns.\r\n                    </p>\r\n                    <h2>\r\n                      How to get EasyReport Starter Kit?\r\n                    </h2>\r\n                    <p>\r\n                      If you already own a Company license for ASP.NET Core edition of EasyQuery - you are lucky! Your license already includes ERSK at no extra charges. You can get it right now from the\r\n                      <a href=\"https://korzh.com/account/assets\">Downloads</a> section of your account on Korzh.com.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n                      Otherwise, you just need to upgrade your license to Company - and voila! - you get the ERSK thereby. To make you lucky too, we provide a <b>50% discount</b>&nbsp;<sup><b>*</b></sup> for such an upgrade. <a href=\"https://korzh.com/support\">Contact us</a> now to get the discount.\r\n                    </p>\r\n                    <p>\r\n                      * This offer expires on May 1st, 2020.\r\n                    </p>\r\n                    <p>\r\n                      <a\r\n                        style=\"\r\n                          padding: 12px 10px;\r\n                          text-align: center;\r\n                          display: block;\r\n                          background: #5893dd;\r\n                          color: #fff;\r\n                          text-decoration: none;\r\n                          text-transform: uppercase;\r\n                          width: max-content;\r\n                          margin: 40px auto;\r\n                          max-width: 300px;\r\n                        \"\r\n                        href=\"https://korzh.com/support\"\r\n                        >Request 50% discount</a>\r\n                    </p>\r\n\r\n                    <h2>\r\n                      Do you really need it?\r\n                    </h2>\r\n\r\n                    <p>\r\n                      We don&#39;t know.\r\n                    </p>\r\n                    <p>\r\n\t\t\t\t\t  But you may try to play with Easy.Report service. It&#39;s free. You can connect it to your testing DB to see how it works with your data. And then you may decide - do you want to build such an application for your customers? Do you want to spend a lot of resources on this? Or do you want to pay once, and get it right now, ready to use?\r\n                    </p>\r\n                    <p>\r\n\t\t\t\t\t  Simple choice.\r\n                    </p>\r\n\r\n                    <hr style=\"margin-top: 40px;\" />\r\n                    <p>\r\n                      Kind regards,<br />\r\n                      <a href=\"https://korzh.com/easyquery\">EasyQuery</a> team\r\n                    </p>\r\n                  </td>\r\n                </tr>\r\n                <tr>\r\n                  <td\r\n                    style=\"\r\n                      padding-top: 50px;\r\n                      padding-right: 16px;\r\n                      padding-bottom: 50px;\r\n                      padding-left: 16px;\r\n                    \"\r\n                  ></td>\r\n                </tr>\r\n              </tbody>\r\n            </table>\r\n          </td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n  </body>\r\n</html>\r\n",
+      "ContentType": "text/html",
+      "Folder": "ERSK"
+    },
+    {
+      "Id": 90,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "ERSK.Release.EqUsers",
+      "Subject": "EasyReport Starter Kit - new product from EasyQuery team",
+      "Content": "<html>\r\n  <head> </head>\r\n\r\n  <body>\r\n    <table\r\n      border=\"0\"\r\n      cellpadding=\"0\"\r\n      cellspacing=\"0\"\r\n      height=\"100%\"\r\n      style=\"\r\n        margin: 0px;\r\n        padding: 0px;\r\n        border: 0px;\r\n        background-color: #f3f3f3;\r\n        font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;\r\n        font-size: 16px;\r\n        line-height: 20px;\r\n      \"\r\n      width=\"100%\"\r\n    >\r\n      <tbody>\r\n        <tr>\r\n          <td align=\"center\" valign=\"top\">\r\n            <table\r\n              border=\"0\"\r\n              cellpadding=\"0\"\r\n              cellspacing=\"0\"\r\n              style=\"margin: 0px; padding: 0px; border: 0px; width: 800px;\"\r\n              width=\"600px\"\r\n            >\r\n              <tbody>\r\n                <tr>\r\n                  <td\r\n                    style=\"\r\n                      padding-top: 50px;\r\n                      padding-right: 16px;\r\n                      padding-bottom: 50px;\r\n                      padding-left: 16px;\r\n                    \"\r\n                  ></td>\r\n                </tr>\r\n                <tr\r\n                  style=\"\r\n                    background-color: #ffffff;\r\n                    color: #3a3f46;\r\n                    font-size: 16px;\r\n                    line-height: 24px;\r\n                  \"\r\n                >\r\n                  <td style=\"padding: 55px 70px;\">\r\n                    <p>Hello <strong>{{ contact.name }}</strong>,</p>\r\n                    <p>\r\n                      We&#39;ve just released a new product and would like to share the joy with you.\r\n                    </p>\r\n                    <p>\r\n                      Why should you care?\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t  As a user of EasyQuery library, you for sure understand the power of adhoc reporting applications and the benefits they bring to customers.\r\n\t\t\t\t\t</p>\r\n                    <p>\r\n                      <a href=\"https://korzh.com/easy-report-starter-kit\">EasyReport Starter Kit</a> (or <b>ERSK</b>) makes it much easier to create such solutions.\r\n                    </p>\r\n                    <h2>What is ERSK?</h2>\r\n                    <p>\r\n                      Have you ever seen our\r\n                      <a href=\"http://easy.report\">Easy.Report</a> service? (you definitely have to, if you have not yet).\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t  EasyReport Starter Kit is an ASP.NET Core solution template for creating web-application that behaves like Easy.Report. Inother words, it is a great starting point for your own solution for adhoc reporting.\r\n                    </p>\r\n                    <h2>\r\n                      What benefits you can get with ERSK?\r\n                    </h2>\r\n                    <p>\r\n                      We built ERSK with the best architectural principles and practices in mind. Both multi-tenant and single-tenant applications are supported. Your users will be able to work with any of the most popular databases: SQL Server, MySQL, Postgre SQL, Oracle or SQLite.\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t  So, using ERSK saves your time and money. Instead of creating everything from scratch, you get a ready-to-use solution built on proven architecture and patterns.\r\n                    </p>\r\n                    <h2>\r\n                      How to get EasyReport Starter Kit?\r\n                    </h2>\r\n                    <p>\r\n                      Simple answer - to purchase it.\r\n                    </p>\r\n                    <p>\r\n                      BUT! As a license owner of EasyQuery you may get an <a href=\"https://korzh.com/orderform?c=ERST-COM&coupon=ERSKLNCH65\">enormous 65% discount for ERSK</a>&nbsp;<sup><b>*</b></sup>.\r\n                    </p>\r\n                    <p>\r\n                      Please note, that the ERSK license also includes the licenses for EasyQuery ASP.NET Core and EasyQuery.JS. So, if you planned to upgrade your current ASP.NET application to ASP.NET Core - that&#39;s a good time to get a proper edition of EasyQuery for that.\r\n                    </p>\r\n                    <p>\r\n                      * This offer expires on May 1st, 2020.\r\n                    </p>\r\n                    <p>\r\n                      <a\r\n                        style=\"\r\n                          padding: 12px 10px;\r\n                          text-align: center;\r\n                          display: block;\r\n                          background: #5893dd;\r\n                          color: #fff;\r\n                          text-decoration: none;\r\n                          text-transform: uppercase;\r\n                          width: max-content;\r\n                          margin: 40px auto;\r\n                          max-width: 300px;\r\n                        \"\r\n                        href=\"https://korzh.com/orderform?c=ERST-COM&coupon=ERSKLNCH65\"\r\n                        >Get It Now with 65% discount</a>\r\n                    </p>\r\n\r\n                    <h2>\r\n                      Do you really need it?\r\n                    </h2>\r\n\r\n                    <p>\r\n                      We don&#39;t know.\r\n                    </p>\r\n                    <p>\r\n\t\t\t\t\t  But you may try to play with Easy.Report service. It&#39;s free. You can connect it to your testing DB to see how it works with your data. And then you may decide - do you want to build such an application for your customers? Do you want to spend a lot of resources on this? Or do you want to pay once, and get it right now, ready to use?\r\n                    </p>\r\n                    <p>\r\n\t\t\t\t\t  Simple choice.\r\n                    </p>\r\n\r\n                    <hr style=\"margin-top: 40px;\" />\r\n                    <p>\r\n                      Kind regards,<br />\r\n                      <a href=\"https://korzh.com/easyquery\">EasyQuery</a> team\r\n                    </p>\r\n                  </td>\r\n                </tr>\r\n                <tr>\r\n                  <td\r\n                    style=\"\r\n                      padding-top: 50px;\r\n                      padding-right: 16px;\r\n                      padding-bottom: 50px;\r\n                      padding-left: 16px;\r\n                    \"\r\n                  ></td>\r\n                </tr>\r\n              </tbody>\r\n            </table>\r\n          </td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n  </body>\r\n</html>\r\n",
+      "ContentType": "text/html",
+      "Folder": "ERSK"
+    },
+    {
+      "Id": 91,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "EasyQuery.Sale.201810",
+      "Subject": "EasyQuery - Autumn sale",
+      "Content": "Hello {{ contact.name }},\r\n\r\nAutumn seems to be cold in our terrain. Let's warm it up with hot sale. \r\n\r\nFor short period we dropped prices for EasyQuery making them twice smaller. If you are interested in EasyQuery - now is the best time to purchase it!\r\n\r\nSee details on https://korzh.com/easyquery/licensing\r\n\r\n--\r\nBest regards, Korzh.com team\r\nhttps://korzh.com",
+      "ContentType": "text/plain"
+    },
+    {
+      "Id": 92,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "License.NewUser",
+      "Subject": "Your access to license for {{ product.name }}",
+      "Content": "Hello {{ contact.name }},\r\n\r\nYou have been granted access to {{ product.name }} license (most possibly by license owner).\r\n\r\nNow you can download full (unprotected) version of {{ product.name }} from our website and submit support requests regarding the product.\r\n\r\nTo access your account please open https://korzh.com/account in your browser and log in using your e-mail address ({{ contact.email }}) as user name and the password we sent to you previously.\r\n\r\nUse \"Downloads\" section to get full version of {{ product.name }}.\r\nUse \"Tickets\" page to track your support requests and to submit a new one.\r\n\r\nFeel free to contact us with any questions about our product(s).\r\n\r\n--\r\nBest regards, Korzh.com team\r\nhttps://korzh.com",
+      "ContentType": "text/plain"
+    },
+    {
+      "Id": 93,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Order.License.Downloads",
+      "Subject": "Information regarding the registration of {{ license.name }}",
+      "Content": "Dear {{ contact.name }},\r\n\r\nThank you for purchasing {{ license.name }}. We hope it will be useful to you.\r\n\r\nTo remove all demo version limitations you should download the full (unprotected) version of {{ license.name }} from our website and install it on your computer.\r\n\r\nTo access your account please open the following URL in your browser: \r\n\r\nhttps://korzh.com/account?a={{ contact.token }} \r\n\r\nNB: you will need to set your password on the first login.\r\n\r\nAfter that just go to \"Downloads\" section and click on the necessary item to download it.\r\nUse the procedure described above to get an update of the product in the future.\r\nYou can also access \"Client's area\" to manage your account, modify personal information (e-mail, address, etc.), change the password, \r\naccess your licenses, and renew your subscriptions.\r\n\r\nFeel free to contact us any questions regarding our product(s) using \"Contact/Support\" form on our website.\r\n\r\nYour suggestions and bug reports are welcome. They can help us to make this product more useful and bug-free. \r\n\r\n--\r\nBest regards, {{ license.name }} team\r\nhttps://korzh.com",
+      "ContentType": "text/plain",
+      "Folder": "Order"
+    },
+    {
+      "Id": 94,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Order.License.Key",
+      "Subject": "Information regarding the registration of {{ license.name }}",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n\r\nDear {{ contact.name }},\r\n\r\nThank you for purchasing {{ license.name }}. \r\nWe hope it will be useful to you. Below are instructions on how to make use of your new license.\r\n\r\n## 1. Your access to Client's Area on Korzh.com\r\n\r\nThe Client's Area on our website contains the list of the licenses you own, the current status of all maintenance subscriptions, and the access to product keys and downloads.\r\n\r\nTo access the Client's Area please use the button below:\r\n\r\n<p>\r\n    <a style=\"padding:12px 30px; text-align: center; display: block; background: #5893dd; color: #fff; text-decoration: none; text-transform: uppercase;width: max-content;margin: 50px auto;max-width: 200px;\" \r\n        href=\"https://korzh.com/account?a={{ contact.token }}\">Visit Client Area</a>\r\n</p>\r\n\r\n\r\n## 2. License Key(s) for {{ license.name }}. \r\n\r\nTo remove all demo version limitations you will need to apply the product key(s) that are listed on Client's Area dashboard or License Details pages.\r\nHere are the detailed instructions on how to do it: https://korzh.com/easyquery/docs/getting-started/product-key\r\n\r\n## 3. Getting the full source code\r\n\r\nIf you purchased the license that includes the source code - you can get from Client's Area as well. \r\nJust visit the \"Downloads\" page https://korzh.com/account/assets and download the source code package your need. \r\nPlease note: by default you will there only the downloads for the latest version. \r\nTo get the packages for previous versions just select \"All versions\" option in the drop-down selector above the file list.\r\n\r\n## Welcome on board!\r\n\r\nYour suggestions and bug reports about the product(s) are always welcome!\r\nFeel free to contact us using Contact/Support form on our website (https://korzh.com/support) with any questions about our product(s).\r\n\r\n--\r\nBest regards, {{ license.name }} team\r\nhttps://korzh.com\r\n\r\n\r\n{% endmarkdown %}\r\n",
+      "ContentType": "text/html",
+      "LayoutId": 1,
+      "Folder": "Order"
+    },
+    {
+      "Id": 95,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "OrderProcessedRenewal",
+      "Subject": "Subscription renewal for {{ product.name }}",
+      "Content": "Dear {{ contact.name }},\r\n\r\nYour software maintenance subscription for {{ product.name }} has been extended till {{ license.expired }}.\r\n\r\nYou can access the Client Area section of our website (https://korzh.com/account) to get the keys for the latest versions of the product or to download the assets available for your type of license (source code or additional tools).\r\n\r\nThank you for using our service.\r\n\r\n--\r\nBest regards, {{ product.name }} team\r\nhttps://korzh.com",
+      "ContentType": "text/plain"
+    },
+    {
+      "Id": 96,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Order.Upgrade",
+      "Subject": "License upgrade for {{ license.name }}",
+      "Content": "Dear {{ contact.name }},\r\n\r\nYour license for {{ license.name }} has been upgraded to \"Company\".\r\nYou can get all license assets (full version, source code, etc) from Client Area section of our website:\r\nhttps://korzh.com/account/assets\r\n\r\nThank you for using our service.\r\n\r\n--\r\nBest regards, {{ license.name }} team\r\nhttps://korzh.com\r\n",
+      "ContentType": "text/plain",
+      "Folder": "Order"
+    },
+    {
+      "Id": 97,
+      "IsObsolete": true,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Product.NewVersion.EasyQuery390",
+      "Subject": "EasyQuery version 3.9.0 release",
+      "Content": "Dear {{ contact.name }},\r\n\r\nWe are glad to announce version 3.9.0 release for our EasyQuery library.\r\nThis update includes a few new features in ASP.NET edition of EasyQuery as well as some enhancements in other editions and in Data Model Editor. \r\nYou may find more detailed list of changes here: https://korzh.com/easyquery/release-notes/version-3.9.0\r\n\r\nTo make an upgrade just sign in to the Client Area on our website (https://korzh.com/account) and download the latest version.\r\n\r\nFor more detailed upgrade instructions please read:\r\nhttp://docs.korzh.com/common/get-the-latest-version\r\n\r\nFeel free to contact us with any question regarding new version and upgrade process.\r\n\r\n--\r\nBest regards, EasyQuery team.\r\nhttps://korzh.com\r\n\r\nP.S.\r\nThis message was sent to you since you are a registered user of {{ product.name }}.   \r\nIf you don't want to receive such emails from us further - please use the following link to unsubscribe:\r\nhttps://korzh.com/unsubscribe?email={{ contact.email }}",
+      "ContentType": "text/plain",
+      "Folder": "ReleaseNotifications"
+    },
+    {
+      "Id": 98,
+      "IsObsolete": true,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Product.NewVersion.EasyQuery40",
+      "Subject": "EasyQuery now supports .NET Core",
+      "Content": "Dear {{ contact.name }},\r\n\r\nThere are a few updates in EasyQuery product line we would like to share with you.\r\n\r\n1. New edition: EasyQuery for ASP.NET Core \r\nWe are glad to introduce the new edition: EasyQuery for ASP.NET Core (short version: “EasyQuery ANC”). Using this edition you are able to build ASP.NET Core applications.\r\nYou can test how it works using new samples projects published on GitHub: https://github.com/easyquery/AspNetCoreSamples\r\n\r\n2. 80% discount for new edition\r\nAs a registered user of EasyQuery you can get new EasyQuery ANC with incredible 80% discount! Just open the link and sign-in to your account: \r\nhttps://korzh.com/login?ReturnUrl=/easyquery/purchase\r\nHurry up - this offer will expire on the 1st of August!\r\n\r\n3. Version 4.0 branch\r\nIn order to manage versions better, we divided  EasyQuery into two branches: “Version 3.x” and “Version 4.x”.\r\nEasyQuery for .NET Core got version number 4.0.\r\nAll other editions of EasyQuery still remain with version 3.x branch (the latest version is 3.8.0). We are going to move them into Version 4.x branch eventually but version 3.x of EasyQuery will be still developed and maintained for the next 1-2 years at least.\r\n\r\nSo, you don't need to switch to the new version if you don't work with ASP.NET Core.\r\nAnd you can use both regular .NET editions and .NET Core edition simultaneously in different projects.\r\n \r\n\r\nFor more information about new edition please read EasyQuery 4.0 release notes: https://korzh.com/easyquery/release-notes/version-4.0\r\n \r\n--\r\nBest regards, EasyQuery team.\r\nhttps://korzh.com/easyquery\r\n \r\nP.S.\r\nYou have received this message as a registered user of EasyQuery library.\r\nIf you don't want to receive such emails from us further - please use the following link to unsubscribe:\r\nhttps://korzh.com/unsubscribe?email={{ contact.email }}",
+      "ContentType": "text/plain",
+      "Folder": "ReleaseNotifications"
+    },
+    {
+      "Id": 99,
+      "IsObsolete": true,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Product.NewVersion.EasyQuery42",
+      "Subject": "EasyQuery 4.2 and EasyQuery.JS releases",
+      "Content": "Dear {{ contact.name }},\r\n\r\nThere are a few updates in EasyQuery product line we would like to share with you.\r\n\r\n1. Version 4.2.0 of EasyQuery\r\nA minor update of EasyQuery for ASP.NET Core which includes some new features both in server-side and client-side code as well as the fixes of the bugs found in the previous version.\r\nFor more information about the changes please read the Release Notes: https://korzh.com/easyquery/release-notes/version-4.2.0\r\n\r\n2. EasyQuery.JS release\r\nIt's not a totally new product actually. Before this release, EasyQuery.JS was (and still is) a part of EasyQuery for ASP.NET/ASP.NET Core library. Now it's available as a separate product which can be used with any server-side platform or framework like PHP, Node.JS, Java, etc.\r\nFor more information - please read: https://korzh.com/easyquery/javascript/release-notes/easyqueryjs-first-public-release\r\n\r\nNB: Of course you don't need to worry about this new product if you use ASP.NET (Core) edition of EasyQuery. With the latest version (4.2.0) you already have all functionality of EasyQuery.JS.  \r\nHowever, perhaps there are other development teams in your company and these teams work with other development platforms (like Node.js, PHP, etc). So, we hope they may be interested to know that EasyQuery capabilities are now available to them too.\r\n--\r\nBest regards, EasyQuery team.\r\nhttps://korzh.com/easyquery\r\n \r\nP.S.\r\nYou have received this message as a registered user of EasyQuery library.\r\nIf you don't want to receive such emails from us further - please use the following link to unsubscribe:\r\nhttps://korzh.com/unsubscribe?email={{ contact.email }}",
+      "ContentType": "text/plain",
+      "Folder": "ReleaseNotifications"
+    },
+    {
+      "Id": 100,
+      "IsObsolete": true,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Product.NewVersion.EasyQuery43",
+      "Subject": "EasyQuery 4.3.1 release",
+      "Content": "Dear {{ contact.name }},\r\n\r\nThere is an update we would like to share with you: \r\nVersion 4.3.1 of EasyQuery for ASP.NET Core was released recently!\r\n\r\nThis is a minor update which includes some new features both in server-side and client-side code as well as the fixes of the bugs found in the previous versions.\r\nFor more information about the changes please read the Release Notes post: \r\nhttps://korzh.com/easyquery/docs/release-notes/version-4-3-1\r\n\r\n--\r\nBest regards, EasyQuery team.\r\nhttps://korzh.com/easyquery\r\n \r\nP.S.\r\nYou have received this message as a registered user of EasyQuery library (or corresponding product)\r\nIf you don't want to receive such emails from us further - please use the following link to unsubscribe:\r\nhttps://korzh.com/account/emailprefs?a={{ contact.email }}Hash",
+      "ContentType": "text/plain",
+      "Folder": "ReleaseNotifications"
+    },
+    {
+      "Id": 101,
+      "IsObsolete": true,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Product.NewVersion.EasyQuery44x",
+      "Subject": "EasyQuery 4.4.2 release",
+      "Content": "Dear {{ contact.name }},\r\n\r\nWe are glad to announce the release of version 4.4.2 of EasyQuery for ASP.NET Core.\r\n\r\nSince the version 4.3.1, we added the support for .NET 2.1 and 2.2, redesigned FilterBar widget and made a lot of small improvements and fixes.\r\nMore information about the changes you can find in the \"Release Notes\" section on our website:  \r\nhttps://korzh.com/easyquery/docs/release-notes/\r\n\r\n--\r\nBest regards, EasyQuery team.\r\nhttps://korzh.com/easyquery\r\n \r\nP.S.\r\nYou have received this message as a registered user of EasyQuery library (or corresponding product)\r\nIf you don't want to receive such emails from us further - please use the following link to unsubscribe:\r\nhttps://korzh.com/account/emailprefs?a={{ contact.email }}Hash",
+      "ContentType": "text/plain",
+      "Folder": "ReleaseNotifications"
+    },
+    {
+      "Id": 102,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Product.NewVersion.EasyQuery50",
+      "Subject": "Announcing EasyQuery ASP.NET Core 5.0 release candidate",
+      "Content": "Hello {{ contact.name }},\r\n\r\nWe have 2 news for you:\r\n\r\n1. We prepared a major upgrade of EasyQuery for ASP.NET\r\nWe are glad to announce the EasyQuery ASP.NET Core 5.0 RC2 (Release Candidate 2) which is the last preview version before releasing the final one: 5.0 RTM.\r\nVersion 5.0 - is a major update with a totally redesigned JavaScript part and significantly rewritten core (server-side) packages. \r\nThe main goal with version 5.0 was to simplify the use of EasyQuery in SPA projects with frameworks like Angular, React or Vue. \r\n\r\nFor more information about the new functionality provided with this update and the most significant changes please read the \"release notes\" article on our website:\r\nhttps://korzh.com/easyquery/docs/release-notes/version-5-0-release-notes\r\n\r\n2. 70% discount for current users!\r\nAs a current user of EasyQuery you probably already thought about porting your project to the ASP.NET Core platform. \r\nToday you have a good opportunity to reduce your expenses on such an upgrade. We offer you a massive 70% discount for EasyQuery ASP.NET Core edition.\r\nThe offer is valid until May 1st, 2019. To get the discount just visit EasyQuery Licensing page (https://korzh.com/easyquery/licensing), press \"Buy now\" on the selected license type and use the following coupon code on the order page: EQ50OTED\r\n\r\n--\r\nBest regards, EasyQuery team.\r\nhttps://korzh.com/easyquery\r\n \r\nP.S.\r\nYou have received this message as a registered user of EasyQuery library (or corresponding product)\r\nIf you don't want to receive such emails from us further - please use the following link to unsubscribe:\r\nhttps://korzh.com/account/emailprefs?a={{ contact.email }}Hash",
+      "ContentType": "text/plain"
+    },
+    {
+      "Id": 103,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Product.NewVersion.EasyQuery50-ANC",
+      "Subject": "Announcing EasyQuery 5.0 release candidate",
+      "Content": "Dear {{ contact.name }}\r\n\r\nNo doubt, EasyQuery library works well in classic ASP.NET Core applications which use MVC views or Razor pages.\r\nHowever, you might have difficulties using it in the modern SPA projects with frameworks like Angular, React or Vue. \r\n\r\nThat is one of the main reasons why we spent last few months working on a major update of EasyQuery - version 5.0.\r\nIn this update the JavaScript part was totally redesigned, and the core (server-side) packages were significantly rewritten.\r\n\r\nSo, today we’re announcing the EasyQuery 5.0 RC2 (Release Candidate 2) which is the last preview release before releasing the final version 5.0 RTM.\r\n\r\nFor more information about the new functionality provided with this major update and the most significant changes please read the \"release notes\" article on our website:\r\nhttps://korzh.com/easyquery/docs/release-notes/version-5-0-release-notes\r\n\r\nWe also have published a sample solution for version 5.0 on GitHub:\r\nhttps://github.com/easyquery/AspNetCoreSamples/tree/version-5.0\r\n\r\n\r\nNB:\r\nTo share the joy of this event with you we offer a 50% discount for software maintenance renewal of EasyQuery.\r\nThe offer is valid until May 1st, 2019. So, hurry up if your subscription is expired or is about to expire soon.\r\nAll you need to that is to access your account and click on Renew link there. Here is the direct link:\r\nhttps://korzh.com/account/?a={{ contact.email }}Hash\r\nUse the following coupon code on the order form to get the discount: EQANC50\r\n\r\n--\r\nBest regards, EasyQuery team.\r\nhttps://korzh.com/easyquery\r\n \r\nP.S.\r\nYou have received this message as a registered user of EasyQuery library (or corresponding product)\r\nIf you don't want to receive such emails from us further - please use the following link to unsubscribe:\r\nhttps://korzh.com/account/emailprefs?a={{ contact.email }}Hash",
+      "ContentType": "text/plain"
+    },
+    {
+      "Id": 104,
+      "IsObsolete": true,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Product.NewVersion.EasyQuery511",
+      "Subject": "EasyQuery 5.1 release",
+      "Content": "Dear {{ contact.name }},\r\n\r\nWe are glad to announce the release of version 5.1.1 of EasyQuery for ASP.NET Core.\r\n\r\nThis is a minor update of version 5.0 which focuses on integration with authentication/authorization sub-system in ASP.NET Core and on support for several most frequent scenarios.\r\n\r\nFor the detailed list of changes in this version - please read the \"Release Notes\" article on our website:  \r\nhttps://korzh.com/easyquery/docs/release-notes/version-5-1\r\n\r\n--\r\nBest regards, EasyQuery team.\r\nhttps://korzh.com/easyquery\r\n \r\nP.S.\r\nYou have received this message as a registered user of EasyQuery library (or corresponding product)\r\nIf you don't want to receive such emails from us further - please use the following link to unsubscribe:\r\nhttps://korzh.com/account/emailprefs?a={{ contact.email }}Hash",
+      "ContentType": "text/plain",
+      "Folder": "ReleaseNotifications"
+    },
+    {
+      "Id": 105,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Product.NewVersion.EasyQuery520",
+      "Subject": "EasyQuery 5.2.0 release. Upgrade discount.",
+      "Content": "Dear {{ contact.name }}\r\n\r\nWe are happy to announce the release of version 5.2.0 of EasyQuery! \r\n\r\nWhy are we so happy? Because it's a long-awaited merge of 2 our main branches: version 3.x (for .NET Framework 4) and version 5.x branch for .NET Core.\r\n\r\nWhat does it mean for you as a user:\r\n\r\n1. All editions (ASP.NET 4, ASP.NET Core, WinForms and WPF) are based on the same code base. It means fewer errors and faster fixes and updates.\r\n\r\n2. All EasyQuery assemblies are distributed via NuGet now. No need to download and run some setup file. The practice which was good in the 1990s but is rather outdated now. :)\r\nTo use your license - you just need a special license key which is literally one line of code in your program. The key can be acquired in the Client's Area of our website at any time.\r\n\r\n3. All web editions of EasyQuery (ASP.NET 4 MVC, ASP.NET WebForms, and ASP.NET Core) use now the same client-side library EasyQuery.JS which is quite modern, written on TypeScript and distributed via NPM. Again, it means fewer bugs and quicker response to any possible problem or feature request.\r\n\r\n4. All sample projects are available on GitHub now: https://github.com/easyquery\r\nThere are 2 repositories. The first one contains the samples for .NET Framework 4 editions (WPF, WinForms, ASP.NET) and the second - for ASP.NET Core.\r\n\r\nFor more information about the new version please read the \"Version 5.2 release notes\" article on our website.\r\nhttps://korzh.com/easyquery/docs/release-notes/version-5-2  \r\nand the upgrade instructions:\r\nhttps://korzh.com/easyquery/docs/upgrade-instructions/net4-editions-from-3-x-to-5-x\r\n\r\nNB:\r\nTo celebrate this major update we would like to offer a \"no penalty\" price for software maintenance renewal to all EasyQuery users who missed their expiration dates for the renewal some time ago and now would like to upgrade to the latest version. To get the original price you don't need to do something special. Just initiate the renewal on your Client's Area page (https://korzh.com/account). \r\nThe offer ends on August 24, 2019. \r\n\r\n--\r\nBest regards, EasyQuery team.\r\nhttps://korzh.com/easyquery\r\n \r\nP.S.\r\nYou have received this message as a registered user of EasyQuery library (or corresponding product)\r\nIf you don't want to receive such emails from us further - please use the following link to unsubscribe:\r\nhttps://korzh.com/account/emailprefs?a={{ contact.email }}Hash",
+      "ContentType": "text/plain"
+    },
+    {
+      "Id": 106,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Product.NewVersion.EasyQueryJS42",
+      "Subject": "New product: EasyQuery.JS",
+      "Content": "Dear {{ contact.name }},\r\n\r\nYou use (or used to use) EasyQuery library. We humbly hope that you like it and your customers are happy with it as well.\r\n\r\nNow we are glad to announce our new product - EasyQuery.JS. It's a JavaScript library that allows you to embed advanced search and/or data-filtering functionality into any web application.\r\n\r\nJust imagine: you can use all the power of EasyQuery UI with any server-side platform or framework like PHP, Node.JS, Java, etc. So if you or your colleagues develop web applications and use some non-.NET backend platform - this product is what you need.\r\n\r\nFor more information - please visit EasyQuery.JS web page: https://korzh.com/easyquery/javascript \r\n\r\n--\r\nBest regards, EasyQuery team.\r\nhttps://korzh.com/easyquery\r\n \r\nP.S.\r\nYou have received this message as a registered user of EasyQuery library.\r\nIf you don't want to receive such emails from us further - please use the following link to unsubscribe:\r\nhttps://korzh.com/unsubscribe?email={{ contact.email }}",
+      "ContentType": "text/plain"
+    },
+    {
+      "Id": 107,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Product.NewVersion.EasyQueryJS60",
+      "Subject": "EasyQuery.NET 5.3 + EasyQuery.JS 6.0 release",
+      "Content": "Dear {{ contact.name }}\r\n\r\nWe are happy to announce the release of version 5.3 of EasyQuery for .NET together with version 6.0 of EasyQuery.JS! \r\n\r\nHere is a shortlist of the changes made in these releases:\r\n\r\n1. EasyQuery.JS is a separate product now\r\n\r\nEasyQuery.JS now can be used separately from EasyQuery.NET and has two main editions: Community (free, LGPL-3.0 license) and Enterprise (more features than in Community editions, needs a license key to operate correctly).\r\n\r\nThe license for EasyQuery for ASP.NET (Core) now includes Enterprise edition of EasyQuery.JS as well, so you can find the license key for it in your Client’s Area Dashboard (https://korzh.com/account)\r\n\r\n2. JQuery is not needed anymore\r\n\r\nBefore version 6.0 EasyQuery.JS required JQuery and JQuery UI libraries for basic DOM operations and rendering of UI widgets. Now those dependencies have gone. You no longer need to include JQuery on your webpages or to reference its packages in your web app. \r\n\r\nDespite such significant changes in EasyQuery.JS, the upgrade process is rather simple. You just need to throw away JQuery (except the case if you need it for some purpose in your project) and add one line of code (to set the license key). You will find the upgrade instructions in the release notes (see the link below).\r\n\r\n3. Few small improvements in EasyQuery.NET\r\n\r\n * Better support for SQLite and PostgreSQL\r\n * Automatic processing of multi-reference between 2 tables\r\n * Better table joining algorithm\r\n\r\nFor more information, please read the \"release notes\" article:\r\nhttps://korzh.com/easyquery/docs/release-notes/version-5-3\r\n\r\nAll sample projects are available on GitHub as usual: https://github.com/easyquery\r\n\r\n--\r\nKind regards, EasyQuery team.\r\nhttps://korzh.com/easyquery\r\n \r\nP.S.\r\nYou have received this message as a registered user of EasyQuery library (or corresponding product)\r\nIf you don't want to receive such emails from us further - please use the following link to unsubscribe:\r\nhttps://korzh.com/account/emailprefs?a={{ contact.email }}Hash",
+      "ContentType": "text/plain",
+      "Folder": "ReleaseNotifications"
+    },
+    {
+      "Id": 108,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Product.NewVersion.EasyReport10",
+      "Subject": "EasyReport web-service release",
+      "Content": "Easy.Report (https://easy.report) can be considered as a comprehensive live demo of the features provided by EasyQuery library.    \r\nIt's web-service that allows you to connect to your own databases, build simple reports and export the results to CSV or Excel (via HTML). You can also add more users to your team account and share your reports among them.  \r\nThe service is free for the moment. We also plan to release its stand-alone version as an ASP.NET Core 2.x application which you will be able can use as a template for your own projects. \r\nLet us know if you are interested and we will send you a special offer this new product.\r\n",
+      "ContentType": "text/plain"
+    },
+    {
+      "Id": 109,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Product.NewVersion.Localizer",
+      "Subject": "Localizer 4.16 release",
+      "Content": "Dear {{ contact.name }},\r\n\r\nWe are glad to announce version 4.16.0 release for our Localizer toolkit.\r\nThis version includes support for RAD Studio 10.3 Rio and few small enhancements. You may find more detailed list of changes here: https://korzh.com/news/localizer-version-4.16.0\r\n\r\nTo make an upgrade just sign in to the Client Area on our website (https://korzh.com/account) and download the latest version.\r\n\r\nFor more detailed instructions please read:\r\nhttp://docs.korzh.com/common/get-the-latest-version\r\n\r\nFeel free to contact us with any question regarding new version and upgrade process.\r\n\r\n--\r\nBest regards, Localizer team.\r\nhttps://korzh.com\r\n\r\nP.S.\r\nThis message was sent to you since you are a registered user of {{ product.name }}.   \r\nIf you don't want to receive such emails from us further - please use the following link to unsubscribe:\r\nhttps://korzh.com/unsubscribe?email={{ contact.email }}",
+      "ContentType": "text/plain"
+    },
+    {
+      "Id": 110,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Product.NewVersion.SimpleQuery",
+      "Subject": "SimpleQuery 4.19 release",
+      "Content": "Dear {{ contact.name }},\r\n\r\nWe are glad to announce version 4.19.0 release for our SimpleQuery library.\r\nThis version includes support for RAD Studio 10.2 Tokyo and few small enhancements.\r\n\r\nTo make an upgrade just sign in to the Client Area on our web-site (https://korzh.com/account) and download the latest version.\r\n\r\nFor more detailed instructions please read:\r\nhttp://docs.korzh.com/common/get-the-latest-version\r\n\r\nFeel free to contact us with any question regarding new version and upgrade process.\r\n\r\n--\r\nBest regards, {{ product.name }} team.\r\nhttps://korzh.com\r\n\r\nP.S.\r\nThis message was sent to you since you are a registered user of {{ product.name }}.   \r\nIf you don't want to receive such emails from us further - please use the following link to unsubscribe:\r\nhttps://korzh.com/unsubscribe?email={{ contact.email }}",
+      "ContentType": "text/plain"
+    },
+    {
+      "Id": 111,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Promo.Covid19Discount",
+      "Subject": "35% discount on EasyQuery",
+      "Content": "<html>\r\n  <head> </head>\r\n\r\n  <body>\r\n    <table\r\n      border=\"0\"\r\n      cellpadding=\"0\"\r\n      cellspacing=\"0\"\r\n      height=\"100%\"\r\n      style=\"\r\n        margin: 0px;\r\n        padding: 0px;\r\n        border: 0px;\r\n        background-color: #f3f3f3;\r\n        font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;\r\n        font-size: 16px;\r\n        line-height: 20px;\r\n      \"\r\n      width=\"100%\"\r\n    >\r\n      <tbody>\r\n        <tr>\r\n          <td align=\"center\" valign=\"top\">\r\n            <table\r\n              border=\"0\"\r\n              cellpadding=\"0\"\r\n              cellspacing=\"0\"\r\n              style=\"margin: 0px; padding: 0px; border: 0px; width: 800px;\"\r\n              width=\"600px\"\r\n            >\r\n              <tbody>\r\n                <tr>\r\n                  <td\r\n                    style=\"\r\n                      padding-top: 50px;\r\n                      padding-right: 16px;\r\n                      padding-bottom: 50px;\r\n                      padding-left: 16px;\r\n                    \"\r\n                  ></td>\r\n                </tr>\r\n                <tr\r\n                  style=\"\r\n                    background-color: #ffffff;\r\n                    color: #3a3f46;\r\n                    font-size: 16px;\r\n                    line-height: 24px;\r\n                  \"\r\n                >\r\n                  <td style=\"padding: 55px 70px;\">\r\n                    <p>Hello <strong>{{ contact.name }}</strong>,</p>\r\n                    <p>\r\n                      COVID-19 and quarantine measures affect a lot of businesses around the world.\r\n                    </p>\r\n                    <p>\r\n                      Times are hard for us all. Realizing this, we decided to drop prices for the <strong>EasyQuery</strong> library making them <strong>35% smaller</strong>. If you ever thouhgt about purchasing EasyQuery - this is probably the best time to do it.\r\n\t\t\t\t\t</p>\r\n                    <p>\r\n                      This offer expires on <strong>June 1st, 2020</strong>.\r\n                    </p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t  To initiate the purchase, press the button below. Select the EasyQuery edition and the license type on the page opened, and click \"Buy now\" for selected. The discount will be applied automatically.\r\n\t\t\t\t\t</p>\r\n                    <p>\r\n                      <a\r\n                        style=\"\r\n                          padding: 12px 10px;\r\n                          text-align: center;\r\n                          display: block;\r\n                          background: #5893dd;\r\n                          color: #fff;\r\n                          text-decoration: none;\r\n                          text-transform: uppercase;\r\n                          width: max-content;\r\n                          margin: 40px auto;\r\n                          max-width: 300px;\r\n                        \"\r\n                        href=\"https://korzh.com/easyquery/licensing\"\r\n                        >Get EasyQuery with 35% discount</a>\r\n                    </p>\r\n                    <p>\r\n                      Please note: if you purchase a Company license of EasyQuery, you also get a license for <a href=\"https://korzh.com/easy-report-starter-kit\">EasyReport Starter Kit</a> and 1 hour of online consulting about applying EasyQuery to your project (using Skype or Teams by your choice).\r\n\t\t\t\t\t</p>\r\n\r\n                    <hr style=\"margin-top: 40px;\" />\r\n                    <p>\r\n                      Kind regards, <a href=\"https://korzh.com/easyquery\">EasyQuery team</a>\r\n                    </p>\r\n                  </td>\r\n                </tr>\r\n                <tr>\r\n                  <td\r\n                    style=\"\r\n                      padding-top: 50px;\r\n                      padding-right: 16px;\r\n                      padding-bottom: 50px;\r\n                      padding-left: 16px;\r\n                    \"\r\n                  ></td>\r\n                </tr>\r\n              </tbody>\r\n            </table>\r\n          </td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n  </body>\r\n</html>",
+      "ContentType": "text/html"
+    },
+    {
+      "Id": 112,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Promo.WelcomeBackDiscount201911",
+      "Subject": "EasyQuery.JS 6.0 and maintenance subscription offer",
+      "Content": "Hello {{ contact.name }},\r\n\r\nWe have great news about EasyQuery library that we would like to share with you. \r\n\r\n1. EasyQuery.JS 6.0\r\n\r\nIn a few next days we are going to release a big update to the client-side part of the EasyQuery library - EasyQuery.JS 6.0. \r\n\r\nThe client-side part was completely redesigned in the upcoming new version. Now it could be used as a separate library on any platform (not only with a .NET back-end). The visual part does not depend on JQuery anymore and can be easily integrated with other frameworks and libraries (Angular, React, Vue) and third-party visual components (charts, grids, etc).\r\nThe latest BETA version is already published and you can test with our ASP.NET Core samples:\r\nhttps://github.com/easyquery/AspNetCoreSamples/tree/eqjs-6.0.0\r\n\r\n\r\n2. 50% discount on subscription renewal\r\n\r\nWe know that you own an EasyQuery license with an expired software maintenance subscription. To celebrate this major release we would like to offer you to renew it for ONLY A HALF of the usual price. With an active subscription you will get the new version for free right after the release. \r\n\r\nTo take advantage of this offer - just sign in to your account on Korzh.com (https://korzh.com/account). If you don’t remember the password, you may reset it right on the sign-in page. Then find your license for EasyQuery and click on the “Renew Subscription” link there.\r\n\r\nThis offer is valid through November 30. After that date, the regular price will apply.\r\n--\r\nKind regards, EasyQuery team.\r\nhttps://korzh.com/easyquery",
+      "ContentType": "text/plain"
+    },
+    {
+      "Id": 113,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "SubscriptionExpirationReminder",
+      "Subject": "{{ product.name }}: subscription expiration reminder",
+      "Content": "Hello {{ contact.name }},\r\n\r\nAs you probably know we provide annual subscriptions for our products to give you access to the latest releases and support.\r\n\r\nYour subscription for {{ product.name }} is about to expire on {{ license.expired }}. \r\nUp to this date, you are able to renew the subscription by the low price (about 25% of the original product price). \r\nOf course, you will be able to renew the expired subscription after that date (so-called \"welcome back\"), but it will cost you more than twice as much (about 70%).\r\n\r\nTo renew your subscription please visit Client's Area of our website: https://korzh.com/account\r\nYou will see the list of licenses you have. Click on \"Renew\" link for the necessary license, then fill the order form and click \"Submit Order\".\r\n\r\nPlease note: you will possibly be asked to sign in to access this page. Use your email address and the password you got in the product registration message. \r\n\r\nWe tried to answer your prospective questions in the section below. Feel free to ask any additional questions to techsupport@korzh.com.\r\n\r\n[Questions & Answers]\r\n\r\nQ: Why do I need to renew the subscription?\r\nA: Valid subscription allows you to download new versions of the Product. When the new version is released you don't need to pay for the upgrade - just download it from our Members Area.\r\n\r\nQ: Do I lose the right to use the Product if the subscription is expired?\r\nA: No. Your license is perpetual.\r\n\r\nQ: What do I lose letting the subscription to expire?\r\nA: With the expired subscription you will no longer have access to new releases and support. \r\nYou will be able to renew the expired subscription (so-called \"welcome back\"), but it will cost you more than twice as much.\r\n\r\nQ: What is the end date of regular (cheap) subscription renewal?\r\nA: The renewal should be done before the subscription expiration date. You can find the expiration date on the Licenses page of our Members Area.\r\nThe purchased Product gets the one-year subscription starting from the purchase date. Each renewal adds one year to the current covered period.\r\n\r\nQ: What is the end date of \"welcome back\" (more expensive) subscription renewal?\r\nA: There is no final date. You can do it anytime. \r\n\r\n--\r\nBest regards, {{ product.name }} team.\r\nhttps://korzh.com\r\n\r\nP.S.\r\nYou received this message as a registered user of {{ product.name }}. \r\nIf you don't want to receive such emails from us further - please use the following link to unsubscribe:\r\nhttps://korzh.com/unsubscribe?email={{ contact.email }}",
+      "ContentType": "text/plain"
+    },
+    {
+      "Id": 114,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Ticket.AssignedTo",
+      "Subject": "[Ticket #{{ ticket.id }}] assigned to you. {{ product.tag}}, {{ ticket.title }}",
+      "Content": "[Ticket #{{ ticket.id }}] has been assigned to you:\r\n{{ ticket.managerUrl}}\r\n\r\nClient: {{ client.name }} from {{ client.country}}\r\nClient status: @Client.Status\r\nProduct: @Product.Name\r\n\r\nDescription:\r\n--------------------\r\n{{ ticket.content }}\r\n---------------------\r\n\r\n",
+      "ContentType": "text/plain",
+      "Folder": "Tickets"
+    },
+    {
+      "Id": 115,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Ticket.AutoResolved2Client",
+      "Subject": "[Ticket #{{ ticket.id }}]: status changed to \"Resolved\"",
+      "Content": "Hello, {{ client.name }},\r\n\r\nThis is a notification about the status of your support request #{{ ticket.id }} ({{ ticket.title }})\r\n\r\nAs we can see, your request has been in status \"Pending\" for more than 10 days since last response from our support team. \r\nThat is why its status has been changed to \"Solved\" automatically. \r\n\r\nIn case you still have some questions or you think that your problem isn't resolved completely - please add a new comment at:\r\n{{ ticket.clientUrl }}\r\n\r\n--\r\nBest regards, Korzh.com support\r\nhttps://korzh.com\r\n",
+      "ContentType": "text/plain",
+      "Folder": "Tickets"
+    },
+    {
+      "Id": 116,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Ticket.New",
+      "Subject": "New ticket for {{ product.tag}}: #{{ ticket.id }} / {{ ticket.title }}",
+      "Content": "New ticket arrived:\r\n{{ ticket.managerUrl}}\r\n\r\nClient: {{ client.name }} from {{ client.country}}\r\nClient status: @Client.Status\r\nProduct: @Product.Name\r\n\r\n\r\n",
+      "ContentType": "text/plain",
+      "Folder": "Tickets"
+    },
+    {
+      "Id": 117,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Ticket.Received",
+      "Subject": "Automatic reply [Ticket #{{ ticket.id }}]: {{ ticket.title }}",
+      "Content": "Dear {{ client.name }},\r\n\r\nWe have received your request and will reply to you shortly.\r\nYou can check the status of your request at:\r\n{{ ticket.clientUrl }}\r\n\r\n--\r\nBest regards, Korzh.com support team\r\nhttps://korzh.com",
+      "ContentType": "text/plain"
+    },
+    {
+      "Id": 118,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Ticket.Reply2Client",
+      "Subject": "[Ticket #{{ ticket.id }}] New answer: {{ reply.excerpt}}",
+      "Content": "You've got new answer from {{ manager.name }} on your request: [#{{ ticket.id }}: {{ ticket.title }}]\r\n\r\nUse the following link to read the comment and continue the conversation:\r\n{{ ticket.clientUrl }}\r\n\r\n--\r\nBest regards, Korzh.com support\r\nhttps://korzh.com",
+      "ContentType": "text/plain",
+      "Folder": "Tickets"
+    },
+    {
+      "Id": 119,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Ticket.Reply2Manager",
+      "Subject": "[Ticket #{{ ticket.id }}] New comment: {{ reply.excerpt}}",
+      "Content": "New comment submitted by @Reply.Author on ticket [#{{ ticket.id }}: {{ ticket.title }}]:\r\n{{ ticket.managerUrl}}\r\n\r\nReply content:\r\n-----------\r\n@Reply.Content\r\n-----------\r\n",
+      "ContentType": "text/plain"
+    },
+    {
+      "Id": 120,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Ticket.ReplyFromClient",
+      "Subject": "[Ticket #{{ ticket.id }}] New comment: {{ reply.excerpt}}",
+      "Content": "New comment submitted by {{ client.name }}:\n\n @Reply.Content",
+      "ContentType": "text/plain"
+    },
+    {
+      "Id": 121,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Ticket.ReplyFromSupport",
+      "Subject": "[Ticket #{{ ticket.id }}] New answer: {{ reply.excerpt}}",
+      "Content": "You've got new answer from {{ manager.name }}:\r\n\r\n @Reply.Content",
+      "ContentType": "text/plain",
+      "Folder": "Tickets"
+    },
+    {
+      "Id": 122,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Ticket.StatusChanged",
+      "Subject": "[Ticket #{{ ticket.id }}] Status changed",
+      "Content": "Status Changed for ticket #{{ ticket.id }} ({{ ticket.title }}):\r\n{{ ticket.managerUrl}}\r\n\r\nOld status: {{ ticket.prevStatus }}\r\nNew status: {{ ticket.status }}\r\n",
+      "ContentType": "text/plain",
+      "Folder": "Tickets"
+    },
+    {
+      "Id": 123,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Signup.Confirmation.Trial",
+      "Subject": "Korzh.com Signup Confirmation",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n<p> Hello <strong>{{ contact.name }}</strong>, </p>\r\n\r\n<p>It’s great to see your interest in EasyQuery framework!</p>\r\n<p>One step left to do. Press the button below to confirm your email address. This will move you to the page that contains your trial keys and detailed instructions on how to apply EasyQuery with your project.</p>\r\n<p>\r\n\t<a\r\n\t\tstyle=\"\r\n\t\t  padding: 12px 10px;\r\n\t\t  text-align: center;\r\n\t\t  display: block;\r\n\t\t  background: #5893dd;\r\n\t\t  color: #fff;\r\n\t\t  text-decoration: none;\r\n\t\t  text-transform: uppercase;\r\n\t\t  width: max-content;\r\n\t\t  margin: 40px auto;\r\n\t\t  max-width: 300px;\r\n\t\t\"\r\n\t\thref=\"https://localhost:44301/signup-confirm?a={{ contact.token }}&intent=get-trial&vi={{ visitorId }}&ptag={{ productTag }}\"\r\n\t>Confirm email\r\n\t</a>\r\n</p>\r\n<p>\r\n    In case you have any questions or suggestions - please <a href=\"https://korzh.com/support\" target=\"_blank\">contact us</a>.\r\n</p>\r\n<p>\r\n    Welcome on board!\r\n</p>\r\n\r\n<div style=\"margin-top: 40px; padding-top: 10px; border-top: 2px solid #f3f3f3; color: #3a3f46;\">\r\n\tKind regards, <a href=\"https://korzh.com/easyquery\">EasyQuery</a> team\r\n</div>\r\n{% endmarkdown %}",
+      "ContentType": "text/html",
+      "LayoutId": 1,
+      "Folder": "Auth"
+    },
+    {
+      "Id": 124,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Signup.Confirmation",
+      "Subject": "Korzh.com Signup Confirmation",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n<p> Hello <strong>{{ contact.name }}</strong>, </p>\r\n\r\n<p>It’s great to see your interest in Korzh.com products and services!</p>\r\n<p>One step left to do. Press the button below to confirm your email address. This will move you to your account page on Korzh.com.</p>\r\n<p>\r\n\t<a\r\n\t\tstyle=\"\r\n\t\t  padding: 12px 10px;\r\n\t\t  text-align: center;\r\n\t\t  display: block;\r\n\t\t  background: #5893dd;\r\n\t\t  color: #fff;\r\n\t\t  text-decoration: none;\r\n\t\t  text-transform: uppercase;\r\n\t\t  width: max-content;\r\n\t\t  margin: 40px auto;\r\n\t\t  max-width: 300px;\r\n\t\t\"\r\n\t\thref=\"https://localhost:44301/signup-confirm?a={{ contact.token }}&intent={{ intent }}\"\r\n\t>Confirm email\r\n\t</a>\r\n</p>\r\n<p>\r\n    In case you have any questions or suggestions - please <a href=\"https://korzh.com/support\" target=\"_blank\">contact us</a>.\r\n</p>\r\n<p>\r\n    Welcome!\r\n</p>\r\n\r\n<div style=\"margin-top: 40px; padding-top: 10px; border-top: 2px solid #f3f3f3; color: #3a3f46;\">\r\n\tKind regards, <a href=\"https://korzh.com\">Korzh.com</a> team\r\n</div>\r\n{% endmarkdown %}",
+      "ContentType": "text/html",
+      "LayoutId": 1,
+      "Folder": "Auth"
+    },
+    {
+      "Id": 125,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Product.NewVersion.EasyQuery70",
+      "Subject": "EasyQuery version 7.0 release",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n\r\nDear {{ contact.name }}\r\n\r\nWe are happy to announce the next major update of EasyQuery library - version 7.0 (NB: the latest update is 7.0.1 already). \r\nBoth EasyQuery .NET packages and JS scripts were updated and now have the synchronized version number. \r\n\r\nThis release is more about code refactoring and unification of EasyQuery's APIs than new features (however, you will see plenty of them too), \r\nso the upgrade of your codebase to version 7.0 is highly recommended. \r\nAll [our examples](https://github.com/easyquery/DotNetSamples) were upgraded to 7.0 already and we plan to completely update code examples and tutorials in our documentation within the next 1-2 months.\r\n\r\nFor more information about the release please refer to the [Release Notes](https://korzh.com/easyquery/docs/release-notes/version-7-0). \r\nYou can take a look at [Changelog](https://korzh.com/easyquery/docs/changelog) document for the full list of changes. And here you can find the detailed [upgrade instructions](https://korzh.com/easyquery/docs/upgrade-instructions/version-7-0).\r\n\r\nPlease [let us know](https://korzh.com/support) if you have any questions or comments about this release.\r\n\r\n--    \r\nKind regards, EasyQuery team.\r\nhttps://korzh.com/easyquery\r\n\r\n{% endmarkdown %}",
+      "ContentType": "text/html",
+      "LayoutId": 2
+    },
+    {
+      "Id": 126,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Trial.EQN.Message00",
+      "Subject": "EasyQuery first steps",
+      "Content": "{% assign text_style = 'color: #3A3F46; font-size: 16px; line-height: 24px; margin-block-start: 1em; margin-block-end: 1em;' %}\r\n{% markdown p_style: text_style, li_style: text_style %}\r\n<p> Hello <strong>{{ contact.name }}</strong>, </p>\r\n\r\n<p>Congratulations! Your trial period for EasyQuery framework has been started.</p>\r\n\r\n<p>Here are some guidelines on how to get started using EasyQuery in your project(s). \r\nTo simplify the adaptation process we have split the whole instruction on several small steps so you could get a working project on each of these steps.\r\n</p>\r\n\r\n<ol>\r\n    <li>\r\n        <p><strong>Choose your scenario and try the sample project</strong></p> \r\n\t\t<p>\r\n        EasyQuery can help you to implement <a href=\"https://korzh.com/demo/easyquery-asp-net-core-razor\">several different scenarios</a> of working with data in your app. \r\n\t\t</p>\r\n\t\t<p>\r\n        It can be a page for advanced search, data filtering functionality on your CRUD page, or a full-scale solution for ad-hoc reporting. \r\n        We have sample projects for each of these different scenarios in our <a href=\"https://github.com/easyquery/DotNetSamples\">GitHub repository with EasyQuery samples</a>. \r\n\t\t</p>\r\n\t\t<p>\r\n        So, the best way to start is to choose the one that suits your requirements the most, and then to install and run the corresponding sample project.\r\n\t\t</p>\r\n    </li>\r\n    <li>\r\n        <p><strong>Modify the sample to make it work with your data</strong></p> \r\n\t\t<p>\r\n        The next step will be to modify the sample so it could work with your data model and your database. \r\n        This process is described in detail <a href=\"https://korzh.com/easyquery/docs/getting-started/from-sample-to-your-own-project/connect-to-your-database\">in this article</a>.\r\n\t\t</p>\r\n    </li>\r\n    <li>\r\n        <p><strong>Move the code to your project</strong></p>\r\n\t\t<p>\r\n        When you get a working application that implements the necessary scenario and already uses your data, you can just copy/paste the implementation to your project.\r\n        The <a href=\"https://korzh.com/easyquery/docs/getting-started/from-sample-to-your-own-project/copying-the-easyquerys-code-from-sample-to-your-project\">following article</a>\r\n        describes the steps you need to do for that.\r\n\t\t</p>\r\n    </li>\r\n</ol>\r\n\r\n<p>Some useful links that may help you in the process:</p>\r\n<ul>\r\n    \r\n<li><a href=\"https://korzh.com/easyquery/docs\">EasyQuery documentation and tutorials</a></li>\r\n<li><a href=\"https://korzh.com/account\">Your account page</a> on Korzh.com website. \r\n    Here you can find all information about your license, as well as the links to the documentation (including <a href=\"https://korzh.com/account/help/lic-{{license.userId}}\">this guide</a> and demos.\r\n</li>\r\n<li><a href=\"https://korzh.com/support\">Support request form</a> for your questions or suggestions. We will be glad to help you.</li>\r\n<li><a href=\"https://twitter.com/easyquery\">EasyQuery's account on Twitter</a>. Follow it to get the latest updates instantly.</li>\r\n</ul>\r\n\r\n<br />\r\n<p>\r\n    Welcome on board!\r\n</p>\r\n\r\n<div style=\"margin-top: 40px; padding-top: 10px; border-top: 2px solid #f3f3f3; color: #3a3f46; font-size: 16px;\">\r\n\tKind regards, <a href=\"https://korzh.com/easyquery\">EasyQuery</a> team\r\n</div>\r\n{% endmarkdown %}",
+      "ContentType": "text/html",
+      "LayoutId": 1,
+      "Folder": "Product-Trial"
+    },
+    {
+      "Id": 127,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Signup.ERSK",
+      "Subject": "Easy Report Starter Kit first steps",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n<p> Hello <strong>{{ contact.name }}</strong>, </p>\r\n\r\n<p>Thank you for your interest in Easy Report Starter Kit (ERSK).</p> \r\n<p>We're sure you will find our solution template useful for creating your next ASP.NET Core reporting application.</p>\r\n\r\n<p>One step left to do. Please click the button below to confirm your email address and start downloading of ERSK Community.</p>\r\n<p>\r\n\t<a\r\n\t\tstyle=\"\r\n\t\t  padding: 12px 10px;\r\n\t\t  text-align: center;\r\n\t\t  display: block;\r\n\t\t  background: #5893dd;\r\n\t\t  color: #fff;\r\n\t\t  text-decoration: none;\r\n\t\t  text-transform: uppercase;\r\n\t\t  width: max-content;\r\n\t\t  margin: 40px auto;\r\n\t\t  max-width: 300px;\r\n\t\t\"\r\n\t\thref=\"https://localhost:44301/account/{{intent}}/?tkn={{contact.token}}&ctag={{commodityTag}}&ptag={{productTag}}&diid={{diid}}\r\n\t>Get ERSK Community\r\n\t</a>\r\n</p>\r\n<p>\r\n    <small>This link will expire in 2 hours and can only be used once. <br />\r\n    In case you have any questions or suggestions - please <a href=\"https://korzh.com/support\" target=\"_blank\">contact us</a>.\r\n    </small>\r\n</p>\r\n\r\n\r\n<p>\r\nPlease take a look at <a href=\"https://korzh.com/easy-report-starter-kit/docs/geting-started\">getting started instructions</a> to run the application for the first time.\r\n</p>\r\n<p>\r\nTo learn more about the application architecture, basic concepts, domain object and services, please read \r\n<a href=\"https://korzh.com/easy-report-starter-kit/docs/solution-structure\">Solution Structure</a> section on ERSK documentation website.\r\n</p>\r\n\r\n\r\n<div style=\"margin-top: 40px; padding-top: 10px; border-top: 2px solid #f3f3f3; color: #3a3f46;\">\r\n\tKind regards, <a href=\"https://korzh.com/easy-report-starter-kit\">EasyReport Starter Kit</a> team\r\n</div>\r\n{% endmarkdown %}",
+      "ContentType": "text/html",
+      "LayoutId": 3,
+      "Folder": "Auth"
+    },
+    {
+      "Id": 128,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Signup.Default",
+      "Subject": "Complete registration on Korzh.com",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n<p> Hello <strong>{{ contact.name }}</strong>, </p>\r\n\r\n<p>It’s great to see your interest in Korzh.com products and services!</p>\r\n<p>One step left to do. Please click  the button below to confirm your email address and {{intentDesc}}.</p>\r\n<p>\r\n\t<a\r\n\t\tstyle=\"\r\n\t\t  padding: 12px 10px;\r\n\t\t  text-align: center;\r\n\t\t  display: block;\r\n\t\t  background: #5893dd;\r\n\t\t  color: #fff;\r\n\t\t  text-decoration: none;\r\n\t\t  text-transform: uppercase;\r\n\t\t  width: max-content;\r\n\t\t  margin: 40px auto;\r\n\t\t  max-width: 300px;\r\n\t\t\"\r\n\t\thref=\"https://localhost:44301/account/{{intent}}/?tkn={{contact.token}}&ctag={{commodityTag}}&ptag={{productTag}}&diid={{diid}}\"\r\n\t>{{callToAction}}\r\n\t</a>\r\n</p>\r\n<p>\r\n    <small>This link will expire in 2 hours and can only be used once. <br />\r\n    In case you have any questions or suggestions - please <a href=\"https://korzh.com/support\" target=\"_blank\">contact us</a>.\r\n    </small>\r\n</p>\r\n<p>\r\n    Welcome!\r\n</p>\r\n\r\n<div style=\"margin-top: 40px; padding-top: 10px; border-top: 2px solid #f3f3f3; color: #3a3f46;\">\r\n\tKind regards, <a href=\"https://korzh.com\">Korzh.com</a> team\r\n</div>\r\n{% endmarkdown %}",
+      "ContentType": "text/html",
+      "LayoutId": 1,
+      "Folder": "Auth"
+    },
+    {
+      "Id": 129,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Signin.Default",
+      "Subject": "Sign in to Korzh.com",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n<p> Hello <strong>{{ contact.name }}</strong>, </p>\r\n\r\n<p>It’s great to see your interest in Korzh.com products and services!</p>\r\n<p>One step left to do. Press the button below to confirm your email address. This will move you to your account page on Korzh.com.</p>\r\n<p>\r\n\t<a\r\n\t\tstyle=\"\r\n\t\t  padding: 12px 10px;\r\n\t\t  text-align: center;\r\n\t\t  display: block;\r\n\t\t  background: #5893dd;\r\n\t\t  color: #fff;\r\n\t\t  text-decoration: none;\r\n\t\t  text-transform: uppercase;\r\n\t\t  width: max-content;\r\n\t\t  margin: 40px auto;\r\n\t\t  max-width: 300px;\r\n\t\t\"\r\n\t\thref=\"https://localhost:44301/account/{{intent}}/?tkn={{contact.token}}&ctag={{commodityTag}}&ptag={{productTag}}&diid={{diid}}\"\r\n\t>Confirm email and sign in\r\n\t</a>\r\n</p>\r\n<p>\r\n<small>\r\nThis link will expire in 2 hours and can only be used once.\r\n</small>\r\n</p>\r\n\r\n<p>\r\n<small>\r\nIf the button above doesn’t work, paste this link into your web browser:\r\n<pre>\r\nhttps://localhost:44301/account/{{ intent }}/?tkn={{ contact.token }}    \r\n</pre>\r\n</small>\r\n</p>\r\n\r\n<div style=\"margin-top: 40px; padding-top: 10px; border-top: 2px solid #f3f3f3; color: #3a3f46;\">\r\n\tKind regards, <a href=\"https://korzh.com\">Korzh.com</a> team\r\n</div>\r\n{% endmarkdown %}",
+      "ContentType": "text/html",
+      "LayoutId": 1,
+      "Folder": "Auth"
+    },
+    {
+      "Id": 130,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "GetPerk.ERSK",
+      "Subject": "EasyReport Starter Kit download",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n<p> Hello <strong>{{ contact.name }}</strong>, </p>\r\n\r\n<p>You or someone else uses this email address to get EasyReport Starter Kit Community package.</p>\r\n</p>\r\n<p>\r\nIf it was you, click the button below to start downloading. Otherwise, just  ignore it.\r\n</p>\r\n<p>\r\n\t<a\r\n\t\tstyle=\"\r\n\t\t  padding: 12px 10px;\r\n\t\t  text-align: center;\r\n\t\t  display: block;\r\n\t\t  background: #5893dd;\r\n\t\t  color: #fff;\r\n\t\t  text-decoration: none;\r\n\t\t  text-transform: uppercase;\r\n\t\t  width: max-content;\r\n\t\t  margin: 40px auto;\r\n\t\t  max-width: 300px;\r\n\t\t\"\r\n\t\thref=\"https://korzh.com/account/{{intent}}/?tkn={{contact.token}}&ctag={{commodityTag}}&ptag={{productTag}}&diid={{diid}}\"\r\n\t>Download ERSK Community\r\n\t</a>\r\n</p>\r\n<p>\r\n    <small>This link can only be used once. <br />\r\n    In case you have any questions or suggestions - please <a href=\"https://korzh.com/support\" target=\"_blank\">contact us</a>.\r\n    </small>\r\n</p>\r\n\r\n<div style=\"margin-top: 40px; padding-top: 10px; border-top: 2px solid #f3f3f3; color: #3a3f46;\">\r\n\tKind regards, <a href=\"https://korzh.com/easy-report-starter-kit\">EasyReport Starter Kit</a> team\r\n</div>\r\n{% endmarkdown %}",
+      "ContentType": "text/html",
+      "LayoutId": 2,
+      "Folder": "Auth"
+    },
+    {
+      "Id": 131,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Signin.ERSK-FREE",
+      "Subject": "EasyReport Starter Kit download",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n<p> Hello <strong>{{ contact.name }}</strong>, </p>\r\n\r\n<p>You or someone else uses this email address to get EasyReport Starter Kit Community package.</p>\r\n</p>\r\n<p>\r\nIf it was you, click the button below to start downloading. Otherwise, just  ignore it.\r\n</p>\r\n<p>\r\n\t<a\r\n\t\tstyle=\"\r\n\t\t  padding: 12px 10px;\r\n\t\t  text-align: center;\r\n\t\t  display: block;\r\n\t\t  background: #5893dd;\r\n\t\t  color: #fff;\r\n\t\t  text-decoration: none;\r\n\t\t  text-transform: uppercase;\r\n\t\t  width: max-content;\r\n\t\t  margin: 40px auto;\r\n\t\t  max-width: 300px;\r\n\t\t\"\r\n\t\thref=\"https://korzh.com/account/{{intent}}/?tkn={{contact.token}}&ctag={{commodityTag}}&ptag={{productTag}}&diid={{diid}}\r\n\t>Download ERSK Community\r\n\t</a>\r\n</p>\r\n<p>\r\n    <small>This link can only be used once. <br />\r\n    In case you have any questions or suggestions - please <a href=\"https://korzh.com/support\" target=\"_blank\">contact us</a>.\r\n    </small>\r\n</p>\r\n\r\n\r\n<p>\r\nPlease take a look at <a href=\"https://korzh.com/easy-report-starter-kit/docs/geting-started\">getting started instructions</a> to run the application for the first time.\r\n</p>\r\n<p>\r\nTo learn more about the application architecture, basic concepts, domain object and services, please read \r\n<a href=\"https://korzh.com/easy-report-starter-kit/docs/solution-structure\">Solution Structure</a> section on ERSK documentation website.\r\n</p>\r\n\r\n\r\n<div style=\"margin-top: 40px; padding-top: 10px; border-top: 2px solid #f3f3f3; color: #3a3f46;\">\r\n\tKind regards, <a href=\"https://korzh.com/easy-report-starter-kit\">EasyReport Starter Kit</a> team\r\n</div>\r\n{% endmarkdown %}",
+      "ContentType": "text/html",
+      "LayoutId": 2,
+      "Folder": "Auth"
+    },
+    {
+      "Id": 132,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "Product.NewVersion.ERSK30",
+      "Subject": "ERSK version 3.0 release. 20% off for EasyQuery users",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n<p> Hello <strong>{{ contact.name }}</strong>, </p>\r\n\r\nWe are glad to announce the major (v3.0) update of our [Easy Report Start Kit](https://korzh.com/ersk) solution template\r\nthat may be of interest to you as a current user of EasyQeery for ASP.NET (Core).\r\n\r\nEasy Report Starter Kit (ERSK) is a base template for __data visualization__ and __ad-hoc reporting__ solution on ASP.NET Core.\r\nIt comes with full source code and includes the most required features for this kind of solution such as:\r\n\r\n* authentication\r\n* user management\r\n* multi-tenancy\r\n* report management\r\n* data search/filtering\r\n* data export (CSV, PDF, Excel)\r\n* job scheduling\r\n\r\nERSK is built with a Clean Architecture approach and SOLID design principles in mind and uses the latest LTS version of .NET (6.0). \r\nBesides, it's possible to re-target it  for .NET 5 or .NET Core 3.1.\r\n\r\nWith version 3.0 we also introduce ERSK Community which is a totally free edition of ERSK with only basic features.\r\n\r\nSo, there is no need to build everything from scratch anymore! With ERSK you can deliver a working solution to your client right from Day 1.\r\n\r\nFor more information or to download ERSK Community, please visit the [ERSK web page](https://korzh.com/ersk).\r\n\r\n\r\n<div style=\"margin-top: 40px; padding-top: 10px; border-top: 2px solid #f3f3f3; color: #3a3f46;\">\r\n\tKind regards, <a href=\"https://korzh.com/easy-report-starter-kit\">EasyReport Starter Kit</a> team\r\n</div>\r\n{% endmarkdown %}",
+      "ContentType": "text/html",
+      "LayoutId": 2,
+      "Folder": "Product-NewVersion"
+    },
+    {
+      "Id": 133,
+      "IsObsolete": false,
+      "DateUpdated": "0001-01-01T02:00:00+02:00",
+      "ExtraDataValue": "{}",
+      "Moniker": "GetCode.Default",
+      "Subject": "Korzh.com: Your confirmation code",
+      "Content": "{% assign test_style = 'color: #3A3F46; font-size: 16px; line-height: 24px;' %}\r\n{% markdown p_style: test_style %}\r\n<p> Hello <strong>{{ contact.name }}</strong>, </p>\r\n\r\n<p>You or someone else used this email address to get a license key for one of Korzh.com products.</p>\r\n</p>\r\n<p>\r\nIf it was you, copy the code below and enter it where asked. Otherwise, just  ignore it.\r\n</p>\r\n<pre style=\"font-size:24px\">\r\n{{ contact.liteToken }}\r\n</pre>\r\n<p>\r\n    In case you have any questions or suggestions - please <a href=\"https://korzh.com/support\" target=\"_blank\">contact us</a>.\r\n    </small>\r\n</p>\r\n\r\n\r\n\r\n<div style=\"margin-top: 40px; padding-top: 10px; border-top: 2px solid #f3f3f3; color: #3a3f46;\">\r\n\tKind regards, <a href=\"https://korzh.com\">Korzh.com</a> team\r\n</div>\r\n{% endmarkdown %}",
+      "ContentType": "text/html",
+      "LayoutId": 3,
+      "Folder": "Auth"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CompoundEditor Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>CompoundEditor Demo</h1>
+      <p class="hint">
+        Синтаксис: <b>!table</b>, <b>#field</b>, <b>$function(...)</b>. Використайте ↑/↓ та Enter/Tab для
+        автодоповнення.
+      </p>
+
+      <label class="label" for="expression">Вираз для WHERE:</label>
+      <input
+        id="expression"
+        class="expression-input"
+        type="text"
+        placeholder="#total > 100 AND $month(#created_at) = 2"
+        autocomplete="off"
+      />
+      <p id="function-hint" class="function-hint" aria-live="polite"></p>
+      <ul id="suggestions" class="suggestions" aria-label="Підказки"></ul>
+
+      <section class="result-block">
+        <div class="result-header">
+          <h2>Згенерований SQL</h2>
+          <div class="actions">
+            <button id="generate" type="button">Generate</button>
+            <button id="copy-sql" type="button">Copy SQL</button>
+          </div>
+        </div>
+        <p id="validation-message" class="validation-message" aria-live="polite"></p>
+        <pre id="sql-result" class="sql-result"></pre>
+      </section>
+
+      <section class="meta-grid">
+        <article>
+          <h3>Таблиці</h3>
+          <pre id="schema-view"></pre>
+        </article>
+        <article>
+          <h3>Функції</h3>
+          <pre id="functions-view"></pre>
+        </article>
+      </section>
+    </main>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

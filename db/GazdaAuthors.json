@@ -1,0 +1,69 @@
+{
+  "name": "GazdaAuthors",
+  "schema": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "System.String"
+      },
+      {
+        "name": "ContactId",
+        "type": "System.String"
+      },
+      {
+        "name": "Email",
+        "type": "System.String"
+      },
+      {
+        "name": "Name",
+        "type": "System.String"
+      },
+      {
+        "name": "Bio",
+        "type": "System.String"
+      },
+      {
+        "name": "About",
+        "type": "System.String"
+      },
+      {
+        "name": "PhotoUrl",
+        "type": "System.String"
+      }
+    ]
+  },
+  "data": [
+    {
+      "Id": "author~contentman",
+      "ContactId": "content@korzh.com",
+      "Email": "content@korzh.com",
+      "Name": "Content Manager",
+      "Bio": "Content Manager",
+      "PhotoUrl": ""
+    },
+    {
+      "Id": "author~crocodile",
+      "ContactId": "crocodile@korzh.com",
+      "Email": "crocodile@korzh.com",
+      "Name": "Alex Melnichenko",
+      "Bio": "Co-founder of Korzh.com",
+      "PhotoUrl": "https://en.gravatar.com/userimage/25839787/155742b6fe64dc765d7fcac7f531038d.png?size=200"
+    },
+    {
+      "Id": "author~korzh",
+      "ContactId": "sergiy@korzh.com",
+      "Email": "sergiy@korzh.com",
+      "Name": "Sergiy Korzh",
+      "Bio": "Creator of EasyData library",
+      "PhotoUrl": "https://en.gravatar.com/userimage/25839787/33b37e9319da2b4cb90f10464779eb51.jpg?size=200"
+    },
+    {
+      "Id": "author~supportman",
+      "ContactId": "support@korzh.com",
+      "Email": "support@korzh.com",
+      "Name": "Support Manager",
+      "Bio": "Support Manager",
+      "PhotoUrl": ""
+    }
+  ]
+}

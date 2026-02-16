@@ -1,0 +1,813 @@
+{
+  "name": "DownloadItemPatterns",
+  "schema": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "System.Int32"
+      },
+      {
+        "name": "ProductId",
+        "type": "System.Int32"
+      },
+      {
+        "name": "IsProtected",
+        "type": "System.Boolean"
+      },
+      {
+        "name": "Flags",
+        "type": "System.String"
+      },
+      {
+        "name": "UriPattern",
+        "type": "System.String"
+      },
+      {
+        "name": "Title",
+        "type": "System.String"
+      },
+      {
+        "name": "Description",
+        "type": "System.String"
+      },
+      {
+        "name": "LicenseTypeId",
+        "type": "System.Int64"
+      }
+    ]
+  },
+  "data": [
+    {
+      "Id": 1,
+      "ProductId": 1,
+      "IsProtected": true,
+      "Flags": "CompanyExtras",
+      "UriPattern": "protected/SqlQueryBuilderLocal.zip",
+      "Title": "EQN-ASP",
+      "Description": "Deployment package of \"self-catering\" version of SqlQueryBuilder.com web-service (works with file system instead of Azure Storage).",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 2,
+      "ProductId": 1,
+      "IsProtected": true,
+      "Flags": "Source,CompanyExtras",
+      "UriPattern": "protected/sqbl_src_{VersionNum}.zip",
+      "Title": "EQN-ASP",
+      "Description": "Source code of \"self-catering\" version of SqlQueryBuilder.com web-service",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 3,
+      "ProductId": 1,
+      "IsProtected": true,
+      "UriPattern": "protected/eqn_asp_full_setup_{VersionNum}.exe",
+      "Title": "EQN-ASP",
+      "Description": "Full version setup of EasyQuery for ASP.NET",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 4,
+      "ProductId": 1,
+      "IsProtected": true,
+      "Flags": "Source",
+      "UriPattern": "protected/eqn_asp_src_{VersionNum}.zip",
+      "Title": "EQN-ASP",
+      "Description": "EasyQuery for ASP.NET source code",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 5,
+      "ProductId": 1,
+      "IsProtected": false,
+      "Flags": "",
+      "UriPattern": "eqn_asp_setup.exe",
+      "Title": "EasyQuery.NET WebForms demo version",
+      "Description": "EasyQuery for ASP.NET demo version installation.",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 6,
+      "ProductId": 1,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "downloads/eqn_asp_res20_{VersionNum}.zip",
+      "Title": "WebForms translations",
+      "Description": "EasyQuery.NET WebForms resources translated to different languages.\r\n",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 7,
+      "ProductId": 1,
+      "IsProtected": true,
+      "Flags": "Source",
+      "UriPattern": "protected/dme_src.zip",
+      "Title": "Data Model Editor and Wizard source",
+      "Description": "Data Model Editor and Data Model Wizard source code (written in Borland Delphi)",
+      "LicenseTypeId": 5
+    },
+    {
+      "Id": 8,
+      "ProductId": 2,
+      "IsProtected": false,
+      "Flags": "",
+      "UriPattern": "eqn_win_setup.exe",
+      "Title": "EasyQuery.NET WinForms trial version",
+      "Description": "EasyQuery.NET WinForms trial version installation. ",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 9,
+      "ProductId": 2,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "protected/eqn_win_full_setup_{VersionNum}.exe",
+      "Title": "EQN-WIN",
+      "Description": "Full version setup of EasyQuery WinForms",
+      "LicenseTypeId": 2
+    },
+    {
+      "Id": 10,
+      "ProductId": 2,
+      "IsProtected": true,
+      "Flags": "Source",
+      "UriPattern": "protected/eqn_win_src_{VersionNum}.zip",
+      "Title": "EQN-WIN",
+      "Description": "EasyQuery WinForms source code",
+      "LicenseTypeId": 3
+    },
+    {
+      "Id": 11,
+      "ProductId": 2,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "downloads/eqn_win_res20_{VersionNum}.zip",
+      "Title": "WinForms translations",
+      "Description": "EasyQuery.NET WinForms resources translated to different languages.\r\n",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 12,
+      "ProductId": 3,
+      "IsProtected": false,
+      "Flags": "",
+      "UriPattern": "eqn_wpf_setup.exe",
+      "Title": "EQN",
+      "Description": "EasyQuery WPF trial version installation.",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 13,
+      "ProductId": 3,
+      "IsProtected": true,
+      "UriPattern": "protected/eqn_wpf_full_setup_{VersionNum}.exe",
+      "Title": "EQN-WPF",
+      "Description": "Full version setup of EasyQuery WPF",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 14,
+      "ProductId": 3,
+      "IsProtected": true,
+      "Flags": "Source",
+      "UriPattern": "protected/eqn_wpf_src_{VersionNum}.zip",
+      "Title": "EQN-WPF",
+      "Description": "EasyQuery WPF source code",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 15,
+      "ProductId": 3,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "http://devtools.korzh.com/protected/eqn_wpf_full_setup_{VersionNum}.exe",
+      "Title": "EQN",
+      "Description": "Full version setup of EasyQuery.NET WPF",
+      "LicenseTypeId": 2
+    },
+    {
+      "Id": 16,
+      "ProductId": 4,
+      "IsProtected": false,
+      "Flags": "",
+      "UriPattern": "eqn_sl_setup.exe",
+      "Title": "EQN",
+      "Description": "EasyQuery.NET Silverlight trial version installation.",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 17,
+      "ProductId": 4,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "protected/eqn_sl_full_setup_{VersionNum}.exe",
+      "Title": "EQN-SL",
+      "Description": "Full version setup of EasyQuery Silverlight",
+      "LicenseTypeId": 2
+    },
+    {
+      "Id": 18,
+      "ProductId": 4,
+      "IsProtected": true,
+      "Flags": "Source",
+      "UriPattern": "protected/eqn_sl_src_{VersionNum}.zip",
+      "Title": "EQN-SL",
+      "Description": "Full version setup of EasyQuery Silverlight",
+      "LicenseTypeId": 3
+    },
+    {
+      "Id": 19,
+      "ProductId": 5,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "protected/eqjs_full_{VersionNum}.zip",
+      "Title": "EQN-JS",
+      "Description": "Full (unminified) version of all EasyQuery.JS scripts",
+      "LicenseTypeId": 3
+    },
+    {
+      "Id": 20,
+      "ProductId": 5,
+      "IsProtected": false,
+      "UriPattern": "eqjs.zip",
+      "Title": "EQN-JS",
+      "Description": "EasyQuery.JS package",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 21,
+      "ProductId": 6,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "protected/locpro_setup_{VersionNum}.exe",
+      "Title": "LOCVCL-PRO",
+      "Description": "Localizer Pro edition full version setup",
+      "LicenseTypeId": 2
+    },
+    {
+      "Id": 22,
+      "ProductId": 6,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "protected/locsrc_setup_{VersionNum}.exe",
+      "Title": "LOCVCL-PRO",
+      "Description": "Localizer Pro source code setup",
+      "LicenseTypeId": 3
+    },
+    {
+      "Id": 23,
+      "ProductId": 6,
+      "IsProtected": false,
+      "UriPattern": "lmsetup.exe",
+      "Title": "Language Manager",
+      "Description": "Language Manager utility - freely distributed tool that allows to create and edit  translations.",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 24,
+      "ProductId": 6,
+      "IsProtected": false,
+      "Flags": "",
+      "UriPattern": "locsetup.exe",
+      "Title": "Localizer trial version",
+      "Description": "Localizer trial version installation for all version of Delphi / C++ Builder starting from Delphi 6",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 25,
+      "ProductId": 6,
+      "IsProtected": false,
+      "Flags": "",
+      "UriPattern": "locsetup382.exe",
+      "Title": "Localizer trial version (Delphi 3-5)",
+      "Description": "Localizer trial version installation for old Delphi versions (3 - 5)",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 26,
+      "ProductId": 6,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "locrepair.zip",
+      "Title": "LocRepair",
+      "Description": "LocRepair utility - allows to repair damaged language files.",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 27,
+      "ProductId": 6,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "libmngr.zip",
+      "Title": "LibManager",
+      "Description": "Library Manager - allows to create language libraries ",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 28,
+      "ProductId": 6,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "locrefresh.zip",
+      "Title": "Locrefresh",
+      "Description": "Locrefresh utility - a command line tool that allows to automate language files refreshing.",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 29,
+      "ProductId": 7,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "protected/locstd_setup_{VersionNum}.exe",
+      "Title": "LOCVCL-STD",
+      "Description": "Localizer Standard edition full version setup",
+      "LicenseTypeId": 2
+    },
+    {
+      "Id": 30,
+      "ProductId": 8,
+      "IsProtected": true,
+      "UriPattern": "kqb_setup.exe",
+      "Title": "Korzh Query Builder",
+      "Description": "Free query builder application based on EasyQuery solution.",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 31,
+      "ProductId": 8,
+      "IsProtected": false,
+      "UriPattern": "sq/dbconnections/ibxpinf.zip",
+      "Title": "DbInfo for IB Express",
+      "Description": "DbInfo component for for IB Express ",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 32,
+      "ProductId": 8,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "protected/sq_pro_setup_{VersionNum}.exe",
+      "Title": "SQ-PRO",
+      "Description": "Simple Query Pro full version setup with source code. For all versions of Delphi / RAD Studio starting from Delphi 6",
+      "LicenseTypeId": 3
+    },
+    {
+      "Id": 33,
+      "ProductId": 8,
+      "IsProtected": false,
+      "Flags": "",
+      "UriPattern": "sq_setup.exe",
+      "Title": "Simple Query trial version",
+      "Description": "Simple Query trial version. Installation for Delphi/C++ Builder version 6 and higher",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 34,
+      "ProductId": 8,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "protected/sqold_pro_setup_{VersionNum}.exe",
+      "Title": "Simple Query Pro full  version (Delphi 3-5)",
+      "Description": "Simple Query Pro full version (with sources) setup for Delphi 3-5",
+      "LicenseTypeId": 3
+    },
+    {
+      "Id": 35,
+      "ProductId": 8,
+      "IsProtected": false,
+      "Flags": "",
+      "UriPattern": "sqold_setup.exe",
+      "Title": "Simple Query trial for Delphi 3-5",
+      "Description": "Simple Query trial version for Delphi/C++ Builder 3-5",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 36,
+      "ProductId": 9,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "protected/sq_std_setup_{VersionNum}.exe",
+      "Title": "SQ-STD",
+      "Description": "Simple Query Standard full binaries setup (for all version of Delphi starting from Delphi 6)",
+      "LicenseTypeId": 2
+    },
+    {
+      "Id": 37,
+      "ProductId": 9,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "protected/sq_stdsrc_setup_{VersionNum}.exe",
+      "Title": "SQ-STD",
+      "Description": "Simple Query Standard source code setup for all version of Delphi starting from Delphi 6",
+      "LicenseTypeId": 3
+    },
+    {
+      "Id": 38,
+      "ProductId": 9,
+      "IsProtected": true,
+      "Flags": "Source",
+      "UriPattern": "protected/sq_dmw_src_{VersionNum}.zip",
+      "Title": "Simple Query",
+      "Description": "Full source code of Data Model Wizard for Simple Query",
+      "LicenseTypeId": 3
+    },
+    {
+      "Id": 39,
+      "ProductId": 9,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "protected/sqold_full_setup_{VersionNum}.exe",
+      "Title": "Simple Query Standard full version (Delphi 3-5)",
+      "Description": "Simple Query Standard full version setup for Delphi 3-5",
+      "LicenseTypeId": 2
+    },
+    {
+      "Id": 40,
+      "ProductId": 9,
+      "IsProtected": true,
+      "Flags": "Source",
+      "UriPattern": "protected/sqold_src_setup_{VersionNum}.exe",
+      "Title": "Simple Query Standard sources (Delphi 3-5)",
+      "Description": "Simple Query Standard source code setup for Delphi 3-5",
+      "LicenseTypeId": 3
+    },
+    {
+      "Id": 41,
+      "ProductId": 9,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "protected/sq_full_setup_{VersionNum}.exe",
+      "Title": "Simple Query Standard full binaries",
+      "Description": "Simple Query Standard full binaries setup (for Delphi 6-2007)",
+      "LicenseTypeId": 2
+    },
+    {
+      "Id": 42,
+      "ProductId": 9,
+      "IsProtected": true,
+      "Flags": "Source",
+      "UriPattern": "protected/sq_src_setup_{VersionNum}.exe",
+      "Title": "Simple Query Standard sources",
+      "Description": "Simple Query Standard source code setup for Delphi 6-2007",
+      "LicenseTypeId": 3
+    },
+    {
+      "Id": 43,
+      "ProductId": 10,
+      "IsProtected": false,
+      "Flags": "",
+      "UriPattern": "aqsetup.exe",
+      "Title": "Active Query trial version",
+      "Description": "EasyQuery.AX (Active Query) trial version installation.",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 44,
+      "ProductId": 10,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "protected/aqsource_{VersionNum}.zip",
+      "Title": "EQAX",
+      "Description": "Full source code of Active Query",
+      "LicenseTypeId": 5
+    },
+    {
+      "Id": 45,
+      "ProductId": 10,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "protected/aq_full_{VersionNum}.zip",
+      "Title": "Active Query",
+      "Description": "Full (unprotected) version of ActiveQuery.ocx file",
+      "LicenseTypeId": 2
+    },
+    {
+      "Id": 46,
+      "ProductId": 12,
+      "IsProtected": false,
+      "Flags": "",
+      "UriPattern": "apploc_setup.exe",
+      "Title": "APPLOC",
+      "Description": "First public BETA version of AppLocalizer for .NET",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 47,
+      "ProductId": 13,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "clarity.zip",
+      "Title": "Clarity trial version (service)",
+      "Description": "Clarity trial version that can be installed as service on Windows or Unix/Linux OS",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 48,
+      "ProductId": 13,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "clarity.war",
+      "Title": "Clarity trial version (webapp)",
+      "Description": "Clarity trial version that can be installed as web application in some servlet container (e.g. Tomcat)",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 49,
+      "ProductId": 14,
+      "IsProtected": false,
+      "Flags": "",
+      "UriPattern": "CogniTrainer_setup.exe",
+      "Title": "CogniTrainer trial version",
+      "Description": "CogniTrainer trial version setup file. Trial version contain all the functionality of the regular version, but can only be used for a limited time (30 days).",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 50,
+      "ProductId": 20,
+      "IsProtected": true,
+      "Flags": "Source",
+      "UriPattern": "protected/kml_src.zip",
+      "Title": "KML",
+      "Description": "Full source code of KMultilanguage",
+      "LicenseTypeId": 2
+    },
+    {
+      "Id": 51,
+      "ProductId": 20,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "protected/kml5full.zip",
+      "Title": "KML",
+      "Description": "Full version of KMultiLanguage for Delphi 5",
+      "LicenseTypeId": 2
+    },
+    {
+      "Id": 52,
+      "ProductId": 20,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "protected/kml6full.zip",
+      "Title": "KML",
+      "Description": "Full version of KMultiLanguage for Delphi 6",
+      "LicenseTypeId": 2
+    },
+    {
+      "Id": 53,
+      "ProductId": 22,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "http://software.korzh.com/downloads/np_pro_setup.exe",
+      "Title": "NewsPiper Pro trial version",
+      "Description": "NewsPiper Pro trial version setup file. Trial version contain all the functionality of the regular version, but can only be used for a limited time (30 days).",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 54,
+      "ProductId": 22,
+      "IsProtected": true,
+      "Flags": "",
+      "UriPattern": "http://software.korzh.com/downloads/np_setup.exe",
+      "Title": "NewsPiper Standard free version",
+      "Description": "NewsPiper setup file. Download and run it to  install full-featured free version of NewsPiper.",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 55,
+      "ProductId": 1,
+      "IsProtected": false,
+      "UriPattern": "EQSSRS.zip",
+      "Title": "EasyQuery with SSRS demo project",
+      "Description": "Demo project which shows how to use EasyQuery components to create adhoc reports and deploy them on SSRS.",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 56,
+      "ProductId": 1,
+      "IsProtected": false,
+      "UriPattern": "eqn_asp.zip",
+      "Title": "EasyQuery for ASP.NET trial version zip archive",
+      "Description": "EasyQuery for ASP.NET trial version zip archive",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 57,
+      "ProductId": 1,
+      "IsProtected": false,
+      "UriPattern": "EqWebFormsDemo.zip",
+      "Title": "EasyQuery.JS widgets in WebForms demo",
+      "Description": "Sample project which demonstrates how to use EasyQuery.JS widgets in WebForms application",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 58,
+      "ProductId": 1,
+      "IsProtected": false,
+      "UriPattern": "eq/qryport.zip",
+      "Title": "QRYPort",
+      "Description": ".qry files convertion utility",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 59,
+      "ProductId": 1,
+      "IsProtected": false,
+      "UriPattern": "eq/dbsport.zip",
+      "Title": "DBSPort",
+      "Description": ".dbs files conversion utility",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 60,
+      "ProductId": 5,
+      "IsProtected": true,
+      "Flags": "Source",
+      "UriPattern": "protected/eqjs_src_{VersionNum}.zip",
+      "Title": "EasyQuery.JS source code",
+      "Description": "EasyQuery.JS source code",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 61,
+      "ProductId": 5,
+      "IsProtected": true,
+      "Flags": "CompanyExtras",
+      "UriPattern": "protected/eqserver_src_{VersionNum}.zip",
+      "Title": "EasyQuery Server source code",
+      "Description": "EasyQuery Server source code",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 62,
+      "ProductId": 5,
+      "IsProtected": true,
+      "Flags": "CompanyExtras",
+      "UriPattern": "protected/eqserver_{VersionNum}.zip",
+      "Title": "EasyQuery Server",
+      "Description": "EasyQuery Server (standalone version of SqlQueryBuilder.com web-service)",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 64,
+      "ProductId": 6,
+      "IsProtected": false,
+      "UriPattern": "ite2loc.zip",
+      "Title": "ITE2LOC utility",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 65,
+      "ProductId": 23,
+      "IsProtected": false,
+      "UriPattern": "sq/SQPortUtil.zip",
+      "Title": "Simple Query port utility",
+      "Description": "Converts Simple Query model and query file to EasyQuery format",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 66,
+      "ProductId": 100,
+      "IsProtected": false,
+      "UriPattern": "dme_setup310.exe",
+      "Title": "Data Model Editor setup",
+      "Description": "Data Model Editor setup which can be installed separately (without EasyQuery)",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 67,
+      "ProductId": 100,
+      "IsProtected": false,
+      "UriPattern": "EQMvcDemoParams.zip",
+      "Title": "Sample project that demonstrates generation SQL with parameters",
+      "Description": "Sample project similar to EqMvcDemoDB which generates and executes parameterized SQL queries",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 68,
+      "ProductId": 100,
+      "IsProtected": false,
+      "UriPattern": "SQBL-deploy-instructions.pdf",
+      "Title": "SqlQueryBuilderLocal web-service deployment instructions",
+      "Description": "Deployment instructions for local version of SqlQueryBuilder web-service",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 69,
+      "ProductId": 100,
+      "IsProtected": false,
+      "UriPattern": "dme_setup.exe",
+      "Title": "Data Model Editor setup",
+      "Description": "Data Model Editor setup which can be installed separately (without EasyQuery)",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 70,
+      "ProductId": 100,
+      "IsProtected": false,
+      "UriPattern": "EqMvcDemoMongo.zip",
+      "Title": "EasyQuery MVC + MongoDB sample project ",
+      "Description": "Sample project which demonstrates how to use EasyQuery components with MongoDB (ASP.NET MVC 5.x)",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 71,
+      "ProductId": 150,
+      "IsProtected": false,
+      "UriPattern": "dme7_setup.exe",
+      "Title": "Data Model Editor 7 setup",
+      "Description": "Data Model Editor setup which can be installed separately (without EasyQuery)",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 72,
+      "ProductId": 150,
+      "IsProtected": false,
+      "UriPattern": "dme.zip",
+      "Title": "Data Model Editor",
+      "Description": "Data Model Editor executables",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 73,
+      "ProductId": 300,
+      "IsProtected": false,
+      "UriPattern": "sq/dbconnections/absolutedbinf.zip",
+      "Title": "DbInfo for Absolute DB",
+      "Description": "DbInfo component for Absolute DB",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 74,
+      "ProductId": 300,
+      "IsProtected": false,
+      "UriPattern": "sq/dbconnections/doa.zip",
+      "Title": "Direct Oracle Access",
+      "Description": "DbInfo component for Direct Oracle Access",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 75,
+      "ProductId": 300,
+      "IsProtected": false,
+      "UriPattern": "sq/dbconnections/postgres_mo.zip",
+      "Title": "PostgressDAC by MicroOLAP ",
+      "Description": "DbInfo component for Postgres DAC by MicroOLAP",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 76,
+      "ProductId": 300,
+      "IsProtected": false,
+      "UriPattern": "sq/dbconnections/elevatedb.zip",
+      "Title": "DbInfo for Elevate DB",
+      "Description": "DbInfo component for Elevate DB",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 77,
+      "ProductId": 300,
+      "IsProtected": false,
+      "UriPattern": "sq/dbconnections/dbisam3.zip",
+      "Title": "DbInfo for DBISAM 3",
+      "Description": "DbInfo component for DBISAM 3",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 78,
+      "ProductId": 300,
+      "IsProtected": false,
+      "UriPattern": "sq/dbconnections/dbisam.zip",
+      "Title": "DbInfo for DBISAM",
+      "Description": "DbInfo component for for DBISAM",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 79,
+      "ProductId": 301,
+      "IsProtected": true,
+      "Flags": "Source",
+      "UriPattern": "protected/eqn_anc_src_{VersionNum}.zip",
+      "Title": "EQ-ANC-SRC",
+      "Description": "EasyQuery for ASP.NET Core source code",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 80,
+      "ProductId": 301,
+      "IsProtected": true,
+      "Flags": "Source",
+      "UriPattern": "protected/dme_src_{VersionNum}.zip",
+      "Title": "Data Model Editor source code",
+      "Description": "Data Model Editor Sources",
+      "LicenseTypeId": 1
+    },
+    {
+      "Id": 81,
+      "ProductId": 308,
+      "IsProtected": true,
+      "UriPattern": "protected/ersk_src_{VersionNum}.zip",
+      "Title": "Easy Report Starter Kit source code",
+      "Description": "Full source code of Easy Report Starter Kit ",
+      "LicenseTypeId": 1
+    }
+  ]
+}

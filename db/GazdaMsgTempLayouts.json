@@ -1,0 +1,40 @@
+{
+  "name": "GazdaMsgTempLayouts",
+  "schema": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "System.Int64"
+      },
+      {
+        "name": "Name",
+        "type": "System.String"
+      },
+      {
+        "name": "Content",
+        "type": "System.String"
+      },
+      {
+        "name": "BaseId",
+        "type": "System.String"
+      }
+    ]
+  },
+  "data": [
+    {
+      "Id": 1,
+      "Name": "MainMessageLayout",
+      "Content": "<html>\r\n    \r\n    <body>\r\n        <h1>This is message template</h1>\r\n        {% renderbody %}\r\n    </body>\r\n</html>\r\n"
+    },
+    {
+      "Id": 2,
+      "Name": "Default",
+      "Content": "<html>\r\n<head>\r\n</head>\r\n\r\n<body>\r\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" height=\"100%\"  style=\"margin:0px;padding:0px;border:0px;background-color:#f3f3f3;font-family:BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:20px\"\r\n    width=\"100%\">\r\n    <tbody>\r\n        <tr>\r\n            <td align=\"center\" valign=\"top\">\r\n                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"margin:0px;padding:0px;border:0px;width:800px\"\r\n                    width=\"600px\">\r\n                    <tbody>\r\n                        <tr>\r\n                          <td\r\n                            style=\"\r\n                              padding-top: 50px;\r\n                              padding-right: 16px;\r\n                              padding-bottom: 10px;\r\n                              padding-left: 16px;\r\n                            \"\r\n                          ><img src=\"https://korzh.com/images/korzh_logo.png\" alt=\"KORZH.COM\" class=\"c-desktop-logo\">\r\n        \t\t\t\t  </td>\r\n                        </tr>\r\n                        <tr style=\"background-color:#ffffff;\">\r\n                            <td style=\"padding: 55px 70px; border: 3px solid #f3f3f3;\">\r\n{% renderbody %}\r\n\r\n                            </td>\r\n                        </tr>\r\n                        <tr height=\"100px\">\r\n                            <td style=\"vertical-align: top; padding-top: 10px;\">\r\n                                <p style=\"color: #3A3F46; float: right; font-size: 13px; margin: 0 20px;\">Copyright © 2021 - Korzh.com</p>\r\n                                <p style=\"color: #3A3F46; font-size: 13px; margin: 0 20px;\">If you don't want to receive {{ channel.name }} messages for any reason, <a href=\"https://korzh.com/account/subscriptions?ch={{ channel.moniker }}&a={{ contact.token }}\">click here to unsubscribe</a></p>\r\n                            </td>\r\n                        </tr>                        \r\n                    </tbody>\r\n                </table>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>  \r\n</body>\r\n</html>\r\n"
+    },
+    {
+      "Id": 3,
+      "Name": "SubscriptionConfirmationMessage",
+      "Content": "<html>\r\n\r\n<head>\r\n</head>\r\n\r\n<body>\r\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" height=\"100%\"  style=\"margin:0px;padding:0px;border:0px;background-color:#f3f3f3;font-family:BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:20px\"\r\n    width=\"100%\">\r\n    <tbody>\r\n        <tr>\r\n            <td align=\"center\" valign=\"top\">\r\n                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"margin:0px;padding:0px;border:0px;width:800px\"\r\n                    width=\"600px\">\r\n                    <tbody>\r\n                        <tr>\r\n                          <td\r\n                            style=\"\r\n                              padding-top: 50px;\r\n                              padding-right: 16px;\r\n                              padding-bottom: 10px;\r\n                              padding-left: 16px;\r\n                            \"\r\n                          ><img src=\"https://korzh.com/images/korzh_logo.png\" alt=\"KORZH.COM\" class=\"c-desktop-logo\">\r\n        \t\t\t\t  </td>\r\n                        </tr>\r\n                        <tr style=\"background-color:#ffffff;\">\r\n                            <td style=\"padding: 55px 70px; border: 3px solid #f3f3f3;\">\r\n{% renderbody %}\r\n\r\n                            </td>\r\n                        </tr>\r\n                        <tr height=\"100px\">\r\n                            <td style=\"vertical-align: top; padding-top: 10px;\">\r\n                                <p style=\"color: #3A3F46; float: right; font-size: 13px; margin: 0 20px;\">Copyright © 2021 - Korzh.com</p>\r\n                                <p style=\"color: #3A3F46; font-size: 13px; margin: 0 20px;\">If you don't want to receive \"{{ channel.name }}\" messages for any reason, <a href=\"https://korzh.com/account/subscriptions?ch={{ channel.moniker }}&a={{ contact.token }}\">click here to unsubscribe</a></p>\r\n                            </td>\r\n                        </tr>                        \r\n                    </tbody>\r\n                </table>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>  \r\n</body>\r\n</html>"
+    }
+  ]
+}

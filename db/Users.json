@@ -1,0 +1,308 @@
+{
+  "name": "Users",
+  "schema": {
+    "columns": [
+      {
+        "name": "Id",
+        "type": "System.String"
+      },
+      {
+        "name": "Enabled",
+        "type": "System.Boolean"
+      },
+      {
+        "name": "AccountId",
+        "type": "System.Int64"
+      },
+      {
+        "name": "EmailConfirmed",
+        "type": "System.Boolean"
+      },
+      {
+        "name": "PhoneNumberConfirmed",
+        "type": "System.Boolean"
+      },
+      {
+        "name": "TwoFactorEnabled",
+        "type": "System.Boolean"
+      },
+      {
+        "name": "LockoutEnabled",
+        "type": "System.Boolean"
+      },
+      {
+        "name": "AccessFailedCount",
+        "type": "System.Int32"
+      },
+      {
+        "name": "LockoutEnd",
+        "type": "System.DateTimeOffset"
+      },
+      {
+        "name": "PasswordHash",
+        "type": "System.String"
+      },
+      {
+        "name": "SecurityStamp",
+        "type": "System.String"
+      },
+      {
+        "name": "ConcurrencyStamp",
+        "type": "System.String"
+      },
+      {
+        "name": "PhoneNumber",
+        "type": "System.String"
+      },
+      {
+        "name": "UserName",
+        "type": "System.String"
+      },
+      {
+        "name": "NormalizedUserName",
+        "type": "System.String"
+      },
+      {
+        "name": "Email",
+        "type": "System.String"
+      },
+      {
+        "name": "NormalizedEmail",
+        "type": "System.String"
+      },
+      {
+        "name": "FullName",
+        "type": "System.String"
+      },
+      {
+        "name": "DisplayName",
+        "type": "System.String"
+      },
+      {
+        "name": "UserRoles",
+        "type": "System.String"
+      },
+      {
+        "name": "Notes",
+        "type": "System.String"
+      },
+      {
+        "name": "Signature",
+        "type": "System.String"
+      }
+    ]
+  },
+  "data": [
+    {
+      "Id": "admin",
+      "Enabled": false,
+      "AccountId": 11623,
+      "EmailConfirmed": false,
+      "PhoneNumberConfirmed": false,
+      "TwoFactorEnabled": false,
+      "LockoutEnabled": false,
+      "AccessFailedCount": 0,
+      "PasswordHash": "AQAAAAEAACcQAAAAEH3l/Yl1SMq+/eBT1bShs+dZxLLCCnEUbtXYU1jOKE46LOkEngL3KYTH6suKl7kNLw==",
+      "ConcurrencyStamp": "fb410cc0-25ee-4171-a278-f1855f40ea77",
+      "UserName": "admin",
+      "NormalizedUserName": "admin",
+      "Email": "admin@gazda.co",
+      "NormalizedEmail": "admin@gazda.co",
+      "FullName": "Admin",
+      "DisplayName": "Admin",
+      "UserRoles": "ADMIN,CONTENT,SUPPORT,CLIENT,STORE"
+    },
+    {
+      "Id": "anton",
+      "Enabled": true,
+      "AccountId": 13236,
+      "EmailConfirmed": false,
+      "PhoneNumberConfirmed": false,
+      "TwoFactorEnabled": false,
+      "LockoutEnabled": false,
+      "AccessFailedCount": 0,
+      "PasswordHash": "AQAAAAEAACcQAAAAEHTvwgkd+0I379DNHlJlUv5zF8sm3WB8JWg/SagiGhxn+ATV5VtDt4we1PZdsTtEiQ==",
+      "ConcurrencyStamp": "63bdb26c-d64d-47bd-a37f-945e6c6700e9",
+      "UserName": "anton",
+      "NormalizedUserName": "anton",
+      "Email": "anton_ivanenko@outlook.com",
+      "NormalizedEmail": "anton_ivanenko@outlook.com",
+      "FullName": "Anton Ivanenko",
+      "DisplayName": "Anton",
+      "UserRoles": "SUPPORT,CLIENT"
+    },
+    {
+      "Id": "clientman",
+      "Enabled": false,
+      "AccountId": 13237,
+      "EmailConfirmed": false,
+      "PhoneNumberConfirmed": false,
+      "TwoFactorEnabled": false,
+      "LockoutEnabled": false,
+      "AccessFailedCount": 0,
+      "PasswordHash": "AQAAAAEAACcQAAAAEGkT9SU02x/QH3NgGar4gxGZLHSbGh7Fhhw+T8YSgw9GFkFofcL4vCmZTa8RwV7zmA==",
+      "ConcurrencyStamp": "92ea196d-bd8f-4111-bcd8-98719bc26d8f",
+      "UserName": "clientman",
+      "NormalizedUserName": "clientman",
+      "Email": "clientman@gazda.co",
+      "NormalizedEmail": "clientman@gazda.co",
+      "FullName": "Client Manager",
+      "DisplayName": "Manager1",
+      "UserRoles": "CLIENT"
+    },
+    {
+      "Id": "contentman",
+      "Enabled": false,
+      "AccountId": 13238,
+      "EmailConfirmed": false,
+      "PhoneNumberConfirmed": false,
+      "TwoFactorEnabled": false,
+      "LockoutEnabled": false,
+      "AccessFailedCount": 0,
+      "PasswordHash": "AQAAAAEAACcQAAAAEDMDdMgLJqhxi1U34GLfxcszNBymJKn8Zp4K1FnXneM7zGB/GGR1fh08oJR90bU0mA==",
+      "ConcurrencyStamp": "9639dbf3-defd-445d-9504-41cd96422d07",
+      "UserName": "contentman",
+      "NormalizedUserName": "contentman",
+      "Email": "contentman@gazda.co",
+      "NormalizedEmail": "contentman@gazda.co",
+      "FullName": "Content Manager",
+      "DisplayName": "Manager2",
+      "UserRoles": "CONTENT"
+    },
+    {
+      "Id": "crocodile",
+      "Enabled": true,
+      "AccountId": 13191,
+      "EmailConfirmed": false,
+      "PhoneNumberConfirmed": false,
+      "TwoFactorEnabled": false,
+      "LockoutEnabled": false,
+      "AccessFailedCount": 0,
+      "PasswordHash": "AQAAAAEAACcQAAAAEI654BGAiXifZM1EmPvPKkKHWUAypFLQKpMqqcnBQao7ZTGNKnFvfyKBqGHjC+pFIg==",
+      "ConcurrencyStamp": "77715b7b-ba81-4aae-a7fb-c1ddb988889c",
+      "UserName": "crocodile",
+      "NormalizedUserName": "crocodile",
+      "Email": "croc.dile@gmail.com",
+      "NormalizedEmail": "croc.dile@gmail.com",
+      "FullName": "Oleksandr Melnychenko",
+      "DisplayName": "Oleksandr",
+      "UserRoles": "ADMIN,CONTENT,SUPPORT,CLIENT,STORE,FINANCE"
+    },
+    {
+      "Id": "ditkova",
+      "Enabled": true,
+      "AccountId": 13239,
+      "EmailConfirmed": false,
+      "PhoneNumberConfirmed": false,
+      "TwoFactorEnabled": false,
+      "LockoutEnabled": false,
+      "AccessFailedCount": 0,
+      "PasswordHash": "AQAAAAEAACcQAAAAEEmYE6tLjkgZXTjRD0pOC27sBf86RhC1dBicxi2Qu8h4m+jJRSHBt0I2dcVkjidzqw==",
+      "ConcurrencyStamp": "29f389b9-d1e0-4d07-9af4-4e4eb3777de2",
+      "UserName": "ditkova",
+      "NormalizedUserName": "ditkova",
+      "Email": "olga.ditkova@gmail.com",
+      "NormalizedEmail": "olga.ditkova@gmail.com",
+      "FullName": "Olga Ditkova",
+      "DisplayName": "Olga",
+      "UserRoles": "CONTENT,FINANCE"
+    },
+    {
+      "Id": "korzh",
+      "Enabled": true,
+      "AccountId": 234,
+      "EmailConfirmed": true,
+      "PhoneNumberConfirmed": false,
+      "TwoFactorEnabled": false,
+      "LockoutEnabled": false,
+      "AccessFailedCount": 0,
+      "PasswordHash": "AQAAAAEAACcQAAAAEIhmMc5eeLF8m1vGBAUwAMSGJqC9FaDrHN/iVOm7q4dSZf3F5Fs7qmUgQ11+toKkNw==",
+      "SecurityStamp": "BMYVJPRD2YVAJJ47HYM5SXLYW2RKKWPU",
+      "PhoneNumber": "",
+      "UserName": "korzh",
+      "NormalizedUserName": "korzh",
+      "Email": "sergiy@korzh.com",
+      "NormalizedEmail": "sergiy@korzh.com",
+      "FullName": "Sergiy Korzh",
+      "DisplayName": "Sergiy",
+      "UserRoles": "ADMIN,CONTENT,SUPPORT,CLIENT,STORE,BLOGGER,FINANCE",
+      "Notes": ""
+    },
+    {
+      "Id": "olton",
+      "Enabled": true,
+      "AccountId": 14425,
+      "EmailConfirmed": false,
+      "PhoneNumberConfirmed": false,
+      "TwoFactorEnabled": false,
+      "LockoutEnabled": false,
+      "AccessFailedCount": 0,
+      "PasswordHash": "AQAAAAEAACcQAAAAEMjjtgCbLGp3Gp6I4G6TNpw5czvvLqqZguQfTzM11bJ0ukJJXr5u7+T1bc6u9ZtBng==",
+      "SecurityStamp": "08ae2bfe-7a1e-4a07-8b20-d01f3105a255",
+      "ConcurrencyStamp": "d0d7cb49-bb05-43b6-bed3-cd67084e3776",
+      "UserName": "olton",
+      "NormalizedUserName": "olton",
+      "Email": "serhii@pimenov.com.ua",
+      "NormalizedEmail": "serhii@pimenov.com.ua",
+      "FullName": "Sergiy Pimenov",
+      "DisplayName": "Sergiy",
+      "UserRoles": "CONTENT,SUPPORT,CLIENT,BLOGGER"
+    },
+    {
+      "Id": "storeman",
+      "Enabled": false,
+      "AccountId": 13240,
+      "EmailConfirmed": false,
+      "PhoneNumberConfirmed": false,
+      "TwoFactorEnabled": false,
+      "LockoutEnabled": false,
+      "AccessFailedCount": 0,
+      "PasswordHash": "AQAAAAEAACcQAAAAEIJWKnFp2F4IeNid3pLYxp3dEeJGdOl4spnOcQlCvyfwaPzhdVuYtLkSA2uD/kdGJw==",
+      "ConcurrencyStamp": "f0e8e192-7436-417a-8445-04acfe5aad66",
+      "UserName": "storeman",
+      "NormalizedUserName": "storeman",
+      "Email": "storeman@gazda.co",
+      "NormalizedEmail": "storeman@gazda.co",
+      "FullName": "Store Manager",
+      "DisplayName": "Manager3",
+      "UserRoles": "STORE"
+    },
+    {
+      "Id": "supportman",
+      "Enabled": true,
+      "AccountId": 389,
+      "EmailConfirmed": false,
+      "PhoneNumberConfirmed": false,
+      "TwoFactorEnabled": false,
+      "LockoutEnabled": false,
+      "AccessFailedCount": 0,
+      "PasswordHash": "AQAAAAEAACcQAAAAEMGqUqI1/dcx9y/oUVLX0WSnflZfWRjEvoxsmzbTXwJdtE+dLN/INVIFSgFxG5PhLg==",
+      "ConcurrencyStamp": "c9b71ca2-7f75-467d-8071-84cf86b132f5",
+      "UserName": "supportman",
+      "NormalizedUserName": "supportman",
+      "Email": "support@korzh.com",
+      "NormalizedEmail": "support@korzh.com",
+      "FullName": "Kate",
+      "DisplayName": "Kate",
+      "UserRoles": "SUPPORT,CLIENT,BLOGGER"
+    },
+    {
+      "Id": "test",
+      "Enabled": false,
+      "AccountId": 13608,
+      "EmailConfirmed": false,
+      "PhoneNumberConfirmed": false,
+      "TwoFactorEnabled": false,
+      "LockoutEnabled": false,
+      "AccessFailedCount": 0,
+      "PasswordHash": "AQAAAAEAACcQAAAAEC2dB3azkRj2FodxF29iv6Ai1nhSGVTKnMtQZn3r5JdxTzD4Fg0gN5DNfJ/Sj21TWA==",
+      "ConcurrencyStamp": "32841c17-0303-47bd-8d1b-99b223331655",
+      "UserName": "test",
+      "NormalizedUserName": "test",
+      "Email": "test@korzh.com",
+      "NormalizedEmail": "test@korzh.com",
+      "FullName": "Test Admin",
+      "UserRoles": "CONTENT,SUPPORT,CLIENT"
+    }
+  ]
+}
