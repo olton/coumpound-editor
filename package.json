@@ -19,9 +19,6 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "@easydata/ui": "^1.5.10",
-    "@easyquery/enterprise": "^7.4.1",
-    "@easyquery/ui": "^7.4.1"
   },
   "devDependencies": {
     "@types/node": "^25.2.3",
