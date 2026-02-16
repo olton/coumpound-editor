@@ -1,0 +1,7 @@
+{
+  "version": "0.2",
+  "language": "en,uk",
+  "dictionaries": ["uk-ua"],
+  "words": ["CompoundEditor", "compund", "easydata", "easyquery", "tsx", "tsconfig", "Func"],
+  "ignorePaths": ["node_modules", "dist", "build", "coverage", "package-lock.json"]
+}
